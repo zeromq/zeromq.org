@@ -1,0 +1,25 @@
+{{ $usedby := site.Params.usedby }}
+{{ with $usedby }}
+<section class="section">
+  <div class="container">
+    <div class="content has-text-centered">
+      <h1 class="has-text-primary">Used by</h1>
+
+      <div class="level">
+        {{ range $usedby }}
+        <div class="level-item">
+          <div>
+            <div>
+              <img width="48" height="48" src="{{.image}}" alt="{{.name}}"></img>
+            </div>
+            <div>
+              {{.name}}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,45 @@
+{{ $features := site.Params.features }}
+{{ with $features }}
+<section class="section has-background-light">
+  <div class="container">
+    <div class="columns is-multiline">
+      {{ range $features }}
+      {{ $url := .url }}
+      <div class="column is-one-third">
+        <div class="media feature has-background-white">
+          <figure class="media-left">
+            <span class="icon is-large has-text-primary">
+              <i class="{{.icon}}"></i>
+            </span>
+          </figure>
+
+          <div class="media-content">
+            <div class="content">
+
+              {{ if isset . "url" }}
+              <a href={{.url}}>
+                <h4 class="title is-size-4 is-size-5-mobile has-text-weight-light has-text-primary">
+
+                  {{ .title | markdownify }}
+                </h4>
+              </a>
+              {{ else }}
+              <h4 class="title is-size-4 is-size-5-mobile has-text-weight-light has-text-primary">
+                {{ .title | markdownify }}
+              </h4>
+              {{ end }}
+
+              {{ with .description }}
+              <p>
+                {{ . | markdownify }}
+              </p>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

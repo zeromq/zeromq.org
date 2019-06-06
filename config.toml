@@ -1,0 +1,130 @@
+title = "ZeroMQ"
+baseURL = "https://new.zeromq.org"
+disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
+languageCode = "en-us"
+pygmentsCodefences = true
+pygmentsStyle = "monokai"
+
+[params]
+description = "Distributed Messaging"
+sansseriffont = "Open Sans"
+monospacefont = "Fira Mono"
+fontawesomeversion = "5.6.3"
+js = ["jquery-3.3.1", "app"]
+logo = "/images/logo.gif"
+favicon = "/images/favicon.gif"
+
+[params.logos]
+navbar = "/images/logo.gif"
+footer = "/images/logo.gif"
+panel = "/images/logo.gif"
+
+[params.social.github]
+name = "GitHub"
+url  = "https://github.com/zeromq"
+icon = "github"
+color = "black"
+
+[params.social.gitter]
+name = "Gitter"
+url = "https://gitter.im/zeromq"
+icon = "gitter"
+color = "gitter-purple"
+
+[params.social.twitter]
+name = "Twitter"
+url = "https://twitter.com/zeromq"
+icon = "twitter"
+color = "twitter-blue"
+handle = "zeromq"
+
+[[params.fonts]]
+name = "Open Sans"
+sizes = [300, 400, 600, 700]
+
+[[params.fonts]]
+name = "Fira Mono"
+sizes = [400]
+
+[params.navbar]
+fixed = true
+shadow = true
+
+[[params.features]]
+title = "Universal"
+description = "Connect your code in any language, on any platform."
+icon = "fas fa-3x fa-globe"
+
+[[params.features]]
+title = "Smart"
+description = "Smart patterns like pub-sub, push-pull, and client-server."
+icon = "fas fa-3x fa-brain"
+
+[[params.features]]
+title = "High-speed"
+description = "asynchronous I/O engines, in a tiny library."
+icon = "fas fa-3x fa-tachometer-alt"
+
+[[params.features]]
+title = "Multi-Transport"
+description = "Carries messages across inproc, IPC, TCP, UDP, TIPC, multicast"
+icon = "fas fa-3x fa-road"
+
+[[params.features]]
+title = "Community"
+description = "Backed by a large and active open source community."
+icon = "fas fa-3x fa-people-carry"
+url = "/community"
+
+[[params.features]]
+title = "The Guide"
+description = "Explains how to use ØMQ with 60+ diagrams and 750 examples in 28 languages"
+icon = "fas fa-3x fa-book"
+url = "http://zguide.zeromq.org"
+
+[[menu.navbar]]
+name = "The Guide"
+url = "http://zguide.zeromq.org"
+weight = 1
+
+[[menu.navbar]]
+name = "Get Started"
+url = "/get-started"
+weight = 2
+
+[[menu.navbar]]
+name = "Community"
+url = "/community"
+weight = 3
+
+[[params.usedby]]
+name = "Microsoft"
+image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/microsoft.svg"
+
+[[params.usedby]]
+name = "Samsung"
+image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/samsung.svg"
+
+[[params.usedby]]
+name = "AT&T"
+image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/at-and-t.svg"
+
+[[params.usedby]]
+name = "Spotify"
+image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/spotify.svg"
+
+[[params.usedby]]
+name = "Digital Ocean"
+image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/digitalocean.svg"
+
+[[params.usedby]]
+name = "Auth0"
+image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/auth0.svg"
+
+[[params.usedby]]
+name = "Bitcoin"
+image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bitcoin.svg"
+
+[[params.usedby]]
+name = "Jupyter"
+image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jupyter.svg"
