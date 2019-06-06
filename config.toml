@@ -62,7 +62,7 @@ icon = "fas fa-3x fa-brain"
 
 [[params.features]]
 title = "High-speed"
-description = "asynchronous I/O engines, in a tiny library."
+description = "Asynchronous I/O engines, in a tiny library."
 icon = "fas fa-3x fa-tachometer-alt"
 
 [[params.features]]
