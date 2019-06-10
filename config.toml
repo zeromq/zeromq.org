@@ -3,7 +3,10 @@ baseURL = "https://new.zeromq.org"
 disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
 languageCode = "en-us"
 pygmentsCodefences = true
-pygmentsStyle = "monokai"
+pygmentsStyle = "dracula"
+
+[permalinks]
+docs = "/:title"
 
 [params]
 description = "An open-source universal messaging library"

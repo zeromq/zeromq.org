@@ -10,3 +10,7 @@ command = "make preview-build"
 
 [context.branch-deploy]
 command = "make preview-build"
+
+[[redirects]]
+from = "/intro:read-the-manual"
+to = "get-started/"

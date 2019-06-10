@@ -1,0 +1,10 @@
+{{ $languages := where .Site.RegularPages "Section" "languages" }}
+<div class="columns is-multiline">
+  {{ range $languages }}
+  <div class="column is-one-quarter">
+      <a href="{{ .URL }}" class="button is-primary is-large is-fullwidth">
+        {{ .Title }}
+      </a>
+  </div>
+  {{ end }}
+</div>

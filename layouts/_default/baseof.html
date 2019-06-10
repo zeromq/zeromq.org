@@ -7,7 +7,7 @@
     <title>{{ block "title" . }}{{ site.Title }}{{ end }}</title>
     {{ partial "css.html" . }}
   </head>
-  <body class="page{{ if and $isHome $navbarFixedTop }} has-navbar-fixed-top{{ end }}">
+  <body class="page has-navbar-fixed-top">
     <div class="main">
       {{ block "main" . }}
       {{ end }}

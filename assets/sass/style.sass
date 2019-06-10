@@ -32,6 +32,12 @@ $navbar-burger-color: $primary
 $code: $primary
 $section-padding: 1.5rem
 
+$link: lighten($primary, 10%)
+$link: lighten($primary, 10%)
+$link-active: darken($primary, 10%)
+
+
+
 @import "bulma/sass/utilities/derived-variables"
 
 $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple": ($gitter-purple, $white)), $colors)
@@ -47,24 +53,6 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
 
   .card-content
     padding: 0
-
-.dashboard-panel
-  &.left
-    border-right: 1px solid $grey-lighter
-    flex-basis: 20%
-
-  &-main
-    &-toc
-      ul
-        li
-          font-size: 1.25rem
-
-          & + li
-            margin-top: .25rem
-
-.dashboard-panel-logo
-  width: 40%
-  margin-bottom: 1rem
 
 .hero
   .hero-foot
@@ -84,6 +72,15 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
 
   .media-content
     padding-left: 25px
+
+.column-menu
+  +desktop
+    padding-right: 4.5rem
+
+.column-main
+  +desktop
+    border-left: 0.5px solid #cccccc
+    padding-left: 4.5rem
 
 .page
   display: flex

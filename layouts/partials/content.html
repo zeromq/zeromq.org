@@ -1,0 +1,44 @@
+{{ $docs := where .Site.RegularPages "Section" "docs" }}
+{{ $languages := where .Site.RegularPages "Section" "languages" }}
+{{ $currentUrl := .RelPermalink }}
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-narrow column-menu">
+        <aside class="menu">
+          <ul class="menu-list">
+            {{ range $docs }}
+            {{ $isCurrentPage := eq $currentUrl .URL }}
+            <li>
+              <a href="{{ .URL }}" {{ if $isCurrentPage }} class="is-active" {{ end }}>
+                {{ .Title }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+          <p class="menu-label">
+            Languages
+          </p>
+          <ul class="menu-list">
+            {{ range $languages }}
+            {{ $isCurrentPage := eq $currentUrl .URL }}
+            <li>
+              <a href="{{ .URL }}" {{ if $isCurrentPage }} class="is-active" {{ end }}>
+                {{ .Title }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </aside>
+      </div>
+
+      <div class="column column-main">
+        <section>
+          <div class="content">
+            {{ .Content }}
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
