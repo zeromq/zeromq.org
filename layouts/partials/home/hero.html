@@ -3,7 +3,7 @@
 <section class="hero has-text-centered is-medium is-primary">
   <div class="hero-body">
     <div class="container">
-      <p class="title is-size-1 is-size-2-mobile has-text-weight-light{{ if $description }} is-spaced{{ end }}">
+      <p class="title is-size-1 is-size-2-mobile {{ if $description }} is-spaced{{ end }}">
         {{ $title }}
       </p>
       {{ with $description }}
@@ -11,11 +11,15 @@
         {{ . }}
       </p>
 
-      <a class="button is-primary is-inverted is-large" href="/get-started">
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="container">
+      <a class="button get-started-button is-primary is-inverted is-large" href="/get-started">
         Get Started
       </a>
-
-      {{ end }}
     </div>
   </div>
 </section>

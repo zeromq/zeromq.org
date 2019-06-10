@@ -6,7 +6,7 @@ pygmentsCodefences = true
 pygmentsStyle = "monokai"
 
 [params]
-description = "Distributed Messaging"
+description = "An open-source universal messaging library"
 sansseriffont = "Open Sans"
 monospacefont = "Fira Mono"
 fontawesomeversion = "5.6.3"
@@ -80,11 +80,11 @@ url = "/community"
 title = "The Guide"
 description = "Explains how to use ØMQ with 60+ diagrams and 750 examples in 28 languages"
 icon = "fas fa-3x fa-book"
-url = "http://zguide.zeromq.org"
+url = "http://zguide.zeromq.org/page:all"
 
 [[menu.navbar]]
 name = "The Guide"
-url = "http://zguide.zeromq.org"
+url = "http://zguide.zeromq.org/page:all"
 weight = 1
 
 [[menu.navbar]]
