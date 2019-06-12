@@ -6,6 +6,15 @@ weight: 2
 
 # Download
 
+Most language bindings require the low-level libzmq library. Follow the instructions to download and install libzmq.
+For specific language instructions go to the lanaguage page.
+
+## NetMQ and JeroMQ
+
+NetMQ and JeroMQ are C# and Java pure port of libzmq and therefore don't require libzmq.
+
+Go to [C#]({{< relref "languages/csharp" >}}) and [Java]({{< relref "languages/java" >}}) language pages for more information.
+
 ## Windows
 
 ### Release 4.3.1

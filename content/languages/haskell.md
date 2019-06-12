@@ -1,4 +1,4 @@
 ---
-title: Rust
-weight: 4
+title: Haskell
+weight: 5
 ---

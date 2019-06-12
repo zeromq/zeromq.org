@@ -1,4 +1,4 @@
 ---
-title: Haskell
-weight: 6
+title: Other
+weight: 100
 ---
