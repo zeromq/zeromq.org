@@ -74,18 +74,12 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
     padding-left: 25px
 
 .column-menu
-  +desktop
-    padding-right: 4.5rem
+  +desktop    
+    padding-left: 3rem
 
 .column-main
+  min-width: 0 !important
   +desktop
     border-left: 0.5px solid #cccccc
     padding-left: 4.5rem
-
-.page
-  display: flex
-  flex-direction: column
-  min-height: 100vh
-
-  .main
-    flex: 1
+    margin-top: 0.75rem

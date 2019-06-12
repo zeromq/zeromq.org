@@ -1,44 +1,44 @@
 {{ $docs := where .Site.RegularPages "Section" "docs" }}
 {{ $languages := where .Site.RegularPages "Section" "languages" }}
 {{ $currentUrl := .RelPermalink }}
-<div class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-narrow column-menu">
-        <aside class="menu">
-          <ul class="menu-list">
-            {{ range $docs }}
-            {{ $isCurrentPage := eq $currentUrl .URL }}
-            <li>
-              <a href="{{ .URL }}" {{ if $isCurrentPage }} class="is-active" {{ end }}>
-                {{ .Title }}
-              </a>
-            </li>
-            {{ end }}
-          </ul>
-          <p class="menu-label">
-            Languages
-          </p>
-          <ul class="menu-list">
-            {{ range $languages }}
-            {{ $isCurrentPage := eq $currentUrl .URL }}
-            <li>
-              <a href="{{ .URL }}" {{ if $isCurrentPage }} class="is-active" {{ end }}>
-                {{ .Title }}
-              </a>
-            </li>
-            {{ end }}
-          </ul>
-        </aside>
-      </div>
 
-      <div class="column column-main">
-        <section>
-          <div class="content">
-            {{ .Content }}
-          </div>
-        </section>
-      </div>
-    </div>
+<section class="columns is-fullheight">
+  <div class="column is-2 column-menu is-fullheight section">
+    <aside class="menu">
+      <p class="menu-label">
+        Get Started
+      </p>
+      <ul class="menu-list">
+        {{ range $docs }}
+        {{ $isCurrentPage := eq $currentUrl .URL }}
+        <li>
+          <a href="{{ .URL }}" {{ if $isCurrentPage }} class="is-active" {{ end }}>
+            {{ .Title }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      <p class="menu-label">
+        Languages
+      </p>
+      <ul class="menu-list">
+        {{ range $languages }}
+        {{ $isCurrentPage := eq $currentUrl .URL }}
+        <li>
+          <a href="{{ .URL }}" {{ if $isCurrentPage }} class="is-active" {{ end }}>
+            {{ .Title }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </aside>
   </div>
-</div>
+
+  <div class="container is-10 column column-main ">
+    <section class="section">
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </section>
+  </div>
+</section>

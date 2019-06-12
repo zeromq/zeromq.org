@@ -1,6 +1,6 @@
 title = "ZeroMQ"
 baseURL = "https://new.zeromq.org"
-disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
+disableKinds = ["sitemap", "taxonomy", "taxonomyTerm", "section"]
 languageCode = "en-us"
 pygmentsCodefences = true
 pygmentsStyle = "dracula"
@@ -86,19 +86,24 @@ icon = "fas fa-3x fa-book"
 url = "http://zguide.zeromq.org/page:all"
 
 [[menu.navbar]]
-name = "The Guide"
-url = "http://zguide.zeromq.org/page:all"
+name = "Get Started"
+url = "/get-started"
 weight = 1
 
 [[menu.navbar]]
-name = "Get Started"
-url = "/get-started"
+name = "Download"
+url = "/download"
 weight = 2
+
+[[menu.navbar]]
+name = "The Guide"
+url = "http://zguide.zeromq.org/page:all"
+weight = 3
 
 [[menu.navbar]]
 name = "Community"
 url = "/community"
-weight = 3
+weight = 4
 
 [[params.usedby]]
 name = "Microsoft"
