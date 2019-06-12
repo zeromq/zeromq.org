@@ -43,7 +43,7 @@ czmq and zyre are also available.
 dnf install zeromq-devel
 ```
 
-### Ubuntu
+### Ubuntu/Debian/Mint
 
 ```bash
 apt install libzmq3-dev
@@ -53,6 +53,12 @@ apt install libzmq3-dev
 
 ```bash
 pacman -S zeromq
+```
+
+### SUSE
+
+```bash
+zypper install zeromq-devel
 ```
 
 ### Packages for Debian, Ubuntu, Fedora, CentOS, RHEL, SUSE
