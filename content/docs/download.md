@@ -26,6 +26,9 @@ Download and extract one of the followings:
 * [Visual Studio 12 2013](https://dl.bintray.com/zeromq/generic/libzmq-v120-4_3_1.zip)
 * [Visual Studio 14 2015](https://dl.bintray.com/zeromq/generic/libzmq-v140-4_3_1.zip)
 * [Visual Studio 15 2017](https://dl.bintray.com/zeromq/generic/libzmq-v141-4_3_1.zip)
+* [Visual Studio 12 2013 x64](https://dl.bintray.com/zeromq/generic/libzmq-v120-x64-4_3_1.zip)
+* [Visual Studio 14 2015 x64](https://dl.bintray.com/zeromq/generic/libzmq-v140-x64-4_3_1.zip)
+* [Visual Studio 15 2017 x64](https://dl.bintray.com/zeromq/generic/libzmq-v141-x64-4_3_1.zip)
 
 ### Release 4.0.4
 
