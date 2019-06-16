@@ -12,6 +12,10 @@ command = "make preview-build"
 command = "make preview-build"
 
 [[redirects]]
+from = "/languages/other/"
+to = "http://wiki.zeromq.org/bindings:_start"
+
+[[redirects]]
 from = "/intro:start"
 to = "/"
 
