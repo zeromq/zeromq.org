@@ -9,8 +9,6 @@ Two options are available for C developers, CZMQ or libzmq, the low-level zeromq
 
 The recommended binding for C developers is CZMQ, which provides a high-level API for ØMQ, with additional classes such as pollers, thread management, and security helpers.
 
-
-
 ## CZMQ
 
 <table>
