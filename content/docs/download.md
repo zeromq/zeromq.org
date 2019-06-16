@@ -58,7 +58,7 @@ dnf install zeromq-devel
 ### Ubuntu/Debian/Mint
 
 ```bash
-apt install libzmq3-dev
+apt-get install libzmq3-dev
 ```
 
 ### Arch

@@ -98,6 +98,10 @@ from = "/mailing-lists"
 to = "/community"
 
 [[redirects]]
+from = "/chatroom"
+to = "/community"
+
+[[redirects]]
 from = "/distro:centos"
 to = "http://wiki.zeromq.org/distro:centos"
 status = 302
@@ -375,11 +379,6 @@ status = 302
 [[redirects]]
 from = "/docs:trademark-policy"
 to = "http://wiki.zeromq.org/docs:trademark-policy"
-status = 302
-
-[[redirects]]
-from = "/chatroom"
-to = "http://wiki.zeromq.org/chatroom"
 status = 302
 
 [[redirects]]

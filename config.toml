@@ -36,10 +36,10 @@ color = "gitter-purple"
 
 [params.social.twitter]
 name = "Twitter"
-url = "https://twitter.com/zeromq"
+url = "https://twitter.com/libzmq"
 icon = "twitter"
 color = "twitter-blue"
-handle = "zeromq"
+handle = "libzmq"
 
 [[params.fonts]]
 name = "Open Sans"
@@ -101,8 +101,8 @@ url = "http://zguide.zeromq.org/page:all"
 weight = 3
 
 [[menu.navbar]]
-name = "Community"
-url = "/community"
+name = "Wiki"
+url = "http://wiki.zeromq.org"
 weight = 4
 
 [[params.usedby]]
