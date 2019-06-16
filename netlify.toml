@@ -45,7 +45,9 @@ to = "/download/"
 
 [[redirects]]
 from = "/area:faq"
-to = "/faq/"
+# to = "/faq/"
+to = "http://wiki.zeromq.org/area:faq"
+status = 302
 
 [[redirects]]
 from = "/bindings:c"
