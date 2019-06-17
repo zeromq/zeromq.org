@@ -2,6 +2,7 @@
 title: Community
 description: ZeroMQ Community
 weight: 3
+url: "/our-community"
 ---
 
 # Community
