@@ -17,25 +17,18 @@ Go to [C#]({{< relref "languages/csharp" >}}) and [Java]({{< relref "languages/j
 
 ## Windows
 
-### Release 4.3.1
+### Release 4.3.2
 
 Download and extract one of the followings:
 
-* [Visual Studio 9 2008](https://dl.bintray.com/zeromq/generic/libzmq-v90-4_3_1.zip)
-* [Visual Studio 10 2010](https://dl.bintray.com/zeromq/generic/libzmq-v100-4_3_1.zip)
-* [Visual Studio 12 2013](https://dl.bintray.com/zeromq/generic/libzmq-v120-4_3_1.zip)
-* [Visual Studio 14 2015](https://dl.bintray.com/zeromq/generic/libzmq-v140-4_3_1.zip)
-* [Visual Studio 15 2017](https://dl.bintray.com/zeromq/generic/libzmq-v141-4_3_1.zip)
-* [Visual Studio 12 2013 x64](https://dl.bintray.com/zeromq/generic/libzmq-v120-x64-4_3_1.zip)
-* [Visual Studio 14 2015 x64](https://dl.bintray.com/zeromq/generic/libzmq-v140-x64-4_3_1.zip)
-* [Visual Studio 15 2017 x64](https://dl.bintray.com/zeromq/generic/libzmq-v141-x64-4_3_1.zip)
-
-### Release 4.0.4
-
-Download and install of of the followings
-
-* [x64 build for Vista, 7, 8, Windows Server 2008 R2 and newer.](http://miru.hk/archive/ZeroMQ-4.0.4~miru1.0-x64.exe)
-* [x86 build for Windows XP SP3 and newer.](http://miru.hk/archive/ZeroMQ-4.0.4~miru1.0-x86.exe)
+* [Visual Studio 9 2008](https://dl.bintray.com/zeromq/generic/libzmq-v90-4_3_2.zip)
+* [Visual Studio 10 2010](https://dl.bintray.com/zeromq/generic/libzmq-v100-4_3_2.zip)
+* [Visual Studio 12 2013](https://dl.bintray.com/zeromq/generic/libzmq-v120-4_3_2.zip)
+* [Visual Studio 14 2015](https://dl.bintray.com/zeromq/generic/libzmq-v140-4_3_2.zip)
+* [Visual Studio 15 2017](https://dl.bintray.com/zeromq/generic/libzmq-v141-4_3_2.zip)
+* [Visual Studio 12 2013 x64](https://dl.bintray.com/zeromq/generic/libzmq-v120-x64-4_3_2.zip)
+* [Visual Studio 14 2015 x64](https://dl.bintray.com/zeromq/generic/libzmq-v140-x64-4_3_2.zip)
+* [Visual Studio 15 2017 x64](https://dl.bintray.com/zeromq/generic/libzmq-v141-x64-4_3_2.zip)
 
 ## OSX
 
