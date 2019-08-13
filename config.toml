@@ -1,5 +1,5 @@
 title = "ZeroMQ"
-baseURL = "https://new.zeromq.org"
+baseURL = "https://zeromq.org"
 disableKinds = ["sitemap", "taxonomy", "taxonomyTerm", "section"]
 languageCode = "en-us"
 pygmentsCodefences = true
