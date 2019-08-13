@@ -71,7 +71,7 @@ icon = "fas fa-3x fa-tachometer-alt"
 
 [[params.features]]
 title = "Multi-Transport"
-description = "Carries messages across inproc, IPC, TCP, UDP, TIPC, multicast"
+description = "Carries messages across inproc, IPC, TCP, UDP, TIPC, multicast and WebSocket"
 icon = "fas fa-3x fa-road"
 
 [[params.features]]
