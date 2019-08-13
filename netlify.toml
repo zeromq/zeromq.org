@@ -1518,6 +1518,11 @@ to = "http://wiki.zeromq.org/intro:ask-for-help"
 status = 302
 
 [[redirects]]
+from = "/api"
+to = "http://api.zeromq.org/"
+status = 301
+
+[[redirects]]
 from = "https://zeromq.net/*"
 to = "https://zeromq.org/:splat"
 status = 301
