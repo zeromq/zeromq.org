@@ -1516,3 +1516,23 @@ status = 302
 from = "/intro:ask-for-help"
 to = "http://wiki.zeromq.org/intro:ask-for-help"
 status = 302
+
+[[redirects]]
+from = "https://zeromq.net/*"
+to = "https://zeromq.org/:splat"
+status = 301
+
+[[redirects]]
+from = "https://www.zeromq.net/*"
+to = "https://zeromq.org/:splat"
+status = 301
+
+[[redirects]]
+from = "https://zeromq.com/*"
+to = "https://zeromq.org/:splat"
+status = 301
+
+[[redirects]]
+from = "https://www.zeromq.com/*"
+to = "https://zeromq.org/:splat"
+status = 301
