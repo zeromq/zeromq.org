@@ -19,6 +19,18 @@
         {{ end }}
       </ul>
       <p class="menu-label">
+        Links
+      </p>
+      <ul class="menu-list">
+        {{ range site.Params.links }}
+        <li>
+            <a href="{{.url}}">
+              {{.title}}
+            </a>
+        </li>
+        {{ end }}
+      </ul>
+      <p class="menu-label">
         Languages
       </p>
       <ul class="menu-list">
