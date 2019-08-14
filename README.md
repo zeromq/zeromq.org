@@ -14,4 +14,7 @@ Please pick one of them and provide:
 2. Download instructions
 3. Example
 
+## Run locally
 
+1. Run `npm install` to install CSS and JavaScript dependencies
+2. Run `make serve` to compile the website and start the local server
