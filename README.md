@@ -1,8 +1,8 @@
-# ZeroMQ New Website
+# ZeroMQ Website
 
-Website is using [hugo static website engine](https://gohugo.io/) and [netlify](https://www.netlify.com/) for hosting. 
+Website is using [hugo static website engine](https://gohugo.io/) and [netlify](https://www.netlify.com/) for hosting.
 
-You can check it out at https://new.zeromq.org
+You can check it out at https://zeromq.org
 
 ## Contribute
 
