@@ -35,7 +35,7 @@ Server:
 using (var server = new ResponseSocket())
 {
     client.Bind("tcp://*:5556");
-    string msg = server.ReceiveFrameString();    
+    string msg = server.ReceiveFrameString();
     Console.WriteLine("From Client: {0}", msg);
     server.SendFrame("World");
 }
@@ -49,8 +49,8 @@ using (var subscriber = new SubscriberSocket())
 {
     subscriber.Connect("tcp://127.0.0.1:5556");
     subscriber.Subscribe("A");
-    
-    while (true) 
+
+    while (true)
     {
         var topic = subscriber.ReceiveFrameString();
         var msg = subscriber.ReceiveFrameString();
@@ -64,10 +64,10 @@ Publisher:
 using (var publisher = new PublisherSocket())
 {
     publisher.Bind("tcp://*:5556");
-    
+
     int i = 0;
 
-    while (true) 
+    while (true)
     {
         publisher
             .SendMoreFrame("A") // Topic
@@ -86,5 +86,5 @@ using (var publisher = new PublisherSocket())
 <tr><td>Nuget</td><td>https://www.nuget.org/packages/ZeroMQ/</td></tr>
 <table>
 
-Package include libzmq for Windows, for OSX and Linux you need to [install libzmq]({{< relref "docs/download" >}}).
+Package include libzmq for Windows, for OSX and Linux you need to [install libzmq]({{< relref "/docs/download" >}}).
 

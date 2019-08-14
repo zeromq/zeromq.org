@@ -16,7 +16,7 @@ Two options are available for Go developers, [goczmq](https://github.com/zeromq/
 
 ### Install
 
-Follow the instrunction to install [install libzmq]({{< relref "docs/download" >}}) and [CZMQ]({{< relref "languages/c" >}})
+Follow the instrunction to install [install libzmq]({{< relref "/docs/download" >}}) and [CZMQ]({{< relref "/languages/c" >}})
 
 ```bash
 go get gopkg.in/zeromq/goczmq.v4
@@ -112,7 +112,7 @@ func main() {
 
 ### Installation
 
-First [install libzmq]({{< relref "docs/download" >}}).
+First [install libzmq]({{< relref "/docs/download" >}}).
 
 ```bash
 go get github.com/pebbe/zmq4

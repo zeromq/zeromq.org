@@ -1,8 +1,8 @@
-# ZeroMQ New Website
+# ZeroMQ Website
 
-Website is using [hugo static website engine](https://gohugo.io/) and [netlify](https://www.netlify.com/) for hosting. 
+Website is using [hugo static website engine](https://gohugo.io/) and [netlify](https://www.netlify.com/) for hosting.
 
-You can check it out at https://new.zeromq.org
+You can check it out at https://zeromq.org
 
 ## Contribute
 
@@ -14,4 +14,7 @@ Please pick one of them and provide:
 2. Download instructions
 3. Example
 
+## Run locally
 
+1. Run `npm install` to install CSS and JavaScript dependencies
+2. Run `make serve` to compile the website and start the local server

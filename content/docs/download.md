@@ -13,7 +13,7 @@ For specific language instructions go to the lanaguage page.
 
 NetMQ and JeroMQ are C# and Java pure port of libzmq and therefore don't require libzmq.
 
-Go to [C#]({{< relref "languages/csharp" >}}) and [Java]({{< relref "languages/java" >}}) language pages for more information.
+Go to [C#]({{< relref "/languages/csharp" >}}) and [Java]({{< relref "/languages/java" >}}) language pages for more information.
 
 ## Windows
 
