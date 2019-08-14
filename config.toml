@@ -137,3 +137,7 @@ image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bitcoin.svg"
 [[params.usedby]]
 name = "Jupyter"
 image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jupyter.svg"
+
+[[params.usedby]]
+name = "Mongrel2"
+image = "https://upload.wikimedia.org/wikipedia/en/0/0b/Mongrel_2_logo.png"
