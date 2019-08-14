@@ -88,7 +88,7 @@ let actor =
 
 ### Pre-requisites
 
-You need to install libzmq, follow the instrunctions on the [download page]({{< relref "docs/download" >}}).
+You need to install libzmq, follow the instrunctions on the [download page]({{< relref "/docs/download" >}}).
 
 ### Example
 

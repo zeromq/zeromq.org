@@ -13,7 +13,7 @@ weight: 3
 
 ## Installation
 
-[Install libzmq]({{< relref "docs/download" >}}).
+[Install libzmq]({{< relref "/docs/download" >}}).
 
 ```bash
 gem install zmq

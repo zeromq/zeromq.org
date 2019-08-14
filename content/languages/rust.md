@@ -13,7 +13,7 @@ weight: 4
 
 ## Installation
 
-[Install libzmq]({{< relref "docs/download" >}}).
+[Install libzmq]({{< relref "/docs/download" >}}).
 
 Add the following Cargo.toml file:
 

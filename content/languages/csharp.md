@@ -86,5 +86,5 @@ using (var publisher = new PublisherSocket())
 <tr><td>Nuget</td><td>https://www.nuget.org/packages/ZeroMQ/</td></tr>
 <table>
 
-Package include libzmq for Windows, for OSX and Linux you need to [install libzmq]({{< relref "docs/download" >}}).
+Package include libzmq for Windows, for OSX and Linux you need to [install libzmq]({{< relref "/docs/download" >}}).
 

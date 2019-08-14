@@ -18,7 +18,7 @@ The recommended binding for C developers is CZMQ, which provides a high-level AP
 
 ### Install
 
-First [install libzmq]({{< relref "docs/download" >}}).
+First [install libzmq]({{< relref "/docs/download" >}}).
 
 #### Ubuntu/Debian/Mint
 
@@ -89,7 +89,7 @@ int main (void)
 
 ### Install
 
-Following the instrunctions on [download page]({{< relref "docs/download" >}}).
+Following the instrunctions on [download page]({{< relref "/docs/download" >}}).
 
 ### Example
 
