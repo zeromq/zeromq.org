@@ -10,3 +10,7 @@
 <script src="{{ $prodJs.RelPermalink }}" integrity="{{ $prodJs.Data.Integrity }}"></script>
 {{- end }}
 {{- end }}
+<!-- Includes 'copy-code-button.js' only if site contains a code block -->
+{{ if (findRE "<pre" .Content 1) }}
+    <script src="/js/copy-code-button.js"></script>
+{{ end }}
