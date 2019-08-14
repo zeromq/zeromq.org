@@ -40,18 +40,18 @@ use subscriber = Socker.sub ()
 
 // Connecting and subscribing...
 
-let dealerObservable = 
+let dealerObservable =
   Poller.addSocket poller dealer
   |> Observable.map Frame.recv
-  
-let subObservable = 
+
+let subObservable =
   Poller.addSocket poller subscriber
   |> Observable.map Frame.recv
 
-use observer = 
-  Observable.merge dealerObservable subObservable  
+use observer =
+  Observable.merge dealerObservable subObservable
   |> Observable.subscribe (fun msg -> printfn "%A" msg)
-  
+
 Poller.run poller
 ```
 
@@ -59,18 +59,18 @@ Poller.run poller
 Actor is a thread with socket attached to it, so you are able to send it messages and request cancellation. Together with Poller it is a powerful concept.
 
 ```fsharp
-// Actor is disposable, so whenever you call dispose 
+// Actor is disposable, so whenever you call dispose
 // on the actor the end message will be sent and the thread will exit
-let actor = 
-  Actor.create (fun shim -> 
+let actor =
+  Actor.create (fun shim ->
     use poller = Poller.create ()
-    
+
     // Registering for the end message which will cancel the actor
     use emObserver = Poller.registerEndMessage poller shim
 
     // Creating sockets and adding them to the poller
     ...
-   
+
     // Signalling that the actor is ready, this will let the Actor.create function to return
     Actor.signal shim
 
@@ -139,4 +139,4 @@ let client () =
     // receive and print a reply from the server
     let reply = (recv >> decode) client
     printfn "(%i) got: %s" i reply
-```    
+```

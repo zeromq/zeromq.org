@@ -112,7 +112,7 @@ func main() {
 
 ### Installation
 
-First [install libzmq]({{< relref "docs/download" >}}).
+First [install libzmq]({{< relref "/docs/download" >}}).
 
 ```bash
 go get github.com/pebbe/zmq4
