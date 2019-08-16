@@ -6,7 +6,7 @@ weight: 4
 # Perl
 
 <table>
-<tr><td>Github</td><td>https://github.com/calid/zmq-ffi</td></tr>
+<tr><td>Github</td><td>https://github.com/zeromq/perlzmq</td></tr>
 <tr><td>cpan</td><td>https://metacpan.org/pod/ZMQ::FFI</td></tr>
 <table>
 
