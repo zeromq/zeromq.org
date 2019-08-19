@@ -1,0 +1,19 @@
+{{ $exampleName := .Get 0 }}
+
+{{ range .Site.Params.examples }}
+  {{ $exampleLang := .language }}
+  {{ range .libraries }}
+    {{ $exampleLib := . }}
+    {{ $headlessBundle := printf "/docs/examples/%s/%s" (lower $exampleLang) (lower $exampleLib) }}
+    {{ $examples := $.Site.GetPage $headlessBundle }}
+
+    {{ range $examples.Resources.ByType "page" }}
+      {{ if eq .Params.Name $exampleName }}
+        <div class="example-{{ lower $exampleLang }}-{{ lower $exampleLib }}">
+          {{ .Content }}
+        </div>
+      {{ end }}
+    {{ end }}
+
+  {{ end }}
+{{ end }}
