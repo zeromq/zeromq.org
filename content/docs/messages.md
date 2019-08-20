@@ -38,13 +38,13 @@ null**.
 
 {{< example messages_strings_send_recv >}}
 
-Because we utilise the frames length as string length sending mulitple strings
-requires sending multiple frames.
+Because we utilise the frame's length as the string's length we can send
+mulitple strings by putting each of them into a seperate frame.
 
 {{< example messages_strings_send_recv_multi >}}
 
 ## Other
 
-The following functions are provided to work with messages:
+Find out more about working with messages:
 
 {{< example messages_functions >}}
