@@ -158,7 +158,7 @@ under the License.
 
     var presentLanguage = getLanguageFromQueryString();
     var presentLibrary = getLibraryFromQueryString();
-    if (presentLanguage) {
+    if (presentLanguage && presentLibrary) {
       // the language is in the URL, so use that language!
       activateLanguage(presentLanguage, presentLibrary);
 
