@@ -5,11 +5,6 @@
       <p class="title{{ if $description }} is-spaced{{ end }}">
         {{ .Title }}
       </p>
-      {{ with $description }}
-      <p class="subtitle">
-        {{ . | markdownify }}
-      </p>
-      {{ end }}
     </div>
   </div>
 </section>
