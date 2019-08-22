@@ -158,13 +158,15 @@ under the License.
 
     var presentLanguage = getLanguageFromQueryString();
     var presentLibrary = getLibraryFromQueryString();
-    if (presentLanguage) {
+    if (presentLanguage && presentLibrary) {
       // the language is in the URL, so use that language!
       activateLanguage(presentLanguage, presentLibrary);
 
       localStorage.setItem("language", presentLanguage);
       localStorage.setItem("library", presentLibrary);
-    } else if ((defaultLanguage !== null) && (jQuery.inArray(defaultLanguage, languages) != -1)) {
+    } else if ((defaultLanguage !== null) && (defaultLibrary !== null) &&
+               (jQuery.inArray(defaultLanguage, languages) != -1) &&
+               (jQuery.inArray(defaultLibrary, examples[defaultLanguage]) != -1)) {
       // the language was the last selected one saved in localstorage, so use that language!
       activateLanguage(defaultLanguage, defaultLibrary);
     } else {
@@ -190,11 +192,15 @@ under the License.
       var optionSelected = $("option:selected", this);
       var library = optionSelected.data("library-name");
 
-      var presentLanguage = getLanguageFromQueryString();
+      var presentLanguage = $("option:selected", $(".lang-selector select")).data("language-name");
       if (!presentLanguage) {
-        presentLanguage = localStorage.getItem("language");
+        var presentLanguage = getLanguageFromQueryString();
+        if (!presentLanguage) {
+          presentLanguage = localStorage.getItem("language");
+        }
       }
 
+      pushURL("language", presentLanguage);
       pushURL("library" , library);
       activateLanguage(presentLanguage, library);
       return false;

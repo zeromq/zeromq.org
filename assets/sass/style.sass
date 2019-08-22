@@ -31,6 +31,7 @@ $family-code: "{{ $monospaceFont }}", monospace
 $navbar-burger-color: $primary
 $code: $primary
 $section-padding: 1.5rem
+$footer-padding:  2rem 1.5rem 2rem
 
 $link: lighten($primary, 10%)
 $link: lighten($primary, 10%)
@@ -150,6 +151,10 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
 .hero
   .hero-foot
     padding-bottom: 3rem
+
+  .title
+    @include until($desktop)
+      text-align: center
 
 .section
   padding: 3rem 1.5rem 3rem 1.5rem
