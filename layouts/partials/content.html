@@ -3,7 +3,7 @@
 {{ $currentUrl := .RelPermalink }}
 
 <section class="columns is-fullheight">
-  <div class="column is-2 column-menu is-fullheight section">
+  <div id="docsToc" class="column is-2 column-menu is-fullheight section">
     <aside class="menu">
       <p class="menu-label">
         Get Started
@@ -44,6 +44,7 @@
         {{ end }}
       </ul>
     </aside>
+    <a class="close-button" onclick="page.toggleToc()"></a>
   </div>
 
   <div class="container is-10 column column-main ">
