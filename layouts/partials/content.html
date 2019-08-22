@@ -53,7 +53,7 @@
     <section class="section">
 
       {{ if (findRE "<div class=\"example-" .Content 1) }}
-      <div id="lang-lib-selector" class="columns">
+      <div id="lang-lib-selector" class="columns is-mobile">
       {{ with .Site.Params.examples }}
         <div class="field lang-selector" style="margin-right: 1em">
           <div class="control has-icons-left">
