@@ -164,7 +164,9 @@ under the License.
 
       localStorage.setItem("language", presentLanguage);
       localStorage.setItem("library", presentLibrary);
-    } else if ((defaultLanguage !== null) && (jQuery.inArray(defaultLanguage, languages) != -1)) {
+    } else if ((defaultLanguage !== null) && (defaultLibrary !== null) &&
+               (jQuery.inArray(defaultLanguage, languages) != -1) &&
+               (jQuery.inArray(defaultLibrary, examples[defaultLanguage]) != -1)) {
       // the language was the last selected one saved in localstorage, so use that language!
       activateLanguage(defaultLanguage, defaultLibrary);
     } else {
