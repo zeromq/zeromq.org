@@ -45,6 +45,15 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
 @import "bulma/bulma"
 @import "bulma-dashboard/src/bulma-dashboard"
 
+.navbar-brand
+  .navbar-item
+    @include until($desktop)
+      position: absolute
+      left: 50%
+      transform: translate(-50%, -50%)
+      display: block
+      top: 30px
+
 .card
   margin: 1.5rem 0
 
