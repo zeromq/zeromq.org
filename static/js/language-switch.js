@@ -190,11 +190,15 @@ under the License.
       var optionSelected = $("option:selected", this);
       var library = optionSelected.data("library-name");
 
-      var presentLanguage = getLanguageFromQueryString();
+      var presentLanguage = $("option:selected", $(".lang-selector select")).data("language-name");
       if (!presentLanguage) {
-        presentLanguage = localStorage.getItem("language");
+        var presentLanguage = getLanguageFromQueryString();
+        if (!presentLanguage) {
+          presentLanguage = localStorage.getItem("language");
+        }
       }
 
+      pushURL("language", presentLanguage);
       pushURL("library" , library);
       activateLanguage(presentLanguage, library);
       return false;
