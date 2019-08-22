@@ -6,6 +6,10 @@ var page = (function () {
         navbarBurger = $(".navbar-burger");
         navbarMenu = $(".navbar-menu");
 
+        if($("#docsToc").length == 0) {
+            $(".navbar-docsToc-button").hide();
+        }
+
         resetTheView();
 
         window.addEventListener('resize', resetTheView);
