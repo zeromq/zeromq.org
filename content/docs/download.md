@@ -4,8 +4,6 @@ description: Download and install zeromq
 weight: 2
 ---
 
-# Download
-
 Most language bindings require the low-level libzmq library. Follow the instructions to download and install libzmq.
 For specific language instructions go to the lanaguage page.
 
