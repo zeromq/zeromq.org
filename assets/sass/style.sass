@@ -37,7 +37,8 @@ $link: lighten($primary, 10%)
 $link: lighten($primary, 10%)
 $link-active: darken($primary, 10%)
 
-
+// ZeroMQ Theme variables
+$toc-margin: 15px
 
 @import "bulma/sass/utilities/derived-variables"
 
@@ -138,6 +139,21 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
       width: 400px
       max-width: 100vw
       overflow-y: auto
+
+.content
+  #TableOfContents
+    margin: $toc-margin
+
+  $header-clearance: 65px
+
+  h1, h2, h3, h4, h5, h6
+    // Make sure anchor links are showing the header
+    &:before
+      display: block
+      content: " "
+      margin-top: -$header-clearance
+      height: $header-clearance
+      visibility: hidden
 
 .card
   margin: 1.5rem 0
