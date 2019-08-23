@@ -1,7 +1,7 @@
 ---
 name: messages_strings_send_recv
 language: C
-library: libzmq
+library: czmq
 ---
 
 The following function sends a C string to a socket as a frame where the
