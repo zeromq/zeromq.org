@@ -144,6 +144,17 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
   #TableOfContents
     margin: $toc-margin
 
+  $header-clearance: 65px
+
+  h1, h2, h3, h4, h5, h6
+    // Make sure anchor links are showing the header
+    &:before
+      display: block
+      content: " "
+      margin-top: -$header-clearance
+      height: $header-clearance
+      visibility: hidden
+
 .card
   margin: 1.5rem 0
 
