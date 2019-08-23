@@ -7,8 +7,42 @@ url: "/our-community"
 
 ## Events
 
-ZeroMQ community host an annual pre-fosdem event (end of January/beginning of February) at Brussels, Belgium.
+ZeroMQ community host an annual FOSDEM side event (end of January/beginning of February) at Brussels, Belgium.
 [Subscribe to the mailing list](https://lists.zeromq.org/mailman/listinfo/zeromq-dev) or [follow @libzmq on Twitter](https://twitter.com/libzmq) for exact location and dates.
+
+### FOSDEM 2020 (Mon 3 + Tue 4 Feb 2020)
+
+#### When?
+
+Monday 3rd Tuesday 4th February 2020, from 9am to late in the night :-)
+
+#### Where?
+
+Hackerspace Brussels (HSBXL)
+Rue des Goujons 152
+1070 Anderlecht
+Brussels
+Belgium
+GPS: 50.832593, 4.322160 https://osm.org/go/0EoSTZ3_O https://goo.gl/maps/NwCELYFNmXp
+Web: http://www.hsbxl.be
+GSM: +32 484 566109 (zoobab)
+
+#### Drinks and food
+
+HSBXL has a decent bar (beers, tea, soft drinks, etc...).
+
+For the food, bring your own, and we will order suchis, pizzas, etc... when needed.
+
+#### How to register?
+
+Choose from the following options:
+
+* Write to the [zeromq-dev mailing list](https://lists.zeromq.org/mailman/listinfo/zeromq-dev)
+* Register on [Wikidot](http://wiki.zeromq.org/event:zeromq-post-fosdem-hackaton-mon-3-tue-4-feb-2020)
+
+#### Costs
+
+There are some costs for the heating system (we might need to rent one), so participants will be invited to make a small donation to cover those.
 
 ## Gitter
 
