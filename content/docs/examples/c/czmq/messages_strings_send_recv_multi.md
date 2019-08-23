@@ -1,7 +1,7 @@
 ---
 name: messages_strings_send_recv_multi
 language: C
-library: libzmq
+library: czmq
 ---
 
 Sending multiple string frames is possible using the `zstr_sendm` function. This
