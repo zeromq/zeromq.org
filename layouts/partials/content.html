@@ -1,6 +1,8 @@
 {{ $docs := where .Site.RegularPages "Section" "docs" }}
 {{ $languages := where .Site.RegularPages "Section" "languages" }}
 {{ $currentUrl := .RelPermalink }}
+{{- $filepath := .Page.File.Path }}
+{{- $editLink := printf "https://github.com/zeromq/zeromq.org/edit/master/content/%s" $filepath }}
 
 <section class="columns is-fullheight">
   <div id="docsToc" class="column is-2 column-menu is-fullheight section">
@@ -89,9 +91,16 @@
       </div>
       {{ end }}
 
+      <p style="margin: 0px">
+        <a href="{{ $editLink }}" id="editPageButton" target="_blank">
+          <i class="fas fa-2x fa-pen-square"></i>
+        </a>
+      <p>
+
       <div class="content"
            data-languages="{{ with .Site.Params.examples  }}[{{ range $i,$e := . }}{{- if $i -}}, {{ end -}}{{ printf " %q " (lower $e.language) }}{{ end }}]{{ end }}"
            data-examples="{{ with .Site.Params.examples  }}{{"{"}}{{ range $i,$e := . }}{{- if $i -}}, {{ end -}}{{ printf "%q:" (lower $e.language)}}[{{ range $j,$f := .libraries }}{{- if $j -}}, {{ end -}}{{ printf " %q " (lower $f) }}{{ end }}]{{ end }}{{"}"}}{{ end }}">
+
         <h1>{{ .Title }}</h1>
         {{ .Content }}
       </div>
