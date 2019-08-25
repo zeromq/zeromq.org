@@ -3,8 +3,6 @@ title: C++
 weight: 2
 ---
 
-# C++
-
 ## cppzmq
 
 <table>
@@ -28,7 +26,7 @@ int main()
 }
 ```
 
-## zmqpp 
+## zmqpp
 
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/zmqpp</td></tr>

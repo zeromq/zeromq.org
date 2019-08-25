@@ -3,8 +3,6 @@ title: Java
 weight: 3
 ---
 
-# Java
-
 Three options are available for Java developers, JeroMQ a pure Java
 implementation, JZMQ a Java binding for libzmq, JCZMQ a Java binding for czmq
 

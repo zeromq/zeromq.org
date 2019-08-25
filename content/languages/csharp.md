@@ -3,8 +3,6 @@ title: C#
 weight: 3
 ---
 
-# C\#
-
 Two options are available for C# developers, [NetMQ](https://github.com/zeromq/netmq), a port of zeromq to C#, or [clrzmq4](https://github.com/zeromq/clrzmq4), C# binding for libzmq.
 
 NetMQ is the recommended option. However NetMQ doesn't implement ZMTP 3 and curve encryption at the moment.
