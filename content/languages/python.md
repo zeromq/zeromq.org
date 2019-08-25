@@ -3,8 +3,6 @@ title: Python
 weight: 3
 ---
 
-# Python
-
 ## Pyzmq
 
 <table>

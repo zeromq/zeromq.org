@@ -3,8 +3,6 @@ title: Erlang
 weight: 6
 ---
 
-# Erlang
-
 ## Chumak
 
 <table>

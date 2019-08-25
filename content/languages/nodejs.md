@@ -3,8 +3,6 @@ title: NodeJS
 weight: 4
 ---
 
-# NodeJS
-
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/zeromq.js/</td></tr>
 <tr><td>npm</td><td>https://www.npmjs.com/package/zeromq</td></tr>

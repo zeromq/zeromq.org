@@ -3,8 +3,6 @@ title: Rust
 weight: 4
 ---
 
-# Rust
-
 <table>
 <tr><td>Github</td><td>https://github.com/erickt/rust-zmq</td></tr>
 <tr><td>Crate</td><td>https://docs.rs/crate/zmq</td></tr>

@@ -3,8 +3,6 @@ title: Go
 weight: 4
 ---
 
-# Go
-
 Two options are available for Go developers, [goczmq](https://github.com/zeromq/goczmq) binding for CZMQ, or [pebbe/zmq4](https://github.com/pebbe/zmq4), binding for libzmq.
 
 ## goczmq

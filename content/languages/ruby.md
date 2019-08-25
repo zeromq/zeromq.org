@@ -3,8 +3,6 @@ title: Ruby
 weight: 3
 ---
 
-# Ruby
-
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/rbzmq</td></tr>
 <tr><td>gem</td><td>https://rubygems.org/gems/zmq</td></tr>
