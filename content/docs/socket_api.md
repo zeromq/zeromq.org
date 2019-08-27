@@ -62,7 +62,7 @@ You can also see that we have zero configuration, we are just sending strings.
 
 The client create a socket of type request, connect and start sending messages.
 
-Both the `Send` and `Receive` methods are blocking (by default). For the receive
+Both the `send` and `receive` methods are blocking (by default). For the receive
 it is simple: if there are no messages the method will block. For sending it is
 more complicated and depends on the socket type. For request sockets, if the
 high watermark is reached or no peer is connected the method will block.
@@ -146,12 +146,123 @@ There are more ZeroMQ patterns that are still in draft state:
 
 ### Request-reply pattern
 
-The request-reply pattern is used for sending requests from a ZMQ_REQ client to
-one or more ZMQ_REP services, and receiving subsequent replies to each request
-sent.
+The request-reply pattern is intended for service-oriented architectures of
+various kinds. It comes in two basic flavors: synchronous (`REQ` and `REP`
+socket types), and asynchronous socket types (`DEALER` and `ROUTER` socket
+types), which may be mixed in various ways.
 
 The request-reply pattern is formally defined by RFC
 [28/REQREP](http://rfc.zeromq.org/spec:28).
+
+#### REQ socket
+
+A `REQ` socket is used by a client to send requests to and receive replies from
+a service. This socket type allows only an alternating sequence of *sends* and
+subsequent *receive* calls. A `REQ` socket maybe connected to any number of
+`REP` or `ROUTER` sockets. Each request sent is round-robined among all
+connected services, and each reply received is matched with the last issued
+request. It is designed for simple request-reply models where reliability
+against failing peers is not an issue.
+
+If no services are available, then any send operation on the socket will block
+until at least one service becomes available. The `REQ` socket will not discard
+any messages.
+
+**Summary of characteristics:**
+
+|                           |                                 |
+|---------------------------|---------------------------------|
+| Compatible peer sockets   | `REP`, `ROUTER`                 |
+| Direction                 | Bidirectional                   |
+| Send/receive pattern      | Send, Receive, Send, Receive, … |
+| Outgoing routing strategy | Round-robin                     |
+| Incoming routing strategy | Last peer                       |
+| Action in mute state      | Block                           |
+
+#### REP socket
+
+A `REP` socket is used by a service to receive requests from and send replies
+to a client. This socket type allows only an alternating sequence of *receive*
+and subsequent *send* calls. Each request received is fair-queued from among
+all clients, and each reply sent is routed to the client that issued the last
+request. If the original requester does not exist any more the reply is
+silently discarded.
+
+**Summary of characteristics:**
+
+|                           |                                |
+|---------------------------|--------------------------------|
+| Compatible peer sockets   | `REQ`, `DEALER`                |
+| Direction                 | Bidirectional                  |
+| Send/receive pattern      | Receive, Send, Receive, Send … |
+| Outgoing routing strategy | Fair-robin                     |
+| Incoming routing strategy | Last peer                      |
+
+#### DEALER socket
+
+The `DEALER` socket type talks to a set of anonymous peers, sending and
+receiving messages using round-robin algorithms. It is reliable, insofar as it
+does not drop messages. `DEALER` works as an asynchronous replacement for
+`REQ`, for clients that talk to `REP` or `ROUTER` servers. Message received by
+a `DEALER` are fair-queued from all connected peers.
+
+When a `DEALER` socket enters the mute state due to having reached the high
+water mark for all peers, or if there are no peers at all, then any *send*
+operation on the socket will block until the mute state ends or at least one
+peer becomes available for sending; messages are not discarded.
+
+When a `DEALER` socket is connected to a `REP` socket message sent must contain
+an empty frame as first part of the message (the delimiter), followed by one or
+more body parts.
+
+**Summary of characteristics:**
+
+|                           |                           |
+|---------------------------|---------------------------|
+| Compatible peer sockets   | `ROUTER`, `REP`, `DEALER` |
+| Direction                 | Bidirectional             |
+| Send/receive pattern      | Unrestricted              |
+| Outgoing routing strategy | Round-robin               |
+| Incoming routing strategy | Fair-queued               |
+| Action in mute state      | Block                     |
+
+#### ROUTER socket
+
+The `ROUTER` socket type talks to a set of peers, using explicit addressing so
+that each outgoing message is sent to a specific peer connection. `ROUTER`
+works as an asynchronous replacement for `REP`, and is often used as the basis
+for servers that talk to `DEALER` clients.
+
+When receiving messages a `ROUTER` socket will prepend a message part
+containing the routing id of the originating peer to the message before passing
+it to the application. Messages received are fair-queued from among all
+connected peers. When sending messages a `ROUTER` socket will remove the first
+part of the message and use it to determine the *routing id* of the peer the
+message shall be routed to. If the peer does not exist anymore, or has never
+existed, the message shall be silently discarded.
+
+When a `ROUTER` socket enters the mute state due to having reached the high
+water mark for all peers, then any messages sent to the socket will be dropped
+until the mute state ends. Likewise, any messages routed to a peer for which
+the individual high water mark has been reached will also be dropped.
+
+When a `REQ` socket is connected to a `ROUTER` socket, in addition to the
+*routing id* of the originating peer each message received shall contain an
+empty delimiter message part. Hence, the entire structure of each received
+message as seen by the application becomes: one or more routing id parts,
+delimiter part, one or more body parts. When sending replies to a `REQ`
+socket the application must include the delimiter part.
+
+**Summary of characteristics:**
+
+|                           |                          |
+|---------------------------|--------------------------|
+| Compatible peer sockets   |`DEALER`, `REQ`, `ROUTER` |
+| Direction                 | Bidirectional            |
+| Send/receive pattern      | Unrestricted             |
+| Outgoing routing strategy | See text                 |
+| Incoming routing strategy | Fair-queued              |
+| Action in mute state      | Drop (see text)          |
 
 ### Publish-subscribe pattern
 
@@ -298,8 +409,8 @@ The exclusive pair pattern is formally defined by
 
 ### Client-server pattern
 
-The client-server pattern is used to allow a single ZMQ_SERVER server talk to
-one or more ZMQ_CLIENT clients. The client always starts the conversation, after
+The client-server pattern is used to allow a single `SERVER` server talk to one
+or more `CLIENT` clients. The client always starts the conversation, after
 which either peer can send messages asynchronously, to the other.
 
 The client-server pattern is formally defined by RFC
