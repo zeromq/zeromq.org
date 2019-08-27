@@ -1,11 +1,11 @@
 ---
 title: Messages
 description: Working with ZeroMQ messages
+toc: true
 weight: 3
 draft: true
 ---
 
-{{< toc >}}
 
 A ZeroMQ message is a discrete unit of data passed between applications or
 components of the same application. From the point of view of ZeroMQ itself

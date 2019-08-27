@@ -64,29 +64,3 @@ var page = (function () {
         toggleNavbarMenu: toggleNavbarMenu
     };
 })();
-
-/*
-  By default hugo generates a TOC for all levels with no options to customize it.
-  The following function removes empty <li> tags which were created even though
-  no header at this level exists. This happens e.g. if you skip the first level!
-
-  This is a workaround that hopefully can be removed if there's a native
-  solution in hugo.
-*/
-function fixTableOfContents() {
-  // Copyright (c) 2017 Yihui Xie & 2018 Vincent Tam under MIT
-  var toc = document.getElementById('TableOfContents');
-  if (!toc) return;
-  do {
-    var li, ul = toc.querySelector('ul');
-    if (ul.childElementCount !== 1) break;
-    li = ul.firstElementChild;
-    if (li.tagName !== 'LI') break;
-    // remove <ul><li></li></ul> where only <ul> only contains one <li>
-    ul.outerHTML = li.innerHTML;
-  } while (toc.childElementCount >= 1);
-}
-
-(function() {
-	fixTableOfContents();
-})();

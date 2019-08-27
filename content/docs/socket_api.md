@@ -1,6 +1,7 @@
 ---
 title: Socket API
 weight: 4
+toc: true
 draft: true
 ---
 
@@ -11,7 +12,6 @@ arbitrary messaging pattern. Furthermore ZeroMQ sockets provide a clean
 abstraction over the underlying network protocol which hides the complexity of
 those protocols and makes switching between them very easy.
 
-{{< toc >}}
 
 ## Key differences to conventional sockets
 

@@ -1,7 +1,8 @@
 ---
 title: Community
 description: ZeroMQ Community
-weight: 4
+toc: false
+weight: 5
 url: "/our-community"
 ---
 

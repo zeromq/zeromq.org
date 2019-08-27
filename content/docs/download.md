@@ -1,6 +1,7 @@
 ---
 title: Download
 description: Download and install zeromq
+toc: true
 weight: 2
 ---
 
