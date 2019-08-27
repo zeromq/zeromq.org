@@ -154,3 +154,8 @@ url = "http://api.zeromq.org"
 [[params.examples]]
 language = "C"
 libraries = ["libzmq", "czmq"]
+
+[[params.examples]]
+language = "csharp"
+display = "C#"
+libraries = ["NetMQ"]

@@ -60,7 +60,7 @@
             <div class="select">
               <select>
                 {{ range . }}
-                  <option value="{{ lower .language }}" data-language-name="{{ lower .language }}">{{ .language }}</option>
+                  <option value="{{ lower .language }}" data-language-name="{{ lower .language }}">{{ default .language .display }}</option>
                 {{ end }}
               </select>
             </div>
