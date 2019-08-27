@@ -6,6 +6,7 @@ weight: 3
 draft: true
 ---
 
+{{% capture overview %}}
 
 A ZeroMQ message is a discrete unit of data passed between applications or
 components of the same application. From the point of view of ZeroMQ itself
@@ -29,16 +30,18 @@ arbitrary sizes, you should break them into pieces and send each piece as
 separate single-part messages. Using multipart data will not reduce memory
 consumption.
 
-## Working with Strings
+{{% /capture %}}
 
-Passing data as Strings is usually the easiest way to get a communication going
+## Working with strings
+
+Passing data as strings is usually the easiest way to get a communication going
 as serialization is rather straightforward. For ZeroMQ we established the rule
 that **strings are length-specified and are sent on the wire without a trailing
 null**.
 
 {{< example messages_strings_send_recv >}}
 
-Because we utilise the frame's length as the string's length we can send
+Because we utilise the frame's length to refelct the string's length we can send
 mulitple strings by putting each of them into a seperate frame.
 
 {{< example messages_strings_send_recv_multi >}}

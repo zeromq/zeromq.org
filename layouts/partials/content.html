@@ -103,6 +103,11 @@
 
         <h1>{{ .Title }}</h1>
 
+        {{- $overview := .Page.Scratch.Get "overview" -}}
+        {{- if $overview -}}
+          {{ $overview | markdownify }}
+        {{- end -}}
+
         {{- if .Page.Params.toc -}}
         <ul id="markdown-toc">
             {{ $headers := findRE "<h2.*?>(.|\n)*?</h2>" .Content }}
