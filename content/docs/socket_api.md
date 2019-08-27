@@ -393,24 +393,87 @@ sub/unsub prefix may also be sent, but have no effect on subscription status.
 
 ### Pipeline pattern
 
-The pipeline pattern is used for distributing data to nodes arranged in a
-pipeline. Data always flows down the pipeline, and each stage of the pipeline is
-connected to at least one node. When a pipeline stage is connected to multiple
-nodes data is round-robined among all connected nodes.
+The pipeline pattern is intended for task distribution, typically in a
+multi-stage pipeline where one or a few nodes push work to many workers, and
+they in turn push results to one or a few collectors. The pattern is mostly
+reliable insofar as it will not discard messages unless a node disconnects
+unexpectedly. It is scalable in that nodes can join at any time.
 
 The pipeline pattern is formally defined by RFC
 [30/PIPELINE](http://rfc.zeromq.org/spec:30).
 
+ZeroMQ comes with support for pipelining by way of two socket types:
+
+* `PUSH` Socket Type
+* `PULL` Socket Type
+
+#### PUSH socket
+
+The `PUSH` socket type talks to a set of anonymous `PULL` peers, sending
+messages using a round-robin algorithm. The *receive* operation is not
+implemented for this socket type.
+
+When a `PUSH` socket enters the mute state due to having reached the high water
+mark for all downstream nodes, or if there are no downstream nodes at all, then
+any *send* operations on the socket will block until the mute state ends or at
+least one downstream node becomes available for sending; messages are not
+discarded.
+
+**Summary of characteristics:**
+
+|                           |                |
+|---------------------------|----------------|
+| Compatible peer sockets   | `PULL`         |
+| Direction                 | Unidirectional |
+| Send/receive pattern      | Send only      |
+| Incoming routing strategy | N/A            |
+| Outgoing routing strategy | Round-robin    |
+| Action in mute state      | Block          |
+
+#### PULL socket
+
+The PULL socket type talks to a set of anonymous PUSH peers, receiving messages
+using a fair-queuing algorithm.
+
+The *send* operation is not implemented for this socket type.
+
+**Summary of characteristics:**
+
+|                           |                |
+|---------------------------|----------------|
+| Compatible peer sockets   | `PUSH`         |
+| Direction                 | Unidirectional |
+| Send/receive pattern      | Receive only   |
+| Incoming routing strategy | Fair-queued    |
+| Outgoing routing strategy | N/A            |
+| Action in mute state      | Block          |
+
 ### Exclusive pair pattern
 
-The exclusive pair pattern is used to connect a peer to precisely one other
-peer. This pattern is used for inter-thread communication across the inproc
-transport.
+PAIR is not a general-purpose socket but is intended for specific use cases
+where the two peers are architecturally stable. This usually limits PAIR to use
+within a single process, for inter-thread communication.
 
 The exclusive pair pattern is formally defined by
 [31/EXPAIR](http://rfc.zeromq.org/spec:31).
 
-### Client-server pattern
+#### PAIR socket
+
+A socket of type `PAIR` can only be connected to a single peer at any one time.
+No message routing or filtering is performed on messages sent over a `PAIR`
+socket.
+
+When a `PAIR` socket enters the mute state due to having reached the high
+water mark for the connected peer, or if no peer is connected, then any
+*send* operations on the socket will block until the peer becomes
+available for sending; messages are not discarded.
+
+While `PAIR` sockets can be used over transports other than **inproc**, their
+inability to auto-reconnect coupled with the fact new incoming connections will
+be terminated while any previous connections (including ones in a closing state)
+exist makes them unsuitable for TCP in most cases.
+
+### Client-server pattern (Draft)
 
 The client-server pattern is used to allow a single `SERVER` server talk to one
 or more `CLIENT` clients. The client always starts the conversation, after
@@ -419,7 +482,7 @@ which either peer can send messages asynchronously, to the other.
 The client-server pattern is formally defined by RFC
 [41/CLISRV](http://rfc.zeromq.org/spec:41).
 
-### Radio-dish pattern
+### Radio-dish pattern (Draft)
 
 The radio-dish pattern is used for one-to-many distribution of data from a
 single publisher to multiple subscribers in a fan out fashion.
