@@ -9,7 +9,7 @@ url: "/our-community"
 ## Events
 
 ZeroMQ community host an annual FOSDEM side event (end of January/beginning of February) at Brussels, Belgium.
-[Subscribe to the mailing list](https://lists.zeromq.org/mailman/listinfo/zeromq-dev) or [follow @libzmq on Twitter](https://twitter.com/libzmq) for exact location and dates.
+Join the [meetup group](https://www.meetup.com/ZeroMQ-FOSDEM-side-event) for exact location and dates.
 
 ### FOSDEM 2020 (Mon 3 + Tue 4 Feb 2020)
 
@@ -38,6 +38,7 @@ For the food, bring your own, and we will order suchis, pizzas, etc... when need
 
 Choose from the following options:
 
+* Register on the [meetup event](https://www.meetup.com/ZeroMQ-FOSDEM-side-event/events/264336737/)
 * Write to the [zeromq-dev mailing list](https://lists.zeromq.org/mailman/listinfo/zeromq-dev)
 * Register on [Wikidot](http://wiki.zeromq.org/event:zeromq-post-fosdem-hackaton-mon-3-tue-4-feb-2020)
 
