@@ -1,6 +1,7 @@
 ---
 title: Get started
 description: Get started with zeromq
+toc: false
 weight: 1
 ---
 

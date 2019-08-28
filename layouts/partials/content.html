@@ -102,6 +102,24 @@
            data-examples="{{ with .Site.Params.examples  }}{{"{"}}{{ range $i,$e := . }}{{- if $i -}}, {{ end -}}{{ printf "%q:" (lower $e.language)}}[{{ range $j,$f := .libraries }}{{- if $j -}}, {{ end -}}{{ printf " %q " (lower $f) }}{{ end }}]{{ end }}{{"}"}}{{ end }}">
 
         <h1>{{ .Title }}</h1>
+
+        {{- $overview := .Page.Scratch.Get "overview" -}}
+        {{- if $overview -}}
+          {{ $overview | markdownify }}
+        {{- end -}}
+
+        {{- if .Page.Params.toc -}}
+        <ul id="markdown-toc">
+            {{ $headers := findRE "<h2.*?>(.|\n)*?</h2>" .Content }}
+            {{ range $headers }}
+            {{ $id := . | strings.TrimPrefix "<h2 id=\"" }}
+            {{ $id := $id | replaceRE "\">.*" "" }}
+            {{ $header := . | replaceRE "</?h2.*?>" "" | htmlUnescape | safeHTML }}
+            <li><a href="#{{ $id }}">{{ $header }}</a></li>
+            {{ end }}
+        </ul>
+        {{- end -}}
+
         {{ .Content }}
       </div>
     </section>

@@ -1,11 +1,16 @@
 ---
 title: Download
 description: Download and install zeromq
+toc: true
 weight: 2
 ---
 
+{{% capture overview %}}
+
 Most language bindings require the low-level libzmq library. Follow the instructions to download and install libzmq.
 For specific language instructions go to the lanaguage page.
+
+{{% /capture %}}
 
 ## NetMQ and JeroMQ
 
