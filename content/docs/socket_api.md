@@ -473,7 +473,12 @@ inability to auto-reconnect coupled with the fact new incoming connections will
 be terminated while any previous connections (including ones in a closing state)
 exist makes them unsuitable for TCP in most cases.
 
-### Client-server pattern (Draft)
+### Client-server pattern
+
+{{% note info %}}
+This pattern is still in draft state and thus might not be supported by the
+zeromq library you're using!
+{{% /note %}}
 
 The client-server pattern is used to allow a single `SERVER` server talk to one
 or more `CLIENT` clients. The client always starts the conversation, after
@@ -482,7 +487,64 @@ which either peer can send messages asynchronously, to the other.
 The client-server pattern is formally defined by RFC
 [41/CLISRV](http://rfc.zeromq.org/spec:41).
 
-### Radio-dish pattern (Draft)
+#### CLIENT socket
+
+The CLIENT socket type talks to one or more SERVER peers. If connected to
+multiple peers, it scatters sent messages among these peers in a round-robin
+fashion. On reading, it reads fairly, from each peer in turn. It is reliable,
+insofar as it does not drop messages in normal cases.
+
+If the CLIENT socket has established a connection, *send* operations will accept
+messages, queue them, and send them as rapidly as the network allows. The
+outgoing buffer limit is defined by the high water mark for the socket. If the
+outgoing buffer is full, or if there is no connected peer, *send* operations
+will block, by default. The CLIENT socket will not drop messages.
+
+**Summary of characteristics:**
+
+|                           |               |
+|---------------------------|---------------|
+| Compatible peer sockets   | SERVER        |
+| Direction                 | Bidirectional |
+| Send/receive pattern      | Unrestricted  |
+| Outgoing routing strategy | Round-robin   |
+| Incoming routing strategy | Fair-queued   |
+| Action in mute state      | Block         |
+
+#### SERVER socket
+
+The SERVER socket type talks to zero or more CLIENT peers. Each outgoing message
+is sent to a specific peer CLIENT. A SERVER socket can only reply to an incoming
+message: the CLIENT peer must always initiate a conversation.
+
+Each received message has a *routing_id* that is a 32-bit unsigned integer. To
+send a message to a given CLIENT peer the application must set the peer's
+*routing_id* on the message.
+
+{{< example clisrv set_get_routing_id >}}
+
+If the *routing_id* is not specified, or does not refer to a connected client
+peer, the send call will fail. If the outgoing buffer for the client peer is
+full, the send call will block. The SERVER socket will not drop messages in any
+case.
+
+**Summary of characteristics:**
+
+|                           |                |
+|---------------------------|----------------|
+| Compatible peer sockets   | CLIENT         |
+| Direction                 | Bidirectional  |
+| Send/receive pattern      | Unrestricted   |
+| Outgoing routing strategy | See text       |
+| Incoming routing strategy | Fair-queued    |
+| Action in mute state      | Fail           |
+
+### Radio-dish pattern
+
+{{% note info %}}
+This pattern is still in draft state and thus might not be supported by the
+zeromq library you're using!
+{{% /note %}}
 
 The radio-dish pattern is used for one-to-many distribution of data from a
 single publisher to multiple subscribers in a fan out fashion.
@@ -495,3 +557,45 @@ The intention is to increase the length to 40 chars (including null). The
 encoding of groups shall be UTF8.
 
 Groups are matched using exact matching (vs prefix matching of PubSub).
+
+#### RADIO socket
+
+A RADIO socket is used by a publisher to distribute data. Each message belong to
+a group. Messages are distributed to all members of a group. The *receive*
+operation is not implemented for this socket type.
+
+{{< example raddsh_radio_example >}}
+
+When a RADIO socket enters the mute state due to having reached the high
+water mark for a subscriber, then any messages that would be sent to the
+subscriber in question will instead be dropped until the mute state ends. The
+*send* operation will never block for this socket type.
+
+**Summary of characteristics:**
+
+|                           |                |
+|---------------------------|----------------|
+| Compatible peer sockets   | DISH           |
+| Direction                 | Unidirectional |
+| Send/receive pattern      | Send only      |
+| Incoming routing strategy | N/A            |
+| Outgoing routing strategy | Fan out        |
+| Action in mute state      | Drop           |
+
+#### DISH socket
+
+A DISH socket is used by a subscriber to subscribe to groups distributed by
+a RADIO. Initially a DISH socket is not subscribed to any groups. The *send*
+operations are not implemented for this socket type.
+
+{{< example raddsh_dish_example >}}
+
+**Summary of characteristics:**
+
+|                           |                |
+|---------------------------|----------------|
+| Compatible peer sockets   | RADIO          |
+| Direction                 | Unidirectional |
+| Send/receive pattern      | Receive only   |
+| Incoming routing strategy | Fair-queued    |
+| Outgoing routing strategy | N/A            |

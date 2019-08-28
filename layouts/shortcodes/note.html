@@ -1,0 +1,10 @@
+{{- $color := .Get 0 -}}
+{{- if $color -}}
+<article class="message {{ printf "is-%s" $color }}">
+{{- else -}}
+<article class="message">
+{{- end -}}
+    <div class="message-body">
+      <strong>Note:</strong> {{ trim .Inner " \n" | markdownify }}
+  </div>
+</article>
