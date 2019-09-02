@@ -41,12 +41,12 @@ null**.
 
 {{< example messages_strings_send_recv >}}
 
-Because we utilise the frame's length to refelct the string's length we can send
+Because we utilise the frame's length to reflect the string's length we can send
 mulitple strings by putting each of them into a seperate frame.
 
 {{< example messages_strings_send_recv_multi >}}
 
-## Other
+## More
 
 Find out more about working with messages:
 

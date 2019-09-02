@@ -21,10 +21,30 @@ be NULL!
 zstr_sendx (socket, "HELLO", "beautiful", "WORLD!", NULL);
 ```
 
-To receive a series of string frame use the `zstr_recvx` function. Each string
+If you like work with message objects rather than building up the message by
+sending multiple frames. You can use the `zmsg` class.
+
+```c
+zmsg_t *strings = zmsg_new ();
+zmsg_addstr ("HELLO");
+zmsg_addstr ("beautiful");
+zmsg_addstr ("WORLD");
+zmsg_send (&strings, socket);
+```
+
+To receive a series of string frames use the `zstr_recvx` function. Each string
 is allocated and filled with string data!
 
 ```c
 char *hello, beautiful, world;
 zstr_recvx (socket, &hello, &beautiful, &world, NULL);
+```
+
+Or in case you're working with `zmsg` message objects:
+
+```c
+zmsg_t *strings = zmsg_recv (socket);
+char *hello = zmsg_popstr (strings);
+char *beautiful = zmsg_popstr (strings);
+char *world = zmsg_popstr (strings);
 ```

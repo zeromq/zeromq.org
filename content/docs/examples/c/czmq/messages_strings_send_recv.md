@@ -4,8 +4,8 @@ language: C
 library: czmq
 ---
 
-The following function sends a C string to a socket as a frame where the
-string's length equals frame's length.
+The following functions sends a C string to a socket as a single-frame message
+where the string's length equals frame's length.
 
 ```c
 zstr_send (socket, "HELLO");
