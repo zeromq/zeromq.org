@@ -4,6 +4,7 @@
 
 {{ define "main" }}
 {{ partial "navbar.html" . }}
+{{ .Scratch.Set "headerTitle" "Documentation" }}
 {{ partial "header.html" . }}
 {{ partial "content.html" . }}
 {{ partial "footer.html" . }}

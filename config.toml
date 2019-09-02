@@ -87,13 +87,13 @@ icon = "fas fa-3x fa-book"
 url = "http://zguide.zeromq.org/page:all"
 
 [[menu.navbar]]
-name = "Get Started"
+name = "Documentation"
 url = "/get-started"
 weight = 1
 
 [[menu.navbar]]
-name = "Download"
-url = "/download"
+name = "Community"
+url = "/our-community"
 weight = 2
 
 [[menu.navbar]]
