@@ -1,9 +1,11 @@
 {{ $description := .Params.description }}
+{{ $title := .Scratch.Get "headerTitle" | default "" }}
+{{ $hasTitle := ne $title "" }}
 <section class="hero is-primary is-small">
   <div class="hero-body">
     <div class="container">
       <p class="title{{ if $description }} is-spaced{{ end }}">
-        {{ .Title }}
+      {{- if $hasTitle -}}{{ $title }}{{- else -}}{{ .Title }}{{- end -}}
       </p>
     </div>
   </div>
