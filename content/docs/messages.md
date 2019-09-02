@@ -3,7 +3,6 @@ title: Messages
 description: Working with ZeroMQ messages
 toc: true
 weight: 3
-draft: true
 ---
 
 {{% capture overview %}}

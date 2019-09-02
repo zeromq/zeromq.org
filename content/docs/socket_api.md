@@ -2,7 +2,7 @@
 title: Socket API
 weight: 4
 toc: true
-draft: true
+weight: 4
 ---
 
 {{% capture overview %}}
