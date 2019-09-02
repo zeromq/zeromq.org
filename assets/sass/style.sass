@@ -144,6 +144,31 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
   position: absolute
   right: 24px
 
+.has-inside-label
+  $label-font-size: 10px
+
+  label
+    position: absolute
+    top: 0
+    left: 0
+    padding-top: 2px
+    padding-left: 1em
+    font-size: $label-font-size
+    z-index: 4
+
+  .select
+    height: 2.75em
+
+    select
+      height: 2.75em
+      padding-top: 0.95em
+
+  .icon
+    padding-top: 0.9em
+
+    i
+      padding-top: 0.5em
+
 .content
   #TableOfContents
     margin: $toc-margin
