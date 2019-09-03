@@ -11,6 +11,16 @@ ZeroMQ supports common messaging patterns (pub/sub, request/reply, client/server
 
 ZeroMQ is developed by a large community of contributors. There are third-party bindings for many popular programming languages and native ports for C# and Java.
 
+## The Zero in ZeroMQ
+
+The philosophy of ZeroMQ starts with the zero. The zero is for zero broker
+(ZeroMQ is brokerless), zero latency, zero cost (it's free), and zero
+administration.
+
+More generally, "zero" refers to the culture of minimalism that permeates the
+project. We add power by removing complexity rather than by exposing new
+functionality.
+
 ## The Guide
 
 [The guide](http://zguide.zeromq.org/page:all) explains how to use ØMQ, covers basic, intermediate and advanced use with 60+ diagrams and 750 examples in 28 languages.
