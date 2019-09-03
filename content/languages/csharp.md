@@ -32,7 +32,7 @@ Server:
 ```csharp
 using (var server = new ResponseSocket())
 {
-    client.Bind("tcp://*:5556");
+    server.Bind("tcp://*:5556");
     string msg = server.ReceiveFrameString();
     Console.WriteLine("From Client: {0}", msg);
     server.SendFrame("World");
