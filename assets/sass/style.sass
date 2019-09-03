@@ -141,8 +141,7 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
       overflow-y: auto
 
 #editPageButton
-  position: absolute
-  right: 24px
+  float: right
 
 .has-inside-label
   $label-font-size: 10px
@@ -168,6 +167,15 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
 
     i
       padding-top: 0.5em
+
+.column-main
+  > section
+    max-width: 700px
+    margin-left: auto
+    margin-right: auto
+
+  #lang-lib-selector
+    margin-left: 0
 
 .content
   #TableOfContents
@@ -226,7 +234,6 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
   min-width: 0 !important
   +desktop
     border-left: 0.5px solid #cccccc
-    padding-left: 4.5rem
     margin-top: 0.75rem
 
 /********************/
@@ -249,24 +256,24 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
   padding: 3px 8px
   font-size: 0.8em
 
-.copy-code-button:hover
-  cursor: pointer
-  background-color: #F2F2F2
+  &:hover
+    cursor: pointer
+    background-color: #F2F2F2
 
-.copy-code-button:focus
-  /* Avoid an ugly focus outline on click in Chrome,
-     but darken the button for accessibility.
-     See https://stackoverflow.com/a/25298082/1481479 */
-  background-color: #E6E6E6
-  outline: 0
+  &:focus
+    /* Avoid an ugly focus outline on click in Chrome,
+       but darken the button for accessibility.
+       See https://stackoverflow.com/a/25298082/1481479 */
+    background-color: #E6E6E6
+    outline: 0
 
-.copy-code-button:active
-  background-color: #D9D9D9
+  &:active
+    background-color: #D9D9D9
 
 .highlight
   /* Add bottom margin even to last element, because it maybe an included leaf page */
   margin-bottom: 1.5rem
 
-.highlight pre
-  /* Avoid pushing up the copy buttons. */
-  margin: 0
+  pre
+    /* Avoid pushing up the copy buttons. */
+    margin: 0
