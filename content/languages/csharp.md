@@ -13,7 +13,7 @@ NetMQ is the recommended option. However NetMQ doesn't implement ZMTP 3 and curv
 <tr><td>Github</td><td>https://github.com/zeromq/netmq</td></tr>
 <tr><td>Docs</td><td>https://netmq.readthedocs.io/en/latest/</td></tr>
 <tr><td>Nuget</td><td>https://www.nuget.org/packages/NetMQ</td></tr>
-<table>
+</table>
 
 ### Request-Response
 
@@ -82,7 +82,7 @@ using (var publisher = new PublisherSocket())
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/clrzmq4</td></tr>
 <tr><td>Nuget</td><td>https://www.nuget.org/packages/ZeroMQ/</td></tr>
-<table>
+</table>
 
 Package include libzmq for Windows, for OSX and Linux you need to [install libzmq]({{< relref "/docs/download" >}}).
 

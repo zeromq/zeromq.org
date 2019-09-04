@@ -1,6 +1,7 @@
 ---
 title: F#
 weight: 5
+toc: true
 ---
 
 Two alternatives are available for F# developers, `fszmq` and `FsNetMQ`. `fszmq` is a binding over libzmq and FsNetMQ is a thin F# wrapper over NetMQ, which is a pure port of libzmq to C#.
@@ -11,7 +12,7 @@ Two alternatives are available for F# developers, `fszmq` and `FsNetMQ`. `fszmq`
 <table>
 <tr><td>Github</td><td>https://github.com/NetMQ/FsNetMQ</td></tr>
 <tr><td>Nuget</td><td>https://www.nuget.org/packages/FsNetMQ/</td></tr>
-<table>
+</table>
 
 ### Example
 
@@ -82,7 +83,7 @@ let actor =
 <tr><td>Website</td><td>http://zeromq.github.io/fszmq/</td></tr>
 <tr><td>Docs</td><td>http://zeromq.github.io/fszmq/reference/index.html</td></tr>
 <tr><td>Nuget</td><td>https://www.nuget.org/packages/FsNetMQ/</td></tr>
-<table>
+</table>
 
 ### Pre-requisites
 

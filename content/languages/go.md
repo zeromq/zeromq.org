@@ -1,6 +1,7 @@
 ---
 title: Go
 weight: 4
+toc: true
 ---
 
 Two options are available for Go developers, [goczmq](https://github.com/zeromq/goczmq) binding for CZMQ, or [pebbe/zmq4](https://github.com/pebbe/zmq4), binding for libzmq.
@@ -10,7 +11,7 @@ Two options are available for Go developers, [goczmq](https://github.com/zeromq/
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/goczmq</td></tr>
 <tr><td>Docs</td><td>https://godoc.org/github.com/zeromq/goczmq</td></tr>
-<table>
+</table>
 
 ### Install
 
@@ -106,7 +107,7 @@ func main() {
 <tr><td>Github</td><td>https://github.com/pebbe/zmq4</td></tr>
 <tr><td>Docs</td><td>https://godoc.org/github.com/pebbe/zmq4</td></tr>
 <tr><td>Examples</td><td>https://github.com/pebbe/zmq4/tree/master/examples</td></tr>
-<table>
+</table>
 
 ### Installation
 
