@@ -1,6 +1,7 @@
 ---
 title: Java
 weight: 3
+toc: true
 ---
 
 Three options are available for Java developers, JeroMQ a pure Java

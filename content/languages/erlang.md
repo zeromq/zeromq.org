@@ -1,6 +1,7 @@
 ---
 title: Erlang
 weight: 6
+toc: true
 ---
 
 ## Chumak

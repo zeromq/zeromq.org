@@ -1,6 +1,7 @@
 ---
 title: C
 weight: 1
+toc: true
 ---
 
 Two options are available for C developers, CZMQ or libzmq, the low-level zeromq library.

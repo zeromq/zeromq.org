@@ -1,6 +1,7 @@
 ---
 title: F#
 weight: 5
+toc: true
 ---
 
 Two alternatives are available for F# developers, `fszmq` and `FsNetMQ`. `fszmq` is a binding over libzmq and FsNetMQ is a thin F# wrapper over NetMQ, which is a pure port of libzmq to C#.
