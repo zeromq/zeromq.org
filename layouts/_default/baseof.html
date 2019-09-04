@@ -10,10 +10,10 @@
   </head>
   <body class="page has-navbar-fixed-top">
     <div class="main">
-      {{ block "main" . }}
-      {{ end }}
-    </div>
+      {{ block "main" . }}{{ end }}
 
+      {{ partial "footer.html" . }}
+    </div>
     {{ partial "javascript.html" . }}
   </body>
 </html>

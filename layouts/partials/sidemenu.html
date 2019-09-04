@@ -1,0 +1,47 @@
+{{ $currentUrl := .RelPermalink }}
+{{ $docsPages := where .Site.RegularPages "Section" "docs" }}
+{{ $languagePages := where .Site.RegularPages "Section" "languages" }}
+
+  <div id="docsToc" class="column is-one-fifth-desktop column-menu is-fullheight section">
+    <aside class="menu">
+      <p class="menu-label">
+        Documentation
+      </p>
+      <ul class="menu-list">
+        {{ range $docsPages }}
+        {{ $isCurrentPage := eq $currentUrl .URL }}
+        <li>
+          <a href="{{ .URL }}" {{ if $isCurrentPage }} class="is-active" {{ end }}>
+            {{ .Title }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      <p class="menu-label">
+        Links
+      </p>
+      <ul class="menu-list">
+        {{ range site.Params.links }}
+        <li>
+            <a href="{{.url}}">
+              {{.title}}
+            </a>
+        </li>
+        {{ end }}
+      </ul>
+      <p class="menu-label">
+        Languages
+      </p>
+      <ul class="menu-list">
+        {{ range $languagePages }}
+        {{ $isCurrentPage := eq $currentUrl .URL }}
+        <li>
+          <a href="{{ .URL }}" {{ if $isCurrentPage }} class="is-active" {{ end }}>
+            {{ .Title }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </aside>
+    <a class="close-button" onclick="page.toggleToc()"></a>
+  </div>
