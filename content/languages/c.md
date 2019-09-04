@@ -12,7 +12,7 @@ The recommended binding for C developers is CZMQ, which provides a high-level AP
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/czmq</td></tr>
 <tr><td>Docs</td><td>http://czmq.zeromq.org/</td></tr>
-<table>
+</table>
 
 ### Install
 
@@ -83,7 +83,7 @@ int main (void)
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/libzmq</td></tr>
 <tr><td>Docs</td><td>http://api.zeromq.org/</td></tr>
-<table>
+</table>
 
 ### Install
 

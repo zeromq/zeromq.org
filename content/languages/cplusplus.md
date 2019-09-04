@@ -7,7 +7,7 @@ weight: 2
 
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/cppzmq</td></tr>
-<table>
+</table>
 
 Header-only C++ binding for libzmq.
 
@@ -30,7 +30,7 @@ int main()
 
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/zmqpp</td></tr>
-<table>
+</table>
 
 This C++ binding for 0mq/zmq is a 'high-level' library that hides most of the c-style interface core 0mq provides. It consists of a number of header and source files all residing in the zmq directory, these files are provided under the MPLv2 license (see LICENSE for details).
 
@@ -38,7 +38,7 @@ This C++ binding for 0mq/zmq is a 'high-level' library that hides most of the c-
 
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/azmq</td></tr>
-<table>
+</table>
 
 The azmq library provides Boost Asio style bindings for ZeroMQ
 
@@ -74,6 +74,6 @@ int main(int argc, char** argv) {
 
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/czmqpp</td></tr>
-<table>
+</table>
 
 C++ wrapper for czmq. Aims to be minimal, simple and consistent.

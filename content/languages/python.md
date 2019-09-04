@@ -10,7 +10,7 @@ weight: 3
 <tr><td>Docs</td><td>https://zeromq.github.io/pyzmq/</td></tr>
 <tr><td>Guide</td><td>http://zguide.zeromq.org/py:all</td></tr>
 <tr><td>pypi</td><td>https://pypi.org/project/pyzmq/</td></tr>
-<table>
+</table>
 
 ### Download
 

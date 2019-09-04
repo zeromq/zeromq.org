@@ -6,7 +6,7 @@ weight: 4
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/zeromq.js/</td></tr>
 <tr><td>npm</td><td>https://www.npmjs.com/package/zeromq</td></tr>
-<table>
+</table>
 
 ## Installation
 

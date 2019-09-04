@@ -11,7 +11,7 @@ implementation, JZMQ a Java binding for libzmq, JCZMQ a Java binding for czmq
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/jeromq</td></tr>
 <tr><td>Docs</td><td>https://github.com/zeromq/jeromq/blob/master/README.md</td></tr>
-<table>
+</table>
 
 ### Example
 
@@ -54,14 +54,14 @@ public class hwserver
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/jzmq</td></tr>
 <tr><td>Docs</td><td>https://github.com/zeromq/jzmq/blob/master/README.md</td></tr>
-<table>
+</table>
 
 ## JCZMQ
 
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/czmq/tree/master/bindings/jni</td></tr>
 <tr><td>Docs</td><td>https://github.com/zeromq/czmq/blob/master/bindings/jni/README.md</td></tr>
-<table>
+</table>
 
 ### Example
 
