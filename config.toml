@@ -16,7 +16,6 @@ monospacefont = "Fira Mono"
 fontawesomeversion = "5.6.3"
 js = ["jquery-3.3.1", "app"]
 logo = "/images/logo.gif"
-favicon = "/images/favicon.gif"
 
 [params.logos]
 navbar = "/images/logo.gif"

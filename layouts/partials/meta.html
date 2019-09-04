@@ -5,7 +5,6 @@
 {{ $pageType      := cond $isHome "website" "article" }}
 {{ $imageUrl      := site.Params.logo }}
 {{ $twitterHandle := site.Params.social.twitter.handle }}
-{{ $favicon       := site.Params.favicon | relURL }}
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 {{ hugo.Generator }}
@@ -39,4 +38,18 @@
 <meta name="twitter:creator" content="@{{ $twitterHandle }}">
 
 <link rel="canonical" content="{{ .Permalink }}">
-<link rel="shortcut icon" href="{{ $favicon }}" type="image/gif">
+
+<!-- Favicons -->
+<!-- generics -->
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<!-- macOS -->
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<!-- Android -->
+<link rel="manifest" href="/site.webmanifest">
+<!-- iOS -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!-- Windows -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#9c3838">
