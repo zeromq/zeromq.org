@@ -21,7 +21,7 @@ be NULL!
 zstr_sendx (socket, "HELLO", "beautiful", "WORLD!", NULL);
 ```
 
-If you like work with message objects rather than building up the message by
+If you like working with message objects rather than building up the message by
 sending multiple frames. You can use the `zmsg` class.
 
 ```c
@@ -40,7 +40,7 @@ char *hello, beautiful, world;
 zstr_recvx (socket, &hello, &beautiful, &world, NULL);
 ```
 
-Or in case you're working with `zmsg` message objects:
+Or in case you're working with `zmsg`:
 
 ```c
 zmsg_t *strings = zmsg_recv (socket);
