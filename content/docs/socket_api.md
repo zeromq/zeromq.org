@@ -8,7 +8,7 @@ weight: 4
 {{% capture overview %}}
 
 Sockets are the de facto standard API for network programming. That's why ZeroMQ
-presents a familiar socket-based API. One things that make ZeroMQ especially
+presents a familiar socket-based API. One thing that make ZeroMQ especially
 tasty to developers is that it uses different socket types to implement any
 arbitrary messaging pattern. Furthermore ZeroMQ sockets provide a clean
 abstraction over the underlying network protocol which hides the complexity of
@@ -57,13 +57,15 @@ So let's start with some code, the "Hello world" example (of course).
 
 {{< example hello_world_server >}}
 
-The server creates a socket of type response (you can read more on the
-request-response chapter), binds it to port 5555 and then waits for messages.
-You can also see that we have zero configuration, we are just sending strings.
+The server creates a socket of type response (you will read more about
+[request-response]({{< relref "#request-reply-pattern" >}}) later), binds it to
+port 5555 and then waits for messages. You can also see that we have zero
+configuration, we are just sending strings.
 
 {{< example hello_world_client >}}
 
-The client create a socket of type request, connect and start sending messages.
+The client creates a socket of type request, connects and starts sending
+messages.
 
 Both the `send` and `receive` methods are blocking (by default). For the receive
 it is simple: if there are no messages the method will block. For sending it is
@@ -72,7 +74,7 @@ high watermark is reached or no peer is connected the method will block.
 
 ## Bind vs Connect
 
-With ZeroMQ sockets it doesn't matter how binds and how connects. In the above
+With ZeroMQ sockets it doesn't matter who binds and who connects. In the above
 you may have noticed that the server used Bind while the client used Connect.
 Why is this, and what is the difference?
 
@@ -95,8 +97,8 @@ with no live connections, there's no queue to store the message to.
 
 As a general rule use bind from the most stable points in your architecture, and
 use connect from dynamic components with volatile endpoints. For request/reply,
-the service provider might be point where you bind and the client uses connect.
-Just like plain old TCP.
+the service provider might be the point where you bind and the clients are using
+connect. Just like plain old TCP.
 
 If you can't figure out which parts are more stable (i.e. peer-to-peer),
 consider a stable device in the middle, which all sides can connect to.

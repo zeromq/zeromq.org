@@ -15,7 +15,7 @@ socket.SendMoreFrame("HELLO")
     .SendMore("WORLD!");
 ```
 
-To receive a series of strings call `ReceiveMultipartStrings` function. Which return a list of strings.
+To receive a series of strings call `ReceiveMultipartStrings` function. Which returns a list of strings.
 
 ```csharp
 List<string> strings = socket.ReceiveMultipartStrings();
