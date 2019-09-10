@@ -57,10 +57,10 @@ So let's start with some code, the "Hello world" example (of course).
 
 {{< example hello_world_server >}}
 
-The server creates a socket of type response (you will read more about
-[request-response]({{< relref "#request-reply-pattern" >}}) later), binds it to
-port 5555 and then waits for messages. You can also see that we have zero
-configuration, we are just sending strings.
+The server creates a socket of type reply (you will read more about
+[Request-reply pattern]({{< relref "#request-reply-pattern" >}}) later),
+binds it to port 5555 and then waits for messages. You can also see that we have
+zero configuration, we are just sending strings.
 
 {{< example hello_world_client >}}
 
@@ -126,27 +126,27 @@ matching types.
 
 The built-in core ZeroMQ patterns are:
 
-* **Request-reply**, which connects a set of clients to a set of services. This
+* [**Request-reply**]({{< relref "#request-reply-pattern" >}}), which connects a set of clients to a set of services. This
   is a remote procedure call and task distribution pattern.
 
-* **Pub-sub**, which connects a set of publishers to a set of subscribers. This
+* [**Pub-sub**]({{< relref "#publish-subscribe-pattern" >}}), which connects a set of publishers to a set of subscribers. This
   is a data distribution pattern.
 
-* **Pipeline**, which connects nodes in a fan-out/fan-in pattern that can have
+* [**Pipeline**]({{< relref "#pipeline-pattern" >}}), which connects nodes in a fan-out/fan-in pattern that can have
   multiple steps and loops. This is a parallel task distribution and collection
   pattern.
 
-* **Exclusive pair**, which connects two sockets exclusively. This is a pattern
+* [**Exclusive pair**]({{< relref "#exclusive-pair-pattern" >}}), which connects two sockets exclusively. This is a pattern
   for connecting two threads in a process, not to be confused with "normal"
   pairs of sockets.
 
 There are more ZeroMQ patterns that are still in draft state:
 
-* **Client-server**, which allows a single ZeroMQ *server* talk to one or more
+* [**Client-server**]({{< relref "#client-server-pattern" >}}), which allows a single ZeroMQ *server* talk to one or more
   ZeroMQ *clients*. The client always starts the conversation, after which
   either peer can send messages asynchronously, to the other.
 
-* **Radio-dish**, which used for one-to-many distribution of data from a single
+* [**Radio-dish**]({{< relref "#radio-dish-pattern" >}}), which used for one-to-many distribution of data from a single
   publisher to multiple subscribers in a fan out fashion.
 
 ### Request-reply pattern
@@ -296,10 +296,9 @@ status topic:
 
 {{< example pubsub_topics_pub >}}
 
-Subscribers specify which topics they are interested in via the Subscribe method
-of SubscriberSocket:
-
 {{< example pubsub_topics_sub >}}
+
+A subscriber socket can have multiple subscription filters.
 
 A message's topic is compared against subscribers' subscription topics using a
 prefix check.
