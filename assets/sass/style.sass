@@ -306,3 +306,55 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
   pre
     /* Avoid pushing up the copy buttons. */
     margin: 0
+
+/***********************/
+/* Floating Action Bar */
+/***********************/
+.fab-lang-lib
+  position: fixed
+  display: none
+  z-index: 400
+
+  height: auto
+  width: auto
+
+  bottom: 20px
+  right: 20px
+  left: auto
+
+  color: #fcfcfc
+  background: #1f1d1d
+  border: none
+  cursor: pointer
+
+  .fab-current
+    $fab-line-height: 30px
+
+    width: auto
+    height: 30px
+    line-height: $fab-line-height
+    padding: 0 6px
+    display: block
+    font-size: 90%
+    text-align: right
+
+    .fas
+      padding-left: 0.5em
+      color: $primary
+
+    .fab-current-lang-lib
+      display: inline
+      float: left
+
+    .fab-current-caret
+      display: inline
+      float: right
+      padding-left: 0.5em
+      line-height: $fab-line-height
+
+  .fab-select-lang-lib
+    font-size: 90%
+    padding: 12px
+    color: gray
+    background: lighten(#1f1d1d, 20%)
+    display: none

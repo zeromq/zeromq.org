@@ -41,6 +41,9 @@ under the License.
     $(".lib-selector[data-language-name='" + language + "']").show();
     $(".lib-selector option[data-library-name='" + library + "']").parents("select").val(library);
     $(".example-" + language + "-" + library).show();
+    $(".fab-lang-lib").show()
+    $(".current-lang").text(language);
+    $(".current-lib").text(library);
 
     // scroll to the new location of the position
     if ($(window.location.hash).get(0)) {
@@ -177,6 +180,10 @@ under the License.
 
   // if we click on a language tab, activate that language
   $(function() {
+    $(".fab-current").on("click", function(obj) {
+        $(this).parent().find(".fab-select-lang-lib").toggle()
+    });
+
     $(".lang-selector select").on("change", function(obj) {
       var optionSelected = $("option:selected", this);
       var examples = $('.content').data('examples');

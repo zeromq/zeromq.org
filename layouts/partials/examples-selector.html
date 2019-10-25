@@ -1,42 +1,54 @@
 {{- $languages := .Site.Data.libraries.zmqLibraries.languages -}}
 {{ if (findRE "<div class=\"example-" .Content 1) }}
-  <div id="lang-lib-selector" class="columns is-mobile">
-  {{ with .Site.Params.examples }}
-    <div class="field lang-selector" style="margin-right: 1em">
-      <div class="control has-icons-left has-inside-label">
-        <label class="is-left">Language</label>
-        <div class="select">
-          <select>
-            {{ range . }}
-              <option value="{{ lower .language }}" data-language-name="{{ lower .language }}">{{ default .language .display }}</option>
-            {{ end }}
-          </select>
+<div class="fab-lang-lib" data-toggle="rst-versions">
+    <span class="fab-current" data-toggle="rst-current-version">
+       <span class="fab-current-lang-lib">
+          <span class="fas fa-globe">&nbsp;</span>
+          lang: <span class="current-lang"></span>
+          <span class="fas fa-book-open">&nbsp;</span>
+          lib: <span class="current-lib"></span>
+      </span>
+      <span class="fab-current-caret fa fa-caret-down"></span>
+    </span>
+    <div class="fab-select-lang-lib">
+      <div id="lang-lib-selector" class="columns is-mobile">
+        <div class="field lang-selector" style="margin-right: 1em">
+          <div class="control has-icons-left has-inside-label">
+            <label class="is-left">Language</label>
+            <div class="select">
+              <select>
+                {{ range $languages }}
+                  {{- $languageDisplayName := default .name .display }}
+                  <option value="{{ lower .name }}" data-language-name="{{ lower .name }}">{{ $languageDisplayName }}</option>
+                {{ end }}
+              </select>
+            </div>
+            <div class="icon is-small is-left">
+              <i class="fas fa-globe"></i>
+            </div>
+          </div>
         </div>
-        <div class="icon is-small is-left">
-          <i class="fas fa-globe"></i>
+
+        {{ range $languages }}
+        <div class="field lib-selector" data-language-name="{{ lower .name }}"
+             style="display: none">
+          <div class="control has-icons-left has-inside-label">
+            <label class="is-left">Library</label>
+            <div class="select">
+              <select>
+                {{ range .libraries }}
+                  <option value="{{ lower .name }}" data-library-name="{{ lower .name }}">{{ default .name .display }}</option>
+                {{ end }}
+              </select>
+            </div>
+            <div class="icon is-small is-left">
+              <i class="fas fa-book-open"></i>
+            </div>
+          </div>
         </div>
+        {{ end }}
+
       </div>
     </div>
-
-    {{ range . }}
-    <div class="field lib-selector" data-language-name="{{ lower .language }}"
-         style="display: none">
-      <div class="control has-icons-left has-inside-label">
-        <label class="is-left">Library</label>
-        <div class="select">
-          <select>
-            {{ range .libraries }}
-              <option value="{{ lower . }}" data-library-name="{{ lower . }}">{{ . }}</option>
-            {{ end }}
-          </select>
-        </div>
-        <div class="icon is-small is-left">
-          <i class="fas fa-book-open"></i>
-        </div>
-      </div>
-    </div>
-    {{ end }}
-
-  {{ end }}
   </div>
 {{ end }}
