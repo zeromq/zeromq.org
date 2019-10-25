@@ -1,0 +1,202 @@
+zmqLibraries:
+  languages:
+    - name: C
+      libraries:
+        - name: libzmq
+          description: ZeroMQ core engine in C++
+          gitUrl: https://github.com/zeromq/libzmq
+          type: engine
+          protocols: tcp, udp, pgm, norm, ipc, inproc, gssapi
+          security: PLAIN, CURVE
+
+        - name: czmq
+          description: High-level binding for libzmq
+          gitUrl: https://github.com/zeromq/czmq
+          type: binding
+          engine: libzmq
+
+    - name: cpp
+      display: C++
+      libraries:
+        - name: zmqpp
+          description: High-level binding for libzmq
+          language: C++
+          gitUrl: https://github.com/zeromq/zmqpp
+          type: binding
+          engine: libzmq
+
+        - name: cppzmq
+          description: Header-only C++ binding for libzmq
+          language: C++
+          gitUrl: https://github.com/zeromq/cppzmq
+          type: binding
+          engine: libzmq
+
+        - name: azmq
+          description: Boost Asio style binding for libzmq
+          language: C++
+          gitUrl: https://github.com/zeromq/azmq
+          type: binding
+          engine: libzmq
+
+        - name: czmqpp
+          description: Minimal, simple wrapper for czmq
+          language: C++
+          gitUrl: https://github.com/zeromq/czmqpp
+          type: binding
+          engine: libzmq
+
+    - name: csharp
+      display: C#
+      libraries:
+        - name: NetMQ
+          description: ZeroMQ engine in C# for .Net
+          language: C#
+          gitUrl: https://github.com/zeromq/netmq
+          type: engine
+          protocols: tcp, inproc, pgm
+          security: PLAIN
+
+        - name: clrzmq4
+          description: .Net binding for libzmq
+          language: C#
+          gitUrl: https://github.com/zeromq/clrzmq4
+          type: binding
+          engine: libzmq
+
+    - name: Erlang
+      libraries:
+        - name: Chumak
+          description: ZeroMQ engine in Erlang
+          language: Erlang
+          gitUrl: https://github.com/zeromq/chumak
+          type: engine
+          protocols: tcp
+          security: PLAIN, CURVE
+
+        - name: ezmq
+          description: ZeroMQ engine in Erlang
+          language: Erlang
+          gitUrl: https://github.com/zeromq/ezmq
+          type: engine
+          protocols: tcp
+          security:
+
+        - name: erlang-czmq
+          description: Erlang binding for czmq
+          language: Erlang
+          gitUrl: https://github.com/gar1t/erlang-czmq
+          type: binding
+          engine: libzmq
+
+    - name: fsharp
+      display: F#
+      libraries:
+        - name: FsNetMQ
+          description: F# binding for NetMQ
+          language: F#
+          gitUrl: https://github.com/NetMQ/FsNetMQ
+          type: binding
+          engine: NetMQ
+
+        - name: fszmq
+          description: F# binding for libzmq
+          language: F#
+          gitUrl: https://github.com/zeromq/fszmq
+          type: binding
+          engine: libzmq
+
+    - name: Go
+      libraries:
+        - name: zmq4
+          description: Go binding for libzmq
+          language: Go
+          gitUrl: https://github.com/pebbe/zmq4
+          type: binding
+          engine: libzmq
+
+        - name: goczmq
+          description: Go binding for czmq
+          language: Go
+          gitUrl: https://github.com/zeromq/goczmq
+          type: binding
+          engine: libzmq
+
+    - name: Haskell
+      libraries:
+        - name: zeromq-haskell
+          description: Haskell binding for libzmq
+          language: Haskell
+          gitUrl: https://gitlab.com/twittner/zeromq-haskell
+          type: binding
+          engine: libzmq
+
+    - name: Java
+      libraries:
+        - name: JeroMQ
+          description: ZeroMQ engine in pure Java
+          language: Java
+          gitUrl: https://github.com/zeromq/jeromq
+          type: engine
+          protocols: tcp, inproc, ipc (JeroMQ only)
+          security: PLAIN, CURVE
+
+        - name: JZMQ
+          description: JNI binding for libzmq
+          language: Java
+          gitUrl: https://github.com/zeromq/jzmq
+          engine: libzmq
+
+        - name: jczmq
+          description: JNI binding for czmq
+          language: Java
+          gitUrl: https://github.com/zeromq/czmq/tree/master/bindings/jni
+          type: binding
+          engine: libzmq
+
+    - name: nodejs
+      display: Node.js
+      libraries:
+        - name: zeromqjs
+          display: zeromq.js
+          description: Node.js binding for czmq
+          language: Node.js
+          gitUrl: https://github.com/zeromq/zeromq.js
+          type: binding
+          engine: libzmq
+
+    - name: Perl
+      libraries:
+        - name: perlzmq
+          description: Perl binding for libzmq
+          language: Perl
+          gitUrl: https://github.com/zeromq/perlzmq
+          type: binding
+          engine: libzmq
+
+    - name: Python
+      libraries:
+        - name: Pyzmq
+          description: Python binding for libzmq
+          language: Python
+          gitUrl: https://github.com/zeromq/pyzmq
+          type: binding
+          engine: libzmq
+
+    - name: Ruby
+      libraries:
+        - name: rbzmq
+          description: Ruby binding for libzmq
+          language: Ruby
+          gitUrl: https://github.com/zeromq/rbzmq
+          type: binding
+          engine: libzmq
+
+    - name: Rust
+      libraries:
+        - name: rust-zmq
+          description: Rust binding for libzmq
+          language: Rust
+          gitUrl: https://github.com/erickt/rust-zmq
+          type: binding
+          engine: libzmq

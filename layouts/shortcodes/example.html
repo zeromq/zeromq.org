@@ -1,18 +1,35 @@
-{{ $exampleName := .Get 0 }}
+{{- $exampleName := .Get 0 -}}
+{{- $languages := .Site.Data.libraries.zmqLibraries.languages -}}
 
-{{ range .Site.Params.examples }}
-  {{ $exampleLang := .language }}
+{{ range $languages }}
+  {{ $exampleLang := .name }}
   {{ range .libraries }}
-    {{ $exampleLib := . }}
+    {{ $exampleLib := .name }}
     {{ $headlessBundle := printf "/docs/examples/%s/%s" (lower $exampleLang) (lower $exampleLib) }}
     {{ $examples := $.Site.GetPage $headlessBundle }}
 
-    {{ range $examples.Resources.ByType "page" }}
-      {{ if eq .Params.Name $exampleName }}
+    {{ $pages := $examples.Resources.ByType "page" }}
+    {{ $example := where $pages "Params.name" $exampleName }}
+    {{ if eq (len $example) 1 }}
+      {{ range $example }}
         <div class="example-{{ lower $exampleLang }}-{{ lower $exampleLib }}">
           {{ .Content }}
         </div>
       {{ end }}
+    {{ else }}
+      <div class="example-{{ lower $exampleLang }}-{{ lower $exampleLib }}">
+        <article class="message is-warn" style="margin-bottom: 1em;">
+          <div class="message-body">
+            Example <code>{{ $exampleName }}</code> is missing for <code>{{ $exampleLib }}</code>. Would you like to contribute it? Then follow the steps below:
+            <div class="highlight">
+              <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<code class="language-sh" data-lang="sh">git clone https://github.com/zeromq/zeromq.org
+<span style="color:#8be9fd;font-style:italic">cd</span> zeromq.org && mkdir -p content/docs/examples/{{ lower $exampleLang }}/{{ lower $exampleLib }}
+cp archetypes/examples/{{ $exampleName }}.md<br/>   content/docs/examples/{{ lower $exampleLang }}/{{ lower $exampleLib }}/{{ lower $exampleName }}.md</code></pre>
+            </div>
+          </div>
+        </article>
+      </div>
     {{ end }}
 
   {{ end }}

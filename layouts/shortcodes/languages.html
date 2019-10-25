@@ -1,10 +1,15 @@
-{{ $languages := where .Site.RegularPages "Section" "languages" }}
-<div class="columns is-multiline">
+{{- $languages := .Site.Data.libraries.zmqLibraries.languages -}}
+<div id="languagesGrid" class="columns is-multiline">
   {{ range $languages }}
-  <div class="column is-one-quarter">
-      <a href="{{ .URL }}" class="button is-primary is-outlined is-large is-fullwidth">
-        {{ .Title }}
+  <div class="column is-one-quarter language-button" data-language="{{ lower .name }}">
+      <a class="button is-primary is-outlined is-large is-fullwidth">
+        {{ default .name .display }}
       </a>
   </div>
   {{ end }}
+  <div class="column is-one-quarter">
+      <a href="http://wiki.zeromq.org/bindings:_start" class="button is-primary is-outlined is-large is-fullwidth">
+        Other
+      </a>
+  </div>
 </div>

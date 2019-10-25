@@ -148,17 +148,3 @@ url = "http://zguide.zeromq.org"
 [[params.links]]
 title = "Low-level API"
 url = "http://api.zeromq.org"
-
-# Configure the language example tabs.
-[[params.examples]]
-language = "C"
-libraries = ["libzmq", "czmq"]
-
-[[params.examples]]
-language = "csharp"
-display = "C#"
-libraries = ["NetMQ"]
-
-[[params.examples]]
-language = "Java"
-libraries = ["JeroMQ"]
