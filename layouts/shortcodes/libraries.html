@@ -1,0 +1,66 @@
+{{- $languages := .Site.Data.libraries.zmqLibraries.languages -}}
+
+<div id="zmqLibraries" class="columns is-multiline">
+{{ range $languages }}
+  {{- $languageName := .name }}
+  {{- $languageDisplayName := default .name .display }}
+  {{ range .libraries }}
+<div class="column is-half">
+  <div class="card" data-language="{{ lower $languageName }}" data-library="{{ lower .name }}">
+    <header class="card-header">
+      <p class="card-header-title">
+        {{ .name }} | {{ $languageDisplayName }}
+      </p>
+      <a href="{{ .gitUrl }}" class="card-header-icon">
+        <span class="icon">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </span>
+      </a>
+    </header>
+    <div class="card-content">
+      <div class="container">
+          <label class="label">Description</label>
+      </div>
+      <div class="container">
+          {{ .description }}
+      </div>
+
+      <div class="container">
+          <label class="label">Type</label>
+      </div>
+      <div class="container">
+          {{ .type }}
+      </div>
+
+      <div class="container">
+        <label class="label">Supported protocols</label>
+      </div>
+      <div class="container">
+        {{ if .protocols }}
+          {{ .protocols }}
+        {{ else }}
+          {{- $engine := .engine}}
+          {{ range $languages }}{{ range where .libraries "name" $engine }} {{ .protocols }} {{ end }}{{ end }}
+        {{ end }}
+      </div>
+
+      <div class="container">
+        <label class="label">Security</label>
+      </div>
+      <div class="container">
+        {{ if .security }}
+          {{ .security }}
+        {{ else }}
+          {{- $engine := .engine}}
+          {{ range $languages }}{{ range where .libraries "name" $engine }} {{ .security }} {{ end }}{{ end }}
+        {{ end }}
+      </div>
+    </div>
+    <footer class="card-footer">
+      <a href="#" class="card-footer-item library-button">Choose</a>
+    </footer>
+  </div>
+</div>
+  {{ end }}
+{{ end }}
+</div>

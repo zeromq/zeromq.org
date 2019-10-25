@@ -206,6 +206,29 @@ under the License.
       return false;
     });
 
+
+    $(".language-button").on("click", function(obj) {
+      var language = $(this).data("language");
+      $(".language-button").removeClass("active");
+      $(this).addClass("active");
+      pushURL("language", language);
+
+      $("#zmqLibraries .card").parent().hide();
+      $("#zmqLibraries .card[data-language='"+ language + "']").parent().show();
+      return false;
+    });
+
+    $(".library-button").on("click", function(obj) {
+      var language = $(this).parents(".card").data("language");
+      var library = $(this).parents(".card").data("library");
+
+      window.location.hash = "first-example"
+      pushURL("language", language);
+      pushURL("library" , library);
+      activateLanguage(language, library);
+      return false;
+    });
+
     window.onpopstate = function() {
       // activateLanguage(getLanguageFromQueryString());
     };

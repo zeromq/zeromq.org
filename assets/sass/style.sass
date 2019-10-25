@@ -175,7 +175,9 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
     margin-right: auto
 
   #lang-lib-selector
-    margin-left: 0
+    margin: auto
+    .field
+        margin: 0
 
 .content
   #TableOfContents
@@ -192,14 +194,41 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
       height: $header-clearance
       visibility: hidden
 
-.card
-  margin: 1.5rem 0
+#languagesGrid
+  .active
+    a
+      background-color: #d20000
+      border-color: transparent
+      color: #fff
 
-  &.is-shadowless
-    box-shadow: none
+#zmqLibraries
+  .active
+    box-shadow: 0 2px 3px rgba(255,19,19,1), 0 0 0 1px rgba(255,19,19,1)
 
-  .card-content
-    padding: 0
+  .card
+    // .card-link /* This is the link of the entire card */
+    //   position: absolute
+    //   height: 100%
+    //   width: 100%
+    //   z-index: 1
+
+    .card-header
+      background-color: #DF0000
+
+      .card-header-title
+        color: white
+        margin-bottom: 0
+
+      .card-header-icon
+        color: white
+        z-index: 2
+
+        &:hover
+          color: black
+
+
+    .card-content
+      padding: 1em
 
 .hero
   background-image: url(/images/texture.png)
