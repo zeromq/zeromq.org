@@ -222,6 +222,10 @@ under the License.
 
       $("#zmqLibraries .card").parent().hide();
       $("#zmqLibraries .card[data-language='"+ language + "']").parent().show();
+
+      var target = $("#pick-your-library");
+      $('html,body').animate({ scrollTop: target.offset().top }, 500);
+
       return false;
     });
 
@@ -229,15 +233,18 @@ under the License.
       var language = $(this).parents(".card").data("language");
       var library = $(this).parents(".card").data("library");
 
-      window.location.hash = "first-example"
       pushURL("language", language);
       pushURL("library" , library);
       activateLanguage(language, library);
+
+      var target = $("#first-example");
+      $('html,body').animate({ scrollTop: target.offset().top }, 500);
+
       return false;
     });
 
     window.onpopstate = function() {
-      // activateLanguage(getLanguageFromQueryString());
+      activateLanguage(getLanguageFromQueryString());
     };
   });
 })(window);

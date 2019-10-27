@@ -14,12 +14,10 @@ var page = (function () {
 
         window.addEventListener('resize', resetTheView);
         window.addEventListener('scroll', resetTheView);
-        window.addEventListener('keydown', handleKeystrokes);
 
         document.onunload = function(){
             window.removeEventListener('resize', resetTheView);
             window.removeEventListener('scroll', resetTheView);
-            window.removeEventListener('keydown', handleKeystrokes);
         };
     });
 
