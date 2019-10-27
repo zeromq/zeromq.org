@@ -315,12 +315,19 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "gitter-purple
   display: none
   z-index: 400
 
-  height: auto
-  width: auto
+  @include from($desktop)
+    height: auto
+    width: auto
 
-  bottom: 20px
-  right: 20px
-  left: auto
+    bottom: 20px
+    right: 20px
+    left: auto
+
+  @include until($desktop)
+    width: 100%
+
+    bottom: 0
+    left: 0
 
   color: #fcfcfc
   background: #1f1d1d
