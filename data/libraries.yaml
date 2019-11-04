@@ -145,6 +145,7 @@ zmqLibraries:
           description: JNI binding for libzmq
           language: Java
           gitUrl: https://github.com/zeromq/jzmq
+          type: binding
           engine: libzmq
 
         - name: jczmq
