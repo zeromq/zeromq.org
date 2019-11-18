@@ -51,27 +51,6 @@ ZeroMQ sockets have a life in four parts, just like BSD sockets:
 
 * Using the sockets to carry data by writing and receiving messages on them.
 
-## First example
-
-So let's start with some code, the "Hello world" example (of course).
-
-{{< example hello_world_server >}}
-
-The server creates a socket of type reply (you will read more about
-[Request-reply pattern]({{< relref "#request-reply-pattern" >}}) later),
-binds it to port 5555 and then waits for messages. You can also see that we have
-zero configuration, we are just sending strings.
-
-{{< example hello_world_client >}}
-
-The client creates a socket of type request, connects and starts sending
-messages.
-
-Both the `send` and `receive` methods are blocking (by default). For the receive
-it is simple: if there are no messages the method will block. For sending it is
-more complicated and depends on the socket type. For request sockets, if the
-high watermark is reached or no peer is connected the method will block.
-
 ## Bind vs Connect
 
 With ZeroMQ sockets it doesn't matter who binds and who connects. In the above
