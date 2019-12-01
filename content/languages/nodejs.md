@@ -27,7 +27,7 @@ socket and how a worker pulls information from the socket.
 
 ```js
 // producer.js
-var zmq = require("zeromq"),
+var zmq = require("zeromq/v5-compat"),
   sock = zmq.socket("push");
 
 sock.bindSync("tcp://127.0.0.1:3000");
@@ -43,7 +43,7 @@ setInterval(function() {
 
 ```js
 // worker.js
-var zmq = require("zeromq"),
+var zmq = require("zeromq/v5-compat"),
   sock = zmq.socket("pull");
 
 sock.connect("tcp://127.0.0.1:3000");
@@ -63,7 +63,7 @@ Publisher/Subscriber, application.
 
 ```js
 // pubber.js
-var zmq = require("zeromq"),
+var zmq = require("zeromq/v5-compat"),
   sock = zmq.socket("pub");
 
 sock.bindSync("tcp://127.0.0.1:3000");
@@ -79,7 +79,7 @@ setInterval(function() {
 
 ```js
 // subber.js
-var zmq = require("zeromq"),
+var zmq = require("zeromq/v5-compat"),
   sock = zmq.socket("sub");
 
 sock.connect("tcp://127.0.0.1:3000");
