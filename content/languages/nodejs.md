@@ -10,10 +10,10 @@ weight: 4
 
 ## Installation
 
-To install ZeroMQ for Node, download and install the package from npm.
+To install ZeroMQ for Node, download and install the package from npm. Here we use the version 5.x branch since version 6.x is still in beta.
 
 ```
-$ npm install zeromq
+$ npm install zeromq@5
 ```
 
 ## Examples using zeromq
