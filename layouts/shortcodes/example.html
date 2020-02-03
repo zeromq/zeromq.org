@@ -23,9 +23,18 @@
             Example <code>{{ $exampleName }}</code> is missing for <code>{{ $exampleLib }}</code>. Would you like to contribute it? Then follow the steps below:
             <div class="highlight">
               <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<code class="language-sh" data-lang="sh">git clone https://github.com/zeromq/zeromq.org
-<span style="color:#8be9fd;font-style:italic">cd</span> zeromq.org && mkdir -p content/docs/examples/{{ lower $exampleLang }}/{{ lower $exampleLib }}
-cp archetypes/examples/{{ $exampleName }}.md<br/>   content/docs/examples/{{ lower $exampleLang }}/{{ lower $exampleLib }}/{{ lower $exampleName }}.md</code></pre>
+<code class="language-sh" data-lang="sh">
+    git clone https://github.com/zeromq/zeromq.org
+    example_dir=content/docs/examples/{{ lower $exampleLang }}/{{ lower $exampleLib }}
+    cd zeromq.org && mkdir -p $example_dir
+    [ -s $example_dir/index.md ] || cat >$example_dir/index.md <<'EOF'
+---
+headless: true
+---
+EOF
+    cp archetypes/examples/{{ $exampleName }}.md
+    $example_dir/{{ lower $exampleName }}.md
+</code></pre>
             </div>
           </div>
         </article>
