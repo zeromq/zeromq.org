@@ -10,6 +10,7 @@ library: libzmq
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <assert.h>
 
 int main (void)
 {
