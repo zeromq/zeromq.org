@@ -8,13 +8,13 @@ weight: 2
 {{% capture overview %}}
 
 Most language bindings require the low-level libzmq library. Follow the instructions to download and install libzmq.
-For specific language instructions go to the lanaguage page.
+For specific language instructions go to the language page.
 
 {{% /capture %}}
 
 ## NetMQ and JeroMQ
 
-NetMQ and JeroMQ are C# and Java pure port of libzmq and therefore don't require libzmq.
+NetMQ and JeroMQ are C# and Java pure ports of libzmq and therefore don't require libzmq.
 
 Go to [C#]({{< relref "/languages/csharp" >}}) and [Java]({{< relref "/languages/java" >}}) language pages for more information.
 
@@ -71,14 +71,14 @@ zypper install zeromq-devel
 
 ### Packages for Debian, Ubuntu, Fedora, CentOS, RHEL, SUSE
 
-The ZeroMQ maintainers provide pre-built binary packages for libzmq, czmq, zyre, malamute, zproject and zproto, automatically built from both the latest stable releases OR the latest commit in the Git repositories via the Open Build Service, for i386, amd64, armv7, arm64, ppc64, s390x (note: depends on the distribution).
+The ZeroMQ maintainers provide pre-built binary packages for libzmq, czmq, zyre, malamute, zproject and zproto, automatically built from both the latest stable releases OR the latest commit in the Git repositories via the Open Build Service for i386, amd64, armv7, arm64, ppc64, s390x (note: depends on the distribution).
 
 * [latest git, no DRAFT APIs](https://build.opensuse.org/project/show/network:messaging:zeromq:git-stable)
 * [latest git, with DRAFT APIs](https://build.opensuse.org/project/show/network:messaging:zeromq:git-draft)
 * [latest stable release, no DRAFT APIs](https://build.opensuse.org/project/show/network:messaging:zeromq:release-stable)
 * [latest stable release, with DRAFT APIs](https://build.opensuse.org/project/show/network:messaging:zeromq:release-draft)
 
-Add the repository of your choice by clicking on the appropriate distribution and version, and then follow "Go to download repository". That is the URL of the repository. Remember to add the GPG key.
+Add the repository of your choice by clicking on the distribution and version, and then follow "Go to download repository". That is the URL of the repository. Remember to add the GPG key.
 
 For example, to add Debian 9 and install the development packages for libzmq from the latest stable release without draft APIs:
 
