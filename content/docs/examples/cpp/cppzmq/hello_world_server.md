@@ -24,7 +24,7 @@ int main()
     socket.bind("tcp://*:5555");
 
     // prepare some static data for responses
-    std::string data{"World"};
+    const std::string data{"World"};
 
     for (;;) 
     {
@@ -38,7 +38,7 @@ int main()
         std::this_thread::sleep_for(1s);
 
         // construct a reply message
-        zmq::message_t reply{data.begin(), data.end()};
+        zmq::message_t reply{data.cbegin(), data.cend()};
 
         // send the reply to the client
         socket.send(reply, zmq::send_flags::none);

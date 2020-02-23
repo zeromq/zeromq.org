@@ -20,12 +20,12 @@ int main()
     socket.connect("tcp://localhost:5555");
 
     // set up some static data to send
-    std::string data{"Hello"};
+    const std::string data{"Hello"};
 
     for (auto request_num = 0; request_num < 10; ++request_num) 
     {
         // initialize a request message
-        zmq::message_t request{data.begin(), data.end()};
+        zmq::message_t request{data.cbegin(), data.cend()};
         
         // send the request message
         std::cout << "Sending Hello " << request_num << "..." << std::endl;
