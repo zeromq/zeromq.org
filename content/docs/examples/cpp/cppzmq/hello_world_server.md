@@ -23,20 +23,22 @@ int main()
     zmq::socket_t socket{context, ZMQ_REP};
     socket.bind("tcp://*:5555");
 
+    // prepare some static data for responses
+    std::string data{"World"};
+
     for (;;) 
     {
         zmq::message_t request;
 
         // receive a request from client
         socket.recv(request, zmq::recv_flags::none);
-        std::cout << "Received Hello" << std::endl;
+        std::cout << "Received " << request.to_string() << std::endl;
 
         // simulate work
         std::this_thread::sleep_for(1s);
 
         // construct a reply message
-        zmq::message_t reply{5};
-        memcpy(reply.data(), "World", 5);
+        zmq::message_t reply{data.begin(), data.end()};
 
         // send the reply to the client
         socket.send(reply, zmq::send_flags::none);
