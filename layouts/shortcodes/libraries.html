@@ -19,42 +19,47 @@
     </header>
     <div class="card-content">
       <div class="container">
-          <label class="label">Description</label>
-      </div>
-      <div class="container">
-          {{ .description }}
+          <h5 class="title">{{ .description }}</h5>
       </div>
 
       <div class="container">
-          <label class="label">Type</label>
-      </div>
-      <div class="container">
-          {{ .type }}
+        <div class="columns is-mobile">
+          <div class="column is-one-fifth">
+            <span class="fa-stack">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-network-wired fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+          <div class="column">
+              {{ if .protocols }}
+                {{ .protocols }}
+              {{ else }}
+                {{- $engine := .engine}}
+                {{ range $languages }}{{ range where .libraries "name" $engine }} {{ .protocols }} {{ end }}{{ end }}
+              {{ end }}
+          </div>
+        </div>
       </div>
 
       <div class="container">
-        <label class="label">Supported protocols</label>
-      </div>
-      <div class="container">
-        {{ if .protocols }}
-          {{ .protocols }}
-        {{ else }}
-          {{- $engine := .engine}}
-          {{ range $languages }}{{ range where .libraries "name" $engine }} {{ .protocols }} {{ end }}{{ end }}
-        {{ end }}
+        <div class="columns is-mobile">
+          <div class="column is-one-fifth">
+            <span class="fa-stack">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-unlock-alt fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+          <div class="column">
+              {{ if .security }}
+                {{ .security }}
+              {{ else }}
+                {{- $engine := .engine}}
+                {{ range $languages }}{{ range where .libraries "name" $engine }} {{ .security }} {{ end }}{{ end }}
+              {{ end }}
+          </div>
+        </div>
       </div>
 
-      <div class="container">
-        <label class="label">Security</label>
-      </div>
-      <div class="container">
-        {{ if .security }}
-          {{ .security }}
-        {{ else }}
-          {{- $engine := .engine}}
-          {{ range $languages }}{{ range where .libraries "name" $engine }} {{ .security }} {{ end }}{{ end }}
-        {{ end }}
-      </div>
     </div>
     <footer class="card-footer">
       <a href="#" class="card-footer-item library-button">Choose</a>

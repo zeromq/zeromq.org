@@ -80,7 +80,7 @@ zmqLibraries:
           gitUrl: https://github.com/zeromq/ezmq
           type: engine
           protocols: tcp
-          security:
+          security: PLAIN
 
         - name: erlang-czmq
           description: Erlang binding for czmq
