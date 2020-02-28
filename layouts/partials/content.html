@@ -20,6 +20,8 @@
     <li><a href="#{{ $id }}">{{ $header }}</a></li>
       {{ end }}
   </ul>
+  {{- else -}}
+  <p/>
   {{- end -}}
 
   {{ .Content }}
