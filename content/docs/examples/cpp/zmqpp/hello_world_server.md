@@ -5,7 +5,7 @@ library: zmqpp
 ---
 
 ```cpp
-//  Hello World sever
+//  Hello World server
 
 #include <zmqpp/zmqpp.hpp>
 #include <string>
