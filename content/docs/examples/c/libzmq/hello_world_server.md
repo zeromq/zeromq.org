@@ -5,7 +5,7 @@ library: libzmq
 ---
 
 ```c
-//  Hello World sever
+//  Hello World server
 #include <zmq.h>
 #include <string.h>
 #include <stdio.h>
