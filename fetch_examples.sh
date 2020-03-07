@@ -31,7 +31,7 @@ EOF
 }
 
 fetch_example c czmq download https://raw.githubusercontent.com/zeromq/czmq/master/README.md "Install from a package manager"
-fetch_example cpp zmqpp download https://raw.githubusercontent.com/zeromq/zmqpp/master/README.md "Requirements;Installation"
+fetch_example cpp zmqpp download https://raw.githubusercontent.com/zeromq/zmqpp/develop/README.md "Requirements;Installation"
 fetch_example cpp azmq download https://raw.githubusercontent.com/zeromq/azmq/master/README.md "Building and installation"
 fetch_example csharp netmq download https://raw.githubusercontent.com/zeromq/netmq/master/README.md "Installation"
 fetch_example erlang chumak download https://raw.githubusercontent.com/zeromq/chumak/master/README.md "Install"
