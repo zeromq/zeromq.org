@@ -6,3 +6,16 @@ language: erlang
 library: chumak
 ---
 
+## Install
+
+You can install `chumak` from [hex.pm](https://hex.pm/packages/chumak) by including the following in your `rebar.config`:
+
+```
+{deps,[
+	{chumak, "X.Y.Z"}
+]}.
+```
+where _X.Y.Z_ is one of the [release versions](https://github.com/chovencorp/chumak/releases).
+
+For more info on rebar3 dependencies see the [rebar3 docs](http://www.rebar3.org/docs/dependencies).
+
