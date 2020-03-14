@@ -14,1530 +14,1839 @@ command = "make preview-build"
 [[redirects]]
 from = "/languages/other/"
 to = "http://wiki.zeromq.org/bindings:_start"
+force = true
 
 [[redirects]]
 from = "/intro:start"
 to = "/"
+force = true
 
 [[redirects]]
 from = "/intro:read-the-manual"
 to = "/get-started/"
+force = true
 
 [[redirects]]
 from = "/intro:get-the-software"
 to = "/download/"
+force = true
 
 [[redirects]]
 from = "/area:download"
 to = "/download/"
+force = true
 
 [[redirects]]
 from = "/distro:debian"
 to = "/download/"
+force = true
 
 [[redirects]]
 from = "/distro:suse"
 to = "/download/"
+force = true
 
 [[redirects]]
 from = "/docs:windows-installations"
 to = "/download/"
+force = true
 
 [[redirects]]
 from = "/distro:microsoft-windows"
 to = "/download/"
+force = true
 
 [[redirects]]
 from = "/area:faq"
 # to = "/faq/"
 to = "http://wiki.zeromq.org/area:faq"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:c"
 to = "/languages/c/"
+force = true
 
 [[redirects]]
 from = "/bindings:go"
 to = "/languages/c/go"
+force = true
 
 [[redirects]]
 from = "/bindings:python"
 to = "/languages/python"
+force = true
 
 [[redirects]]
 from = "/bindings:ruby-ffi"
 to = "/languages/ruby/"
+force = true
 
 [[redirects]]
 from = "/bindings:clr"
 to = "/languages/csharp/"
+force = true
 
 [[redirects]]
 from = "/bindings:f-binding"
 to = "/languages/fsharp/"
+force = true
 
 [[redirects]]
 from = "/bindings:php"
 to = "/languages/php/"
+force = true
 
 [[redirects]]
 from = "/bindings:cpp"
 to = "/languages/cplusplus/"
+force = true
 
 [[redirects]]
 from = "/bindings:node-js"
 to = "/languages/nodejs/"
+force = true
 
 [[redirects]]
 from = "/bindings:java"
 to = "/languages/java/"
+force = true
 
 [[redirects]]
 from = "/bindings:haskell"
 to = "/languages/haskell/"
+force = true
 
 [[redirects]]
 from = "/mailing-lists"
 to = "/our-community"
+force = true
 
 [[redirects]]
 from = "/chatroom"
 to = "/our-community"
+force = true
 
 [[redirects]]
 from = "/community"
 to = "/get-started/"
+force = true
 
 [[redirects]]
 from = "/distro:centos"
 to = "http://wiki.zeromq.org/distro:centos"
 status = 302
+force = true
 
 [[redirects]]
 from = "/build:android"
 to = "http://wiki.zeromq.org/build:android"
 status = 302
+force = true
 
 [[redirects]]
 from = "/build:mingw"
 to = "http://wiki.zeromq.org/build:mingw"
 status = 302
+force = true
 
 [[redirects]]
 from = "/build:arm"
 to = "http://zeromq.org/build:arm"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:messaging-enabled-network"
 to = "http://wiki.zeromq.org/whitepapers:messaging-enabled-network"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:amqp-analysis"
 to = "http://wiki.zeromq.org/whitepapers:amqp-analysis"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:new-0mq-labs"
 to = "http://wiki.zeromq.org/blog:new-0mq-labs"
 status = 302
+force = true
 
 [[redirects]]
 from = "/nav:side"
 to = "http://wiki.zeromq.org/nav:side"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:multithreading-magic"
 to = "http://wiki.zeromq.org/blog:multithreading-magic"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:omq-is-just-sockets"
 to = "http://wiki.zeromq.org/topics:omq-is-just-sockets"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:xop-igor-pro"
 to = "http://wiki.zeromq.org/bindings:xop-igor-pro"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:free-pascal-compiler-aka-fpc-binding"
 to = "http://wiki.zeromq.org/bindings:free-pascal-compiler-aka-fpc-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/build:encryption"
 to = "http://wiki.zeromq.org/build:encryption"
 status = 302
+force = true
 
 [[redirects]]
 from = "/distro:gentoo"
 to = "http://wiki.zeromq.org/distro:gentoo"
 status = 302
+force = true
 
 [[redirects]]
 from = "/story:1"
 to = "http://wiki.zeromq.org/story:1"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:open-source-data-plant"
 to = "http://wiki.zeromq.org/whitepapers:open-source-data-plant"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:traffic-monitoring-v20"
 to = "http://wiki.zeromq.org/whitepapers:traffic-monitoring-v20"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:socket-binding-between-environments"
 to = "http://wiki.zeromq.org/topics:socket-binding-between-environments"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:monitoring-support"
 to = "http://wiki.zeromq.org/topics:monitoring-support"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:encryption"
 to = "http://wiki.zeromq.org/topics:encryption"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:flossweeklydec212011"
 to = "http://wiki.zeromq.org/event:flossweeklydec212011"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:list-of-categories"
 to = "http://wiki.zeromq.org/event:list-of-categories"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:style"
 to = "http://wiki.zeromq.org/docs:style"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:zeromq-copenhagen-community-meetup-march-27-2014"
 to = "http://wiki.zeromq.org/event:zeromq-copenhagen-community-meetup-march-27-2014"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:20-february:getting-started-c"
 to = "http://wiki.zeromq.org/event:20-february:getting-started-c"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:zeromq-meetup-london"
 to = "http://wiki.zeromq.org/event:zeromq-meetup-london"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:zeromq-london-mettup"
 to = "http://wiki.zeromq.org/event:zeromq-london-mettup"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:zeromqlondon-launch"
 to = "http://wiki.zeromq.org/event:zeromqlondon-launch"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:zeromq-for-mysql"
 to = "http://wiki.zeromq.org/event:zeromq-for-mysql"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:seoul-20120209"
 to = "http://wiki.zeromq.org/event:seoul-20120209"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:portland-2011-05-27"
 to = "http://wiki.zeromq.org/event:portland-2011-05-27"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:opentech-2013"
 to = "http://wiki.zeromq.org/event:opentech-2013"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:ndc"
 to = "http://wiki.zeromq.org/event:ndc"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:meet-drink-in-berlin"
 to = "http://wiki.zeromq.org/event:meet-drink-in-berlin"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:kyej-2011-10"
 to = "http://wiki.zeromq.org/event:kyej-2011-10"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:san-francisco-2012-06"
 to = "http://wiki.zeromq.org/event:san-francisco-2012-06"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:sfbay-2011-06"
 to = "http://wiki.zeromq.org/event:sfbay-2011-06"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:realtime-conference"
 to = "http://wiki.zeromq.org/event:realtime-conference"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:fosdem-2013-brussels"
 to = "http://wiki.zeromq.org/event:fosdem-2013-brussels"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:fosdem2012"
 to = "http://wiki.zeromq.org/event:fosdem2012"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:chicago-2012-05"
 to = "http://wiki.zeromq.org/event:chicago-2012-05"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:berlin-buzzwords"
 to = "http://wiki.zeromq.org/event:berlin-buzzwords"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:3-1-upgrade"
 to = "http://wiki.zeromq.org/docs:3-1-upgrade"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:2-1-upgrade"
 to = "http://wiki.zeromq.org/docs:2-1-upgrade"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:3-1"
 to = "http://wiki.zeromq.org/docs:3-1"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:3-0"
 to = "http://wiki.zeromq.org/docs:3-0"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:brokerless"
 to = "http://wiki.zeromq.org/whitepapers:brokerless"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:brussels-2011-05-10"
 to = "http://wiki.zeromq.org/event:brussels-2011-05-10"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:complex-event-processors"
 to = "http://wiki.zeromq.org/topics:complex-event-processors"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:zeromq-meetup-brussels"
 to = "http://wiki.zeromq.org/event:zeromq-meetup-brussels"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:labs"
 to = "http://wiki.zeromq.org/docs:labs"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:projects"
 to = "http://wiki.zeromq.org/docs:projects"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:_start"
 to = "http://wiki.zeromq.org/event:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:tuning-zeromq"
 to = "http://wiki.zeromq.org/docs:tuning-zeromq"
 status = 302
+force = true
 
 [[redirects]]
 from = "/build:_start"
 to = "http://wiki.zeromq.org/build:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:trademark-policy"
 to = "http://wiki.zeromq.org/docs:trademark-policy"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:mailing-lists"
 to = "http://wiki.zeromq.org/docs:mailing-lists"
 status = 302
+force = true
 
 
 [[redirects]]
 from = "/event:chicago-2011-10"
 to = "http://wiki.zeromq.org/event:chicago-2011-10"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:release-cycles"
 to = "http://wiki.zeromq.org/topics:release-cycles"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:source-git"
 to = "http://wiki.zeromq.org/docs:source-git"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:flex-actionscript"
 to = "http://wiki.zeromq.org/bindings:flex-actionscript"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:erlang"
 to = "http://wiki.zeromq.org/bindings:erlang"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:multithreading-magic"
 to = "http://wiki.zeromq.org/whitepapers:multithreading-magic"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:norm-protocol-transport"
 to = "http://wiki.zeromq.org/topics:norm-protocol-transport"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:8th-binding"
 to = "http://wiki.zeromq.org/bindings:8th-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:swift-binding"
 to = "http://wiki.zeromq.org/bindings:swift-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/intro:commercial-support"
 to = "http://wiki.zeromq.org/intro:commercial-support"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:smalltalk"
 to = "http://wiki.zeromq.org/bindings:smalltalk"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:contributing"
 to = "http://wiki.zeromq.org/docs:contributing"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:bash"
 to = "http://wiki.zeromq.org/bindings:bash"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:features"
 to = "http://wiki.zeromq.org/docs:features"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:bindings:actionscript-zmqsocket"
 to = "http://wiki.zeromq.org/deleted:bindings:actionscript-zmqsocket"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:architecture"
 to = "http://wiki.zeromq.org/whitepapers:architecture"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:cl"
 to = "http://wiki.zeromq.org/bindings:cl"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:ruby"
 to = "http://wiki.zeromq.org/bindings:ruby"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:design-v05"
 to = "http://wiki.zeromq.org/whitepapers:design-v05"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:whitepapers:python"
 to = "http://wiki.zeromq.org/deleted:whitepapers:python"
 status = 302
+force = true
 
 [[redirects]]
 from = "/code:examples-exchange"
 to = "http://wiki.zeromq.org/code:examples-exchange"
 status = 302
+force = true
 
 [[redirects]]
 from = "/code:examples-camera"
 to = "http://wiki.zeromq.org/code:examples-camera"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:0mq-tests-v03"
 to = "http://wiki.zeromq.org/results:0mq-tests-v03"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:design-v03"
 to = "http://wiki.zeromq.org/whitepapers:design-v03"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:compiler"
 to = "http://wiki.zeromq.org/results:compiler"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:0mq-tests-v02"
 to = "http://wiki.zeromq.org/results:0mq-tests-v02"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:design-v01"
 to = "http://wiki.zeromq.org/whitepapers:design-v01"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:measuring-performance"
 to = "http://wiki.zeromq.org/whitepapers:measuring-performance"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:message-matching"
 to = "http://wiki.zeromq.org/whitepapers:message-matching"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:chicken"
 to = "http://wiki.zeromq.org/bindings:chicken"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:load-balancing-in-java"
 to = "http://wiki.zeromq.org/blog:load-balancing-in-java"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:openvms"
 to = "http://wiki.zeromq.org/blog:openvms"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:message-oriented-network-programming"
 to = "http://wiki.zeromq.org/blog:message-oriented-network-programming"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:python-multiprocessing-with-zeromq"
 to = "http://wiki.zeromq.org/blog:python-multiprocessing-with-zeromq"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:installing-ubuntu-java"
 to = "http://wiki.zeromq.org/blog:installing-ubuntu-java"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:0mq-tests"
 to = "http://wiki.zeromq.org/results:0mq-tests"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:10gbe-tests"
 to = "http://wiki.zeromq.org/results:10gbe-tests"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:multicore-tests"
 to = "http://wiki.zeromq.org/results:multicore-tests"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:more-precise-0mq-tests"
 to = "http://wiki.zeromq.org/results:more-precise-0mq-tests"
 status = 302
+force = true
 
 [[redirects]]
 from = "/search:site"
 to = "http://wiki.zeromq.org/search:site"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:ib-tests-v031"
 to = "http://wiki.zeromq.org/results:ib-tests-v031"
 status = 302
+force = true
 
 [[redirects]]
 from = "/build:powerpc"
 to = "http://wiki.zeromq.org/build:powerpc"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:10gbe-tests-v031"
 to = "http://wiki.zeromq.org/results:10gbe-tests-v031"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:_template"
 to = "http://wiki.zeromq.org/topics:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:ooc"
 to = "http://wiki.zeromq.org/bindings:ooc"
 status = 302
+force = true
 
 [[redirects]]
 from = "/area:_start"
 to = "http://wiki.zeromq.org/area:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/distro:vms-v06"
 to = "http://wiki.zeromq.org/distro:vms-v06"
 status = 302
+force = true
 
 [[redirects]]
 from = "/forum:start"
 to = "http://wiki.zeromq.org/forum:start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/forum:recent-threads"
 to = "http://wiki.zeromq.org/forum:recent-threads"
 status = 302
+force = true
 
 [[redirects]]
 from = "/forum:new-thread"
 to = "http://wiki.zeromq.org/forum:new-thread"
 status = 302
+force = true
 
 [[redirects]]
 from = "/forum:thread"
 to = "http://wiki.zeromq.org/forum:thread"
 status = 302
+force = true
 
 [[redirects]]
 from = "/forum:category"
 to = "http://wiki.zeromq.org/forum:category"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:openvms-port"
 to = "http://wiki.zeromq.org/blog:openvms-port"
 status = 302
+force = true
 
 
 [[redirects]]
 from = "/bindings:labview"
 to = "http://wiki.zeromq.org/bindings:labview"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:tries"
 to = "http://wiki.zeromq.org/blog:tries"
 status = 302
+force = true
 
 [[redirects]]
 from = "/area:_feedback"
 to = "http://wiki.zeromq.org/area:_feedback"
 status = 302
+force = true
 
 [[redirects]]
 from = "/story:_start"
 to = "http://wiki.zeromq.org/story:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/area:results"
 to = "http://wiki.zeromq.org/area:results"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:copying"
 to = "http://wiki.zeromq.org/results:copying"
 status = 302
+force = true
 
 [[redirects]]
 from = "/navigator"
 to = "http://wiki.zeromq.org/navigator"
 status = 302
+force = true
 
 [[redirects]]
 from = "/area:_template"
 to = "http://wiki.zeromq.org/area:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:ib-tests-v206"
 to = "http://wiki.zeromq.org/results:ib-tests-v206"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:historical-highlights"
 to = "http://wiki.zeromq.org/blog:historical-highlights"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:road"
 to = "http://wiki.zeromq.org/blog:road"
 status = 302
+force = true
 
 [[redirects]]
 from = "/story:_template"
 to = "http://wiki.zeromq.org/story:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:building-on-red-hat"
 to = "http://wiki.zeromq.org/blog:building-on-red-hat"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:clojure"
 to = "http://wiki.zeromq.org/blog:clojure"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:v2-0-7-released"
 to = "http://wiki.zeromq.org/blog:v2-0-7-released"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:loggy-switches-to-0mq"
 to = "http://wiki.zeromq.org/blog:loggy-switches-to-0mq"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:berlin-buzzwords-2010"
 to = "http://wiki.zeromq.org/blog:berlin-buzzwords-2010"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:cppzmq"
 to = "http://wiki.zeromq.org/topics:cppzmq"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:internet-worldview"
 to = "http://wiki.zeromq.org/blog:internet-worldview"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:introduction"
 to = "http://wiki.zeromq.org/blog:introduction"
 status = 302
+force = true
 
 [[redirects]]
 from = "/story:2"
 to = "http://wiki.zeromq.org/story:2"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:few-blogposts"
 to = "http://wiki.zeromq.org/blog:few-blogposts"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:welcome-objective-c"
 to = "http://wiki.zeromq.org/blog:welcome-objective-c"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:cpan"
 to = "http://wiki.zeromq.org/blog:cpan"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:video-introduction"
 to = "http://wiki.zeromq.org/blog:video-introduction"
 status = 302
+force = true
 
 [[redirects]]
 from = "/include:template-a"
 to = "http://wiki.zeromq.org/include:template-a"
 status = 302
+force = true
 
 [[redirects]]
 from = "/include:template-comments"
 to = "http://wiki.zeromq.org/include:template-comments"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:whitepapers:c"
 to = "http://wiki.zeromq.org/deleted:whitepapers:c"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:whitepapers:java"
 to = "http://wiki.zeromq.org/deleted:whitepapers:java"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:y-suite"
 to = "http://wiki.zeromq.org/whitepapers:y-suite"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:design-v02"
 to = "http://wiki.zeromq.org/whitepapers:design-v02"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:market-analysis"
 to = "http://wiki.zeromq.org/whitepapers:market-analysis"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:design-v04"
 to = "http://wiki.zeromq.org/whitepapers:design-v04"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:user-guide"
 to = "http://wiki.zeromq.org/docs:user-guide"
 status = 302
+force = true
 
 [[redirects]]
 from = "/include:template"
 to = "http://wiki.zeromq.org/include:template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/code:_start"
 to = "http://wiki.zeromq.org/code:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/code:_template"
 to = "http://wiki.zeromq.org/code:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/tutorials:_start"
 to = "http://wiki.zeromq.org/tutorials:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/tutorials:_template"
 to = "http://wiki.zeromq.org/tutorials:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/sandbox:_template"
 to = "http://wiki.zeromq.org/sandbox:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:braindump"
 to = "http://wiki.zeromq.org/blog:braindump"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:devices"
 to = "http://wiki.zeromq.org/docs:devices"
 status = 302
+force = true
 
 [[redirects]]
 from = "/intro:css"
 to = "http://wiki.zeromq.org/intro:css"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:introduction"
 to = "http://wiki.zeromq.org/docs:introduction"
 status = 302
+force = true
 
 [[redirects]]
 from = "/intro:what-people-say"
 to = "http://wiki.zeromq.org/intro:what-people-say"
 status = 302
+force = true
 
 [[redirects]]
 from = "/intro:_template"
 to = "http://wiki.zeromq.org/intro:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:not-to-be-confused"
 to = "http://wiki.zeromq.org/blog:not-to-be-confused"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:september-meetups"
 to = "http://wiki.zeromq.org/blog:september-meetups"
 status = 302
+force = true
 
 [[redirects]]
 from = "/area:most-popular"
 to = "http://wiki.zeromq.org/area:most-popular"
 status = 302
+force = true
 
 [[redirects]]
 from = "/image:logo"
 to = "http://wiki.zeromq.org/image:logo"
 status = 302
+force = true
 
 [[redirects]]
 from = "/project:1"
 to = "http://wiki.zeromq.org/project:1"
 status = 302
+force = true
 
 [[redirects]]
 from = "/project:_template"
 to = "http://wiki.zeromq.org/project:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:modern"
 to = "http://wiki.zeromq.org/blog:modern"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:clojure2"
 to = "http://wiki.zeromq.org/blog:clojure2"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:rfc-0mq-contributions"
 to = "http://wiki.zeromq.org/blog:rfc-0mq-contributions"
 status = 302
+force = true
 
 [[redirects]]
 from = "/distro:_template"
 to = "http://wiki.zeromq.org/distro:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/distro:_start"
 to = "http://wiki.zeromq.org/distro:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/include:wiki-start"
 to = "http://wiki.zeromq.org/include:wiki-start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:_start"
 to = "http://wiki.zeromq.org/whitepapers:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/sandbox:orphans"
 to = "http://wiki.zeromq.org/sandbox:orphans"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:_start"
 to = "http://wiki.zeromq.org/results:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:zmq-poll-workaround"
 to = "http://wiki.zeromq.org/topics:zmq-poll-workaround"
 status = 302
+force = true
 
 [[redirects]]
 from = "/code:nagios-clients-in-c-and-python"
 to = "http://wiki.zeromq.org/code:nagios-clients-in-c-and-python"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:0mq-the-game"
 to = "http://wiki.zeromq.org/blog:0mq-the-game"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:gerard-blog"
 to = "http://wiki.zeromq.org/blog:gerard-blog"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:release-process"
 to = "http://wiki.zeromq.org/topics:release-process"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:_template"
 to = "http://wiki.zeromq.org/whitepapers:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:design-v06"
 to = "http://wiki.zeromq.org/whitepapers:design-v06"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:measuring-jitter"
 to = "http://wiki.zeromq.org/whitepapers:measuring-jitter"
 status = 302
+force = true
 
 [[redirects]]
 from = "/osdp"
 to = "http://wiki.zeromq.org/osdp"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:switch-or-broker"
 to = "http://wiki.zeromq.org/whitepapers:switch-or-broker"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:projects"
 to = "http://wiki.zeromq.org/topics:projects"
 status = 302
+force = true
 
 
 [[redirects]]
 from = "/docs:labs:process-manager"
 to = "http://wiki.zeromq.org/docs:labs:process-manager"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:0mq-over-http"
 to = "http://wiki.zeromq.org/topics:0mq-over-http"
 status = 302
+force = true
 
 
 [[redirects]]
 from = "/docs:message-api-goals"
 to = "http://wiki.zeromq.org/docs:message-api-goals"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:red-binding"
 to = "http://wiki.zeromq.org/bindings:red-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:rebol-3-binding"
 to = "http://wiki.zeromq.org/bindings:rebol-3-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:bindings"
 to = "http://wiki.zeromq.org/docs:bindings"
 status = 302
+force = true
 
 [[redirects]]
 from = "/include:template-b"
 to = "http://wiki.zeromq.org/include:template-b"
 status = 302
+force = true
 
 [[redirects]]
 from = "/story:3"
 to = "http://wiki.zeromq.org/story:3"
 status = 302
+force = true
 
 [[redirects]]
 from = "/intro:give-back"
 to = "http://wiki.zeromq.org/intro:give-back"
 status = 302
+force = true
 
 
 [[redirects]]
 from = "/bxl-conf-minutes"
 to = "http://wiki.zeromq.org/bxl-conf-minutes"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:mongrel2"
 to = "http://wiki.zeromq.org/blog:mongrel2"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:_start"
 to = "http://wiki.zeromq.org/bindings:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:_template"
 to = "http://wiki.zeromq.org/bindings:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:haxe"
 to = "http://wiki.zeromq.org/bindings:haxe"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:javascript"
 to = "http://wiki.zeromq.org/bindings:javascript"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:rt-tests-v031"
 to = "http://wiki.zeromq.org/results:rt-tests-v031"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:aio"
 to = "http://wiki.zeromq.org/results:aio"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:0mq-termination"
 to = "http://wiki.zeromq.org/whitepapers:0mq-termination"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:the-ten-minute-talk"
 to = "http://wiki.zeromq.org/docs:the-ten-minute-talk"
 status = 302
+force = true
 
 [[redirects]]
 from = "/sandbox:ch1"
 to = "http://wiki.zeromq.org/sandbox:ch1"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:topics:about-the-implementation-of-the-asynchronous"
 to = "http://wiki.zeromq.org/deleted:topics:about-the-implementation-of-the-asynchronous"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:welcome-from-amqp"
 to = "http://wiki.zeromq.org/docs:welcome-from-amqp"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:0mq-3-0-pubsub"
 to = "http://wiki.zeromq.org/whitepapers:0mq-3-0-pubsub"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:r-binding"
 to = "http://wiki.zeromq.org/bindings:r-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/code:examples-chat"
 to = "http://wiki.zeromq.org/code:examples-chat"
 status = 302
+force = true
 
 
 [[redirects]]
 from = "/forum:recent-posts"
 to = "http://wiki.zeromq.org/forum:recent-posts"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:basic"
 to = "http://wiki.zeromq.org/bindings:basic"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:scala-binding"
 to = "http://wiki.zeromq.org/bindings:scala-binding"
 status = 302
+force = true
 
 
 [[redirects]]
 from = "/bindings:rebol-2-binding"
 to = "http://wiki.zeromq.org/bindings:rebol-2-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:_start"
 to = "http://wiki.zeromq.org/topics:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:guile-binding"
 to = "http://wiki.zeromq.org/bindings:guile-binding"
 status = 302
+force = true
 
 
 [[redirects]]
 from = "/story:5"
 to = "http://wiki.zeromq.org/story:5"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:d"
 to = "http://wiki.zeromq.org/bindings:d"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:distributions"
 to = "http://wiki.zeromq.org/docs:distributions"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:policies"
 to = "http://wiki.zeromq.org/docs:policies"
 status = 302
+force = true
 
 [[redirects]]
 from = "/build:_template"
 to = "http://wiki.zeromq.org/build:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/build:sparc-linux"
 to = "http://wiki.zeromq.org/build:sparc-linux"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:_start"
 to = "http://wiki.zeromq.org/docs:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:geoip"
 to = "http://wiki.zeromq.org/blog:geoip"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:racket"
 to = "http://wiki.zeromq.org/bindings:racket"
 status = 302
+force = true
 
 [[redirects]]
 from = "/whitepapers:routing"
 to = "http://wiki.zeromq.org/whitepapers:routing"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:gem"
 to = "http://wiki.zeromq.org/blog:gem"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:ada"
 to = "http://wiki.zeromq.org/bindings:ada"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:_start"
 to = "http://wiki.zeromq.org/blog:_start"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:q"
 to = "http://wiki.zeromq.org/bindings:q"
 status = 302
+force = true
 
 [[redirects]]
 from = "/footer"
 to = "http://wiki.zeromq.org/footer"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:omq-2-1-class-diagram"
 to = "http://wiki.zeromq.org/docs:omq-2-1-class-diagram"
 status = 302
+force = true
 
 [[redirects]]
 from = "/event:_template"
 to = "http://wiki.zeromq.org/event:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:felix"
 to = "http://wiki.zeromq.org/bindings:felix"
 status = 302
+force = true
 
 [[redirects]]
 from = "/area:jobs"
 to = "http://wiki.zeromq.org/area:jobs"
 status = 302
+force = true
 
 [[redirects]]
 from = "/story:4"
 to = "http://wiki.zeromq.org/story:4"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:zeromq-and-quickfix"
 to = "http://wiki.zeromq.org/blog:zeromq-and-quickfix"
 status = 302
+force = true
 
 [[redirects]]
 from = "/distro:opensuse"
 to = "http://wiki.zeromq.org/distro:opensuse"
 status = 302
+force = true
 
 [[redirects]]
 from = "/distro:sles"
 to = "http://wiki.zeromq.org/distro:sles"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:owners"
 to = "http://wiki.zeromq.org/docs:owners"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:julia"
 to = "http://wiki.zeromq.org/bindings:julia"
 status = 302
+force = true
 
 [[redirects]]
 from = "/tutorials:butterfly"
 to = "http://wiki.zeromq.org/tutorials:butterfly"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:xpcom-binding"
 to = "http://wiki.zeromq.org/bindings:xpcom-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:delphi"
 to = "http://wiki.zeromq.org/bindings:delphi"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:objc"
 to = "http://wiki.zeromq.org/bindings:objc"
 status = 302
+force = true
 
 [[redirects]]
 from = "/area:licensing"
 to = "http://wiki.zeromq.org/area:licensing"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:eiffel"
 to = "http://wiki.zeromq.org/bindings:eiffel"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:builds"
 to = "http://wiki.zeromq.org/docs:builds"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:binding-abstractions"
 to = "http://wiki.zeromq.org/topics:binding-abstractions"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:bindings:perl-binding-ffi"
 to = "http://wiki.zeromq.org/deleted:bindings:perl-binding-ffi"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:topics:heartbeating"
 to = "http://wiki.zeromq.org/deleted:topics:heartbeating"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:topics:pubsub-security"
 to = "http://wiki.zeromq.org/deleted:topics:pubsub-security"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:topics:planning"
 to = "http://wiki.zeromq.org/deleted:topics:planning"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:topics:libzutil"
 to = "http://wiki.zeromq.org/deleted:topics:libzutil"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:topics:project-basket"
 to = "http://wiki.zeromq.org/deleted:topics:project-basket"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:_template"
 to = "http://wiki.zeromq.org/docs:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:changes-4-0-0"
 to = "http://wiki.zeromq.org/docs:changes-4-0-0"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:nimrod-binding"
 to = "http://wiki.zeromq.org/bindings:nimrod-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/tutorials:dealer-and-router"
 to = "http://wiki.zeromq.org/tutorials:dealer-and-router"
 status = 302
+force = true
 
 [[redirects]]
 from = "/topics:omq-is-just-sockets-tabindex-1"
 to = "http://wiki.zeromq.org/topics:omq-is-just-sockets-tabindex-1"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:tcl"
 to = "http://wiki.zeromq.org/bindings:tcl"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:_template"
 to = "http://wiki.zeromq.org/blog:_template"
 status = 302
+force = true
 
 [[redirects]]
 from = "/intro:books"
 to = "http://wiki.zeromq.org/intro:books"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:ocaml"
 to = "http://wiki.zeromq.org/bindings:ocaml"
 status = 302
+force = true
 
 [[redirects]]
 from = "/build:iphone"
 to = "http://wiki.zeromq.org/build:iphone"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:organization"
 to = "http://wiki.zeromq.org/docs:organization"
 status = 302
+force = true
 
 [[redirects]]
 from = "/deleted:topics:requirements-for-reliability"
 to = "http://wiki.zeromq.org/deleted:topics:requirements-for-reliability"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:using-valgrind"
 to = "http://wiki.zeromq.org/docs:using-valgrind"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:lua"
 to = "http://wiki.zeromq.org/bindings:lua"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:4-1-upgrade"
 to = "http://wiki.zeromq.org/docs:4-1-upgrade"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:fortran77"
 to = "http://wiki.zeromq.org/bindings:fortran77"
 status = 302
+force = true
 
 [[redirects]]
 from = "/area:whitepapers"
 to = "http://wiki.zeromq.org/area:whitepapers"
 status = 302
+force = true
 
 [[redirects]]
 from = "/area:edgenet-hydra"
 to = "http://wiki.zeromq.org/area:edgenet-hydra"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:core-api"
 to = "http://wiki.zeromq.org/docs:core-api"
 status = 302
+force = true
 
 [[redirects]]
 from = "/blog:zero-copy"
 to = "http://wiki.zeromq.org/blog:zero-copy"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:perl"
 to = "http://wiki.zeromq.org/bindings:perl"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:metatrader-4-binding"
 to = "http://wiki.zeromq.org/bindings:metatrader-4-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/sandbox:dealer"
 to = "http://wiki.zeromq.org/sandbox:dealer"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:r-pbdr-binding"
 to = "http://wiki.zeromq.org/bindings:r-pbdr-binding"
 status = 302
+force = true
 
 [[redirects]]
 from = "/results:perf-howto"
 to = "http://wiki.zeromq.org/results:perf-howto"
 status = 302
+force = true
 
 [[redirects]]
 from = "/docs:issue-tracking"
 to = "http://wiki.zeromq.org/docs:issue-tracking"
 status = 302
+force = true
 
 [[redirects]]
 from = "/bindings:twisted"
 to = "http://wiki.zeromq.org/bindings:twisted"
 status = 302
+force = true
 
 [[redirects]]
 from = "/intro:ask-for-help"
 to = "http://wiki.zeromq.org/intro:ask-for-help"
 status = 302
+force = true
 
 [[redirects]]
 from = "/api"
 to = "http://api.zeromq.org/"
 status = 301
+force = true
 
 [[redirects]]
 from = "https://zeromq.net/*"
 to = "https://zeromq.org/:splat"
 status = 301
+force = true
 
 [[redirects]]
 from = "https://www.zeromq.net/*"
 to = "https://zeromq.org/:splat"
 status = 301
+force = true
 
 [[redirects]]
 from = "https://zeromq.com/*"
 to = "https://zeromq.org/:splat"
 status = 301
+force = true
 
 [[redirects]]
 from = "https://www.zeromq.com/*"
 to = "https://zeromq.org/:splat"
 status = 301
+force = true
