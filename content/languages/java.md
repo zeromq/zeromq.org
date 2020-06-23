@@ -23,7 +23,7 @@ and responds to them with "Hello, world!":
 import org.zeromq.ZMQ;
 import org.zeromq.ZContext;
 
-public class hwserver
+public class HelloWorldServer
 {
     public static void main(String[] args) throws Exception
     {
