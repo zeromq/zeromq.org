@@ -1,0 +1,30 @@
+{{ define "title" }}
+  {{ site.Title }} | {{ .Title }}
+{{ end }}
+
+{{ define "main" }}
+  {{ partial "navbar.html" . }}
+  {{ partial "header.html" . }}
+  <section class="columns is-desktop is-fullheight">
+    {{ partial "sidemenu.html" . }}
+
+    <div class="column column-main">
+      <section class="section">
+
+        {{ partial "examples-selector.html" . }}
+
+        {{- $filepath  := .Page.File.Path }}
+        {{- $editLink  := printf "https://github.com/zeromq/zeromq.org/edit/master/content/%s" $filepath }}
+
+        <p style="margin: 0px">
+          <a href="{{ $editLink }}" id="editPageButton" target="_blank">
+            <i class="fas fa-2x fa-pen-square"></i>
+          </a>
+        <p>
+
+        {{ partial "content.html" . }}
+
+      </section>
+    </div>
+  </section>
+{{ end }}

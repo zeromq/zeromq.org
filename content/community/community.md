@@ -6,6 +6,12 @@ weight: 5
 url: "/our-community"
 ---
 
+## Code of Conduct
+
+The ZeroMQ community values respect and inclusiveness, and enforces a Code of Conduct in all interactions.
+
+[Read more]({{< ref "code-of-conduct.md" >}})
+
 ## Events
 
 ZeroMQ community host an annual FOSDEM side event (end of January/beginning of February) at Brussels, Belgium.
