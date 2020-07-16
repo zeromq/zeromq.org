@@ -4,6 +4,17 @@ weight: 6
 toc: true
 ---
 
+## erlzmq - lukaszsamson fork
+
+<table>
+<tr><td>Github</td><td>http://github.com/lukaszsamson/erlzmq</td></tr>
+</table>
+
+Fork of erlzmq2 using dirty NIFs for blocking IO calls and dedicated threads for safely handling sockets.
+Compatible with zmq 4.x
+Supports macos and *nix
+Supports CurveZMQ
+
 ## Chumak
 
 <table>
@@ -37,6 +48,19 @@ erlang-czmq is an Erlang port wrote on top of czmq. The API mirrors that of CZMQ
 </table>
 
 erlzmq2 is NIF based binding.
+Not maintained
+Warning: unstable (leaks file descriptors, memory, threads, has race conditions, can deadlock beam and crashes due to accessing zmq sockets from multiple beam threads)
+
+## erlzmq2 - esl fork
+
+<table>
+<tr><td>Github</td><td>http://github.com/esl/erlzmq</td></tr>
+</table>
+
+Fork of erlzmq2 published on hex.pm.
+Compatible with zmq 4.x
+Supports macos and *nix
+Warning: unstable (leaks file descriptors, memory, threads, has race conditions, can deadlock beam and crashes due to accessing zmq sockets from multiple beam threads)
 
 ## erlzmq
 
@@ -44,4 +68,5 @@ erlzmq2 is NIF based binding.
 <tr><td>Github</td><td>http://github.com/zeromq/erlzmq</td></tr>
 </table>
 
-erlzmq is port based binding.
+erlzmq is port based binding. Compatible with zmq 2.x
+Not maintained
