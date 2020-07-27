@@ -5,7 +5,7 @@ weight: 3
 
 Two options are available for C# developers, [NetMQ](https://github.com/zeromq/netmq), a port of zeromq to C#, or [clrzmq4](https://github.com/zeromq/clrzmq4), C# binding for libzmq.
 
-NetMQ is the recommended option, which has implemented curve encryption.
+NetMQ is the recommended option, which has implemented curve encryption (https://github.com/zeromq/netmq/blob/master/src/NetMQ.Tests/CurveTests.cs).
 
 ## NetMQ
 
