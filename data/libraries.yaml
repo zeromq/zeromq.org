@@ -55,7 +55,7 @@ zmqLibraries:
           gitUrl: https://github.com/zeromq/netmq
           type: engine
           protocols: tcp, inproc, pgm
-          security: PLAIN
+          security: PLAIN, CURVE
 
         - name: clrzmq4
           description: .Net binding for libzmq
