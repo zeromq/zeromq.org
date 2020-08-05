@@ -141,6 +141,10 @@ image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jupyter.svg"
 name = "Mongrel2"
 image = "https://upload.wikimedia.org/wikipedia/en/0/0b/Mongrel_2_logo.png"
 
+[[params.usedby]]
+name = "Jina"
+image = "https://docs.jina.ai/jina-logo-dark.png"
+
 [[params.links]]
 title = "The Guide"
 url = "http://zguide.zeromq.org"
