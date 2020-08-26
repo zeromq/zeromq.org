@@ -4,10 +4,11 @@ weight: 6
 toc: true
 ---
 
-## erlzmq - lukaszsamson fork
+## erlzmq_dnif
 
 <table>
 <tr><td>Github</td><td>http://github.com/lukaszsamson/erlzmq</td></tr>
+<tr><td>Hex</td><td>https://hex.pm/packages/erlzmq_dnif</td></tr>
 </table>
 
 Fork of erlzmq2 using dirty NIFs for blocking IO calls and dedicated threads for safely handling sockets.
@@ -19,6 +20,7 @@ Supports CurveZMQ
 
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/chumak</td></tr>
+<tr><td>Hex</td><td>https://hex.pm/packages/chumak</td></tr>
 </table>
 
 Pure Erlang implementation of ZeroMQ Message Transport Protocol.
@@ -44,7 +46,6 @@ erlang-czmq is an Erlang port wrote on top of czmq. The API mirrors that of CZMQ
 
 <table>
 <tr><td>Github</td><td>http://github.com/zeromq/erlzmq2</td></tr>
-<tr><td>Docs</td><td>http://zeromq.github.com/erlzmq2</td></tr>
 </table>
 
 erlzmq2 is NIF based binding.
@@ -55,6 +56,7 @@ Warning: unstable (leaks file descriptors, memory, threads, has race conditions,
 
 <table>
 <tr><td>Github</td><td>http://github.com/esl/erlzmq</td></tr>
+<tr><td>Hex</td><td>https://hex.pm/packages/erlzmq</td></tr>
 </table>
 
 Fork of erlzmq2 published on hex.pm.
