@@ -46,6 +46,13 @@ zmqLibraries:
           type: binding
           engine: libzmq
 
+        - name: fbzmq
+          description: Facebook ZeroMQ wrappers
+          language: C++
+          gitUrl: https://github.com/facebook/fbzmq
+          type: binding
+          engine: libzmq
+
     - name: csharp
       display: C#
       libraries:
