@@ -122,6 +122,10 @@ name = "Spotify"
 image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/spotify.svg"
 
 [[params.usedby]]
+name = "Facebook"
+image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg"
+
+[[params.usedby]]
 name = "Digital Ocean"
 image = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/digitalocean.svg"
 
