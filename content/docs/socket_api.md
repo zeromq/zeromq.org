@@ -142,7 +142,7 @@ The request-reply pattern is formally defined by RFC
 
 A `REQ` socket is used by a client to send requests to and receive replies from
 a service. This socket type allows only an alternating sequence of *sends* and
-subsequent *receive* calls. A `REQ` socket maybe connected to any number of
+subsequent *receive* calls. A `REQ` socket may be connected to any number of
 `REP` or `ROUTER` sockets. Each request sent is round-robined among all
 connected services, and each reply received is matched with the last issued
 request. It is designed for simple request-reply models where reliability
