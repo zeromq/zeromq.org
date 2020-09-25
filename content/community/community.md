@@ -17,31 +17,6 @@ The ZeroMQ community values respect and inclusiveness, and enforces a Code of Co
 ZeroMQ community host an annual FOSDEM side event (end of January/beginning of February) at Brussels, Belgium.
 Join the [meetup group](https://www.meetup.com/ZeroMQ-FOSDEM-side-event) for exact location and dates.
 
-### FOSDEM 2020 (Mon 3 + Tue 4 Feb 2020)
-
-#### When?
-
-Monday 3rd Tuesday 4th February 2020, from 9am to late in the night :-)
-
-#### Where?
-
-Chez Hugo Hackerspace
-Rue de Laeken 116
-1000 Brussels
-Belgium
-
-#### Drinks and food
-
-For the food, bring your own, and we will order suchis, pizzas, etc... when needed.
-
-#### How to register?
-
-Choose from the following options:
-
-* Register on the [meetup event](https://www.meetup.com/ZeroMQ-FOSDEM-side-event/events/264336737/)
-* Write to the [zeromq-dev mailing list](https://lists.zeromq.org/mailman/listinfo/zeromq-dev)
-* Register on [Wikidot](http://wiki.zeromq.org/event:zeromq-post-fosdem-hackaton-mon-3-tue-4-feb-2020)
-
 ## Gitter
 
 Join [zeromq on gitter](https://gitter.im/zeromq)
