@@ -83,7 +83,7 @@ url = "/community"
 title = "The Guide"
 description = "Explains how to use ØMQ with 60+ diagrams and 750 examples in 28 languages"
 icon = "fas fa-3x fa-book"
-url = "http://zguide.zeromq.org/page:all"
+url = "http://zguide.zeromq.org/"
 
 [[menu.navbar]]
 name = "Documentation"
@@ -97,7 +97,7 @@ weight = 2
 
 [[menu.navbar]]
 name = "The Guide"
-url = "http://zguide.zeromq.org/page:all"
+url = "http://zguide.zeromq.org/"
 weight = 3
 
 [[menu.navbar]]
