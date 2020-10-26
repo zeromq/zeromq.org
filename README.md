@@ -1,6 +1,7 @@
 # ZeroMQ Website
 
-Website is using [hugo static website engine](https://gohugo.io/) and [netlify](https://www.netlify.com/) for hosting.
+Website is generated using [hugo](https://gohugo.io/), a static website engine
+and hosted via [netlify](https://www.netlify.com/).
 
 You can check it out at https://zeromq.org
 
@@ -8,11 +9,12 @@ You can check it out at https://zeromq.org
 
 ### Language Pages
 
-Help is needed with the different langauge pages https://github.com/zeromq/zeromq.org/tree/master/content/languages.
+Help is needed with the different language pages
+https://github.com/zeromq/zeromq.org/tree/master/content/languages.
 
 Please pick one of them and provide:
 
-1. Links to github, docs and package manager
+1. Links to `GitHub`, docs and package manager
 2. Download instructions
 3. Example
 
@@ -21,16 +23,16 @@ Please pick one of them and provide:
 Help is as well needed to translate the examples for different programming
 languages and libraries in the documentation.
 
-If you're translating from scratch you the hugo archetype which will create
-a stub for each example.
+If you're translating from scratch you the hugo archetype which will create a
+stub for each example.
 
 ```sh
 hugo new --kind examples docs/examples/<your language>/<your framework name>
 ```
 
-If you're like to add an example copy an exisiting on from
+If you're like to add an example copy an existing on from
 `content/docs/examples/c/libzmq/<example name>.md` to your language's and
-librarie's folder.
+library's folder.
 
 ## Run locally
 
