@@ -11,8 +11,16 @@ The recommended binding for C developers is CZMQ, which provides a high-level AP
 ## CZMQ
 
 <table>
-<tr><td>Github</td><td>https://github.com/zeromq/czmq</td></tr>
-<tr><td>Docs</td><td>http://czmq.zeromq.org/</td></tr>
+<tr><td>Github</td><td>
+    
+[https://github.com/zeromq/czmq](https://github.com/zeromq/czmq)
+
+</td></tr>
+<tr><td>Docs</td><td>
+    
+[http://czmq.zeromq.org/](http://czmq.zeromq.org/)
+
+</td></tr>
 </table>
 
 ### Install
@@ -82,8 +90,16 @@ int main (void)
 ## libzmq
 
 <table>
-<tr><td>Github</td><td>https://github.com/zeromq/libzmq</td></tr>
-<tr><td>Docs</td><td>http://api.zeromq.org/</td></tr>
+<tr><td>Github</td><td>
+    
+[https://github.com/zeromq/libzmq](https://github.com/zeromq/libzmq)
+
+</td></tr>
+<tr><td>Docs</td><td>
+    
+[http://api.zeromq.org/](http://api.zeromq.org/)
+
+</td></tr>
 </table>
 
 ### Install
