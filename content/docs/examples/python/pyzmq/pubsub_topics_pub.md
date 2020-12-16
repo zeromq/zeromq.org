@@ -4,6 +4,7 @@ language: python
 library: pyzmq
 ---
 
+```Python
 import signal
 import time
 import random
@@ -22,3 +23,4 @@ for i in range(10):
     print(message)
     socket.send(message)
     time.sleep(1)
+```
