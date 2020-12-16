@@ -1,5 +1,5 @@
 ---
-name: pubsub_topics_pub.py
+name: pubsub_topics_pub
 language: python
 library: pyzmq
 ---
