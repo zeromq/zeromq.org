@@ -4,6 +4,8 @@ language: python
 library: pyzmq
 ---
 
+Subscribers specify which topics they are interested in by setting the ZMQ_SUBSCRIBE option on the subscriber socket:
+
 ```Python
 import signal
 import zmq
