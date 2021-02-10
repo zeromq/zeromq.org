@@ -76,7 +76,7 @@ let actor =
     Poller.run poller
 ```
 
-## fszmq
+## fszmq -- **DEPRECATED (10 Feb 2021)**
 
 <table>
 <tr><td>Github</td><td>https://github.com/zeromq/fszmq</td></tr>
