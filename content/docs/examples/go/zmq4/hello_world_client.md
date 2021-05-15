@@ -27,7 +27,7 @@ func main() {
                 s.Send("Hello", 0)
 
                 msg, _ := s.Recv(0)
-                fmt.Printf("Recieved reply %d [ %s ]\n", i, msg)
+                fmt.Printf("Received reply %d [ %s ]\n", i, msg)
         }
 }
 ```

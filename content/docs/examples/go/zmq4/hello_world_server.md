@@ -23,7 +23,7 @@ func main() {
         for {
                 // Wait for next request from client
                 msg, _ := s.Recv(0)
-                log.Printf("Recieved %s\n", msg)
+                log.Printf("Received %s\n", msg)
 
                 // Do some 'work'
                 time.Sleep(time.Second * 1)
