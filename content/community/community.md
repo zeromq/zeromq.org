@@ -50,11 +50,9 @@ This is a low traffic list for important announcements (new releases and so on).
 
 ## IRC
 
-ØMQ developers and users hang out on the **#zeromq** channel on the [freenode IRC network](http://www.freenode.net/).
+ØMQ developers and users hang out on the **#zeromq** channel on the [libera.chat IRC network](http://www.libera.chat/).
 
-Peter Alexander maintains [a full log of the #zeromq IRC channel](http://travlr.github.com/zmqirclog/) going back to March 2010.
-
-To connect to the network, configure your IRC client to use the **chat.freenode.net** server.
+To connect to the network, configure your IRC client to use the **irc.libera.chat** server.
 
 If you don't have an IRC client, we suggest you try [X-Chat](http://www.xchat.org/) (Linux, Windows and others) or [Colloquy](http://colloquy.info/) (MacOS X).
 
