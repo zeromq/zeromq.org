@@ -147,7 +147,7 @@ image = "https://upload.wikimedia.org/wikipedia/en/0/0b/Mongrel_2_logo.png"
 
 [[params.usedby]]
 name = "Jina"
-image = "https://docs.jina.ai/jina-logo-dark.png"
+image = "https://docs.jina.ai/_static/logo-dark.svg"
 
 [[params.links]]
 title = "The Guide"
