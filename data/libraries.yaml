@@ -71,6 +71,17 @@ zmqLibraries:
           type: binding
           engine: libzmq
 
+    - name: dart
+      display: Dart
+      libraries:
+        - name: dartzmq
+          description: Dart binding for libzmq
+          language: Dart
+          gitUrl: https://github.com/enwi/dartzmq
+          type: binding
+          protocols: tcp
+          security: PLAIN, CURVE
+
     - name: Erlang
       libraries:
         - name: Chumak
