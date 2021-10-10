@@ -79,6 +79,7 @@ zmqLibraries:
           language: Dart
           gitUrl: https://github.com/enwi/dartzmq
           type: binding
+          protocols: tcp
           security: PLAIN, CURVE
 
     - name: Erlang
