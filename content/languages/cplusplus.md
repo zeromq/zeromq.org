@@ -7,7 +7,7 @@ toc: true
 ## cppzmq
 
 <table>
-<tr><td>Github</td><td>https://github.com/zeromq/cppzmq</td></tr>
+<tr><td>Github</td><td><a href="https://github.com/zeromq/cppzmq">https://github.com/zeromq/cppzmq</a></td></tr>
 </table>
 
 Header-only C++ binding for libzmq.
@@ -30,7 +30,7 @@ int main()
 ## zmqpp
 
 <table>
-<tr><td>Github</td><td>https://github.com/zeromq/zmqpp</td></tr>
+   <tr><td>Github</td><td><a href="https://github.com/zeromq/zmqpp">https://github.com/zeromq/zmqpp</a></td></tr>
 </table>
 
 This C++ binding for 0mq/zmq is a 'high-level' library that hides most of the c-style interface core 0mq provides. It consists of a number of header and source files all residing in the zmq directory, these files are provided under the MPLv2 license (see LICENSE for details).
@@ -38,7 +38,7 @@ This C++ binding for 0mq/zmq is a 'high-level' library that hides most of the c-
 ## azmq
 
 <table>
-<tr><td>Github</td><td>https://github.com/zeromq/azmq</td></tr>
+   <tr><td>Github</td><td><a href="https://github.com/zeromq/azmq">https://github.com/zeromq/azmq</a></td></tr>
 </table>
 
 The azmq library provides Boost Asio style bindings for ZeroMQ
@@ -74,7 +74,7 @@ int main(int argc, char** argv) {
 ## czmqpp
 
 <table>
-<tr><td>Github</td><td>https://github.com/zeromq/czmqpp</td></tr>
+   <tr><td>Github</td><td><a href="https://github.com/zeromq/czmqpp">https://github.com/zeromq/czmqpp</a></td></tr>
 </table>
 
 C++ wrapper for czmq. Aims to be minimal, simple and consistent.
