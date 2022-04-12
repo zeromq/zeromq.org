@@ -61,3 +61,4 @@ Both the `send` and `receive` methods are blocking (by default). For the receive
 it is simple: if there are no messages the method will block. For sending it is
 more complicated and depends on the socket type. For request sockets, if the
 high watermark is reached or no peer is connected the method will block.
+https://myoctocat.com/assets/images/base-octocat.svg
