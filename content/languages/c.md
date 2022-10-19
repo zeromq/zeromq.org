@@ -104,7 +104,7 @@ int main (void)
 
 ### Install
 
-Following the instrunctions on [download page]({{< relref "/docs/download" >}}).
+Following the instructions on [download page]({{< relref "/docs/download" >}}).
 
 ### Example
 
