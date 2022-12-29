@@ -20,9 +20,10 @@ int main()
     zmq::socket_t publisher{context, zmq::socket_type::pub};
     publisher.bind("tcp://*:5555");
 
+    // Send a multipart messages forever
     while(true){
-        //  Write three messages, each with an envelope and content
-        publisher.send(zmq::str_buffer("status"), zmq::send_flags::none);
+        // Each consists of a topic envelope and content
+        publisher.send(zmq::str_buffer("status"), zmq::send_flags::sndmore);
         publisher.send(zmq::str_buffer("Message in status"));
     }
 
