@@ -449,9 +449,9 @@ water mark for the connected peer, or if no peer is connected, then any
 available for sending; messages are not discarded.
 
 While `PAIR` sockets can be used over transports other than **inproc**, their
-inability to auto-reconnect coupled with the fact new incoming connections will
-be terminated while any previous connections (including ones in a closing state)
-exist makes them unsuitable for TCP in most cases.
+inability to auto-reconnect coupled with the fact that new incoming connections
+will be terminated while any previous connections (including ones in a closing
+state) exist makes them unsuitable for TCP in most cases.
 
 ### Client-server pattern
 
