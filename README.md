@@ -18,7 +18,7 @@ Please pick one of them and provide:
 2. Download instructions
 3. Example
 
-### Documenation Examples
+### Documentation Examples
 
 Help is as well needed to translate the examples for different programming
 languages and libraries in the documentation.
@@ -37,4 +37,9 @@ library's folder.
 ## Run locally
 
 1. Run `npm install` to install CSS and JavaScript dependencies
-2. Run `make serve` to compile the website and start the local server
+2. Run `make serve` to compile the website and start the local server on port 1313
+
+Alternatively you can use docker:
+
+1. Run `make docker-build`
+2. Run `make docker-run` to start a local server on port 80

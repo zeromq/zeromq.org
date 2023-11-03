@@ -41,10 +41,12 @@ icon = "twitter"
 color = "twitter-blue"
 handle = "libzmq"
 
+# NOT sure if I should simply remove params.fonts
 [[params.fonts]]
 name = "Open Sans"
 sizes = [300, 400, 600, 700]
 
+# NOT sure if I should simply remove params.fonts
 [[params.fonts]]
 name = "Fira Mono"
 sizes = [400]

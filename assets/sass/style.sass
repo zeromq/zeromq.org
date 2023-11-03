@@ -1,9 +1,3 @@
-{{- $fonts    := site.Params.fonts }}
-{{- $fontSlice := (slice) }}
-{{- range $fonts }}
-{{- $fontSlice = $fontSlice | append (printf "%s:%s" (replace .name " " "+") (delimit .sizes ",")) }}
-{{- end }}
-{{- $fontsUrl := printf "https://fonts.googleapis.com/css?family=%s" (delimit $fontSlice "|") }}
 {{- $sansSerifFont := site.Params.sansseriffont }}
 {{- $monospaceFont := site.Params.monospacefont }}
 {{- $fontAwesomeVersion := site.Params.fontawesomeversion }}
@@ -12,7 +6,7 @@
 @charset "utf-8"
 
 // External imports
-@import url({{ $fontsUrl }})
+@import url("https://fonts.googleapis.com/css?family=Open+Sans,https://fonts.googleapis.com/css?family=Fira+Mono")
 @import url({{ $fontAwesomeUrl }})
 
 // Project-specific colors and variables
