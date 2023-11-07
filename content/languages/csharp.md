@@ -9,11 +9,11 @@ NetMQ is the recommended option, which has implemented curve encryption (https:/
 
 ## NetMQ
 
-<table>
-<tr><td>Github</td><td><a href="https://github.com/zeromq/netmq" target="_blank">https://github.com/zeromq/netmq</a></td></tr>
-    <tr><td>Docs</td><td><a href="https://netmq.readthedocs.io/en/latest/" target="_blank">https://netmq.readthedocs.io/en/latest/</a></td></tr>
-<tr><td>Nuget</td><td><a href="https://www.nuget.org/packages/NetMQ" target="_blank">https://www.nuget.org/packages/NetMQ</a></td></tr>
-</table>
+| Github | https://github.com/zeromq/netmq         |
+|--------|-----------------------------------------|
+| Docs   | https://netmq.readthedocs.io/en/latest/ |
+| Nuget  | https://www.nuget.org/packages/NetMQ    |
+
 
 ### Request-Response
 

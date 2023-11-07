@@ -6,6 +6,11 @@ pygmentsCodefences = true
 pygmentsStyle = "dracula"
 googleAnalytics = "UA-139969899-1"
 
+[markup.goldmark.renderer]
+# this setting is required to allow hugo and its Markdown renderer to process
+# embedded HTML tags:
+unsafe = true
+
 [permalinks]
 docs = "/:title"
 

@@ -10,7 +10,7 @@ library: chumak
 
 You can install `chumak` from [hex.pm](https://hex.pm/packages/chumak) by including the following in your `rebar.config`:
 
-```
+```erlang
 {deps,[
 	{chumak, "X.Y.Z"}
 ]}.

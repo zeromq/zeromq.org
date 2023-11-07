@@ -8,10 +8,10 @@ Two options are available for Go developers, [goczmq](https://github.com/zeromq/
 
 ## goczmq
 
-<table>
-<tr><td>Github</td><td>https://github.com/zeromq/goczmq</td></tr>
-<tr><td>Docs</td><td>https://godoc.org/github.com/zeromq/goczmq</td></tr>
-</table>
+| Github | https://github.com/zeromq/goczmq           |
+|--------|--------------------------------------------|
+| Docs   | https://godoc.org/github.com/zeromq/goczmq |
+
 
 ### Install
 

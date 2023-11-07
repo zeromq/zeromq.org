@@ -3,11 +3,11 @@ title: Ruby
 weight: 3
 ---
 
-<table>
-<tr><td>Github</td><td>https://github.com/zeromq/rbzmq</td></tr>
-<tr><td>gem</td><td>https://rubygems.org/gems/zmq</td></tr>
-<tr><td>Docs</td><td>http://zeromq.github.io/rbzmq/</td></tr>
-</table>
+| Github | https://github.com/zeromq/rbzmq |
+|--------|---------------------------------|
+| gem    | https://rubygems.org/gems/zmq   |
+| Docs   | http://zeromq.github.io/rbzmq/  |
+
 
 ## Installation
 

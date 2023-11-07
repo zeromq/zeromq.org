@@ -3,10 +3,9 @@ title: NodeJS
 weight: 4
 ---
 
-<table>
-  <tr><td>Github</td><td><a href="https://github.com/zeromq/zeromq.js/">https://github.com/zeromq/zeromq.js/</a></td></tr>
-  <tr><td>npm</td><td><a href="https://www.npmjs.com/package/zeromq">https://www.npmjs.com/package/zeromq</a></td></tr>
-</table>
+| Github | https://github.com/zeromq/zeromq.js/ |
+|--------|--------------------------------------|
+| npm    | https://www.npmjs.com/package/zeromq |
 
 ## Installation
 

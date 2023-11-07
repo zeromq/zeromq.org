@@ -41,5 +41,6 @@ library's folder.
 
 Alternatively you can use docker:
 
+1. Run `npm install` to install CSS and JavaScript dependencies
 1. Run `make docker-build`
 2. Run `make docker-run` to start a local server on port 80

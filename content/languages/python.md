@@ -5,12 +5,12 @@ weight: 3
 
 ## Pyzmq
 
-<table>
-    <tr><td>Github</td><td><a href="https://github.com/zeromq/pyzmq">https://github.com/zeromq/pyzmq</a></td></tr>
-<tr><td>Docs</td><td><a href="https://pyzmq.readthedocs.io/en/latest/">https://pyzmq.readthedocs.io/en/latest/</a></td></tr>
-<tr><td>Guide</td><td><a href="http://zguide.zeromq.org/py:all">http://zguide.zeromq.org/py:all</a></td></tr>
-<tr><td>pypi</td><td><a href="https://pypi.org/project/pyzmq/">https://pypi.org/project/pyzmq/</a></td></tr>
-</table>
+| Github | https://github.com/zeromq/pyzmq         |
+|--------|-----------------------------------------|
+| Docs   | https://pyzmq.readthedocs.io/en/latest/ |
+| Guide  | http://zguide.zeromq.org/py:all         |
+| pypi   | https://pypi.org/project/pyzmq/         |
+
 
 ### Download
 
