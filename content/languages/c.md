@@ -83,7 +83,7 @@ int main (void)
 
 | Github | https://github.com/zeromq/libzmq |
 |--------|----------------------------------|
-| Docs   | http://api.zeromq.org/           |
+| Docs   | https://libzmq.readthedocs.io//           |
 
 
 ### Install

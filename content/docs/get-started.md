@@ -30,7 +30,7 @@ Also available as a [book](https://www.amazon.com/ZeroMQ-Messaging-Applications-
 ## Libzmq - the low level library
 
 [Libzmq (https://github.com/zeromq/libzmq)](https://github.com/zeromq/libzmq) is the low-level library behind most of the different language bindings.
-Libzmq expose [C-API](http://api.zeromq.org) and implemented in C++.
+Libzmq expose [C-API](https://libzmq.readthedocs.io/) and implemented in C++.
 You will rarely use libzmq directly, however if you want to contribute to the project or learn the internals of zeromq, that is the place to start.
 
 ## Pick your language

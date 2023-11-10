@@ -1823,7 +1823,7 @@ force = true
 
 [[redirects]]
 from = "/api"
-to = "http://api.zeromq.org/"
+to = "https://libzmq.readthedocs.io//"
 status = 301
 force = true
 
