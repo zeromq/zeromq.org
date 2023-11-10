@@ -16,14 +16,14 @@ Add it to your Maven project's `pom.xml`:
 <dependency>
 <groupId>org.zeromq</groupId>
 <artifactId>jeromq</artifactId>
-<version>0.5.1</version>
+<version>0.5.3</version>
 </dependency>
 
 <!-- for the latest SNAPSHOT -->
 <dependency>
 <groupId>org.zeromq</groupId>
 <artifactId>jeromq</artifactId>
-<version>0.5.2-SNAPSHOT</version>
+<version>0.6.0-SNAPSHOT</version>
 </dependency>
 
 <!-- If you can't find the latest snapshot -->

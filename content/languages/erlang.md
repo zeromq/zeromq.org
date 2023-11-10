@@ -6,10 +6,10 @@ toc: true
 
 ## erlzmq_dnif
 
-<table>
-<tr><td>Github</td><td>http://github.com/lukaszsamson/erlzmq</td></tr>
-<tr><td>Hex</td><td>https://hex.pm/packages/erlzmq_dnif</td></tr>
-</table>
+| Github | http://github.com/lukaszsamson/erlzmq |
+|--------|---------------------------------------|
+| Hex    | https://hex.pm/packages/erlzmq_dnif   |
+
 
 Fork of erlzmq2 using dirty NIFs for blocking IO calls and dedicated threads for safely handling sockets.
 Compatible with zmq 4.x

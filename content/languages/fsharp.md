@@ -9,10 +9,10 @@ Two alternatives are available for F# developers, `fszmq` and `FsNetMQ`. `fszmq`
 
 ## FsNetMQ
 
-<table>
-<tr><td>Github</td><td>https://github.com/NetMQ/FsNetMQ</td></tr>
-<tr><td>Nuget</td><td>https://www.nuget.org/packages/FsNetMQ/</td></tr>
-</table>
+| Github | https://github.com/NetMQ/FsNetMQ        |
+|--------|-----------------------------------------|
+| Nuget  | https://www.nuget.org/packages/FsNetMQ/ |
+
 
 ### Example
 

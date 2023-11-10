@@ -6,9 +6,8 @@ toc: true
 
 ## cppzmq
 
-<table>
-<tr><td>Github</td><td><a href="https://github.com/zeromq/cppzmq">https://github.com/zeromq/cppzmq</a></td></tr>
-</table>
+| Github | https://github.com/zeromq/cppzmq |
+|--------|----------------------------------|
 
 Header-only C++ binding for libzmq.
 

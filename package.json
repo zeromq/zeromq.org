@@ -1,8 +1,8 @@
 {
   "private": true,
   "devDependencies": {
-    "bulma": "^0.8.0",
-    "bulma-dashboard": "^0.1.35",
+    "bulma": "^0.9.4",
+    "bulma-dashboard": "^0.3.2",
     "minireset.css": "^0.0.3"
   }
 }
