@@ -33,12 +33,6 @@ url  = "https://github.com/zeromq"
 icon = "github"
 color = "black"
 
-[params.social.gitter]
-name = "Gitter"
-url = "https://gitter.im/zeromq"
-icon = "gitter"
-color = "gitter-purple"
-
 [params.social.twitter]
 name = "Twitter"
 url = "https://twitter.com/libzmq"
@@ -162,4 +156,4 @@ url = "http://zguide.zeromq.org"
 
 [[params.links]]
 title = "Low-level API"
-url = "http://api.zeromq.org"
+url = "https://libzmq.readthedocs.io/"
