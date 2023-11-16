@@ -27,5 +27,6 @@ docker-build:
 	docker build -t zeromqorgsite .
 
 docker-run:
-	docker run --name zeromqorgsite -d -p80:80 zeromqorgsite
+	docker stop zeromqorgsite || true # in case it was already running
+	docker run --rm --name zeromqorgsite -d -p80:80 zeromqorgsite
 
