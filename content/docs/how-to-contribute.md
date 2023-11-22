@@ -39,8 +39,10 @@ Solution: Use CMD.EXE environment variable to extract
 DevStudio version number and build using it.
 ```
 
-## Coding Style
+## Coding Style for libzmq
 
+In case your contribution is targeting [libzmq](https://github.com/zeromq/libzmq) please stick to this guide as coding style.
+Please also note that [clang-format](https://clang.llvm.org/docs/ClangFormat.html) is used to automatically validate and enforce proper formatting.
 
 ### General rules
 
@@ -77,7 +79,7 @@ cout << "Factorial of 10 is " << factorial << "." << endl;
 
 Identifiers are in lower case. If identifier consists of multiple words, the words are separated by underscores.
 
-Identifiers should be meaningful rather than arbitrary. The only exception are control variables of short cycles where short names like i, it etc. can be used.
+Identifiers should be meaningful rather than arbitrary. The only exception are control variables of short cycles where short names like `i`, `it` etc. can be used.
 
 ```
 int sum = 0;
@@ -103,7 +105,7 @@ struct complex_t
 };
 ```
 
-Identifier for types (structs, classes, enums, typedefs) are postfixed by "_t" (e.g. complex_t).
+Identifier for types (structs, classes, enums, typedefs) are postfixed by "_t" (e.g. `complex_t`).
 
 ### Code blocks
 
@@ -116,7 +118,7 @@ void fx ()
 }
 ```
 
-With for, while, if and else blocks opening bracket is on the same line as the control statement:
+With `for`, `while`, `if` and `else` blocks opening bracket is on the same line as the control statement:
 
 ```
 if (sum > 1000) {
@@ -126,14 +128,14 @@ if (sum > 1000) {
 }
 ```
 
-Even if for, while, if or else block contains only a single statement, the statement should be placed on a separate line:
+Even if `for`, `while`, `if` or `else` block contains only a single statement, the statement should be placed on a separate line:
 
 ```
 if (end)
     exit (1);
 ```
 
-If an if block contains an else part, always write the curly braces around both parts.
+If an `if` block contains an `else` part, always write the curly braces around both parts.
 
 If the indenting of the controlled block incidentally collides with the control statement that's broken into two lines, second line of the control statement should be indented by 6 spaces rather than 4 to prevent confusion:
 
@@ -198,7 +200,10 @@ char *p = static_cast <char *> (q);
 
 ### Standard library headers
 
-Do not use deprecated headers (like <stddef.h>). Use the C++ header instead: <cstddef> Always qualify all standard library names: std::size_t, std::memcpy, etc.
+Do not use deprecated headers (like `<stddef.h>`). Use the C++ header instead: `<cstddef>`.
+
+Always qualify all standard library names: `std::size_t`, `std::memcpy`, etc.
+
 
 ### Include guards and global file structure
 
@@ -220,13 +225,13 @@ namespace xyz
 #endif
 ```
 
-The include guard for a header file foo.hpp should be __ZMQ_FOO_HPP_INCLUDED__. (In fact, names starting with double underscores are reserved, and technically any definition of such a name makes the program ill-formed. We need to change this rule and fix all the header files.)
+The include guard for a header file `foo.hpp` should be `__ZMQ_FOO_HPP_INCLUDED__`. (In fact, names starting with double underscores are reserved, and technically any definition of such a name makes the program ill-formed. We need to change this rule and fix all the header files.)
 
 ### Miscellaneous spacing
 
 Constructor initializer lists have spaces around the colon.
 
-The spacing of pointer and reference modifiers is not completely decided, either T* p or T *p are acceptable. But use one fixed style in one file. In the latter case, casts also get a space: static_cast <T *>
+The spacing of pointer and reference modifiers is not completely decided, either `T* p` or `T *p` are acceptable. But use one fixed style in one file. In the latter case, casts also get a space: `static_cast <T *>`
 
 ### Exceptions
 
