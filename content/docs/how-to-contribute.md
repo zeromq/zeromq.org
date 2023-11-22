@@ -7,9 +7,9 @@ weight: 1
 
 ## How We Work Together
 
-The ZeroMQ Community uses the [C4.1](http://rfc.zeromq.org/spec:22) process (with some caveats) for its core projects: libzmq and stable releases (zeromq2-x, zeromq3-x, zeromq4-x) as well as surrounding projects like CZMQ.
+The ZeroMQ Community uses the [C4.1](http://rfc.zeromq.org/spec:22) process (with some caveats) for its core projects: [libzmq](https://github.com/zeromq/libzmq) and stable releases (zeromq2-x, zeromq3-x, zeromq4-x) as well as surrounding projects like [CZMQ](https://github.com/zeromq/czmq).
 
-Please do take the time to read the C4.1 RFC, and/or the line-by-line breakdown in [Chapter 6 of the ZeroMQ Guide](http://zguide.zeromq.org/page:all#The-MQ-Process-C).
+Please do take the time to read the C4.1 RFC, and/or the line-by-line breakdown in [Chapter 6 of the ZeroMQ Guide](https://zguide.zeromq.org/docs/chapter6/#The-ZeroMQ-Process-C).
 
 There is a worked example of making a patch, with all commands, in the same chapter.
 
@@ -20,7 +20,7 @@ Please start by reading the https://docs.github.com/en/get-started/quickstart/co
 
 ## Contribution Example
 
-The ZeroMQ Guide has a [detailed step-by-step example](https://zguide.zeromq.org/docs/chapter6/#A-Real-Life-Example) of contributing a patch to libzmq.
+The ZeroMQ Guide has a [detailed step-by-step example](https://zguide.zeromq.org/docs/chapter6/#A-Real-Life-Example) of contributing a patch to [libzmq](https://github.com/zeromq/libzmq).
 
 ## Write Good Commit Messages
 
