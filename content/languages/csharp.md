@@ -79,10 +79,9 @@ using (var publisher = new PublisherSocket())
 
 ## clrzmq4
 
-<table>
-    <tr><td>Github</td><td><a href="https://github.com/zeromq/clrzmq4" target="_blank">https://github.com/zeromq/clrzmq4</a></td></tr>
-<tr><td>Nuget</td><td><a href="https://www.nuget.org/packages/ZeroMQ/" target="_blank">https://www.nuget.org/packages/ZeroMQ/</a></td></tr>
-</table>
+| Github | https://github.com/zeromq/clrzmq4       |
+|--------|-----------------------------------------|
+| Nuget  | https://www.nuget.org/packages/ZeroMQ/  |
 
 Package include libzmq for Windows, for OSX and Linux you need to [install libzmq]({{< relref "/docs/download" >}}).
 

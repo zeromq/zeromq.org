@@ -103,11 +103,10 @@ func main() {
 
 ## pebbe/zmq4
 
-<table>
-<tr><td>Github</td><td>https://github.com/pebbe/zmq4</td></tr>
-<tr><td>Docs</td><td>https://godoc.org/github.com/pebbe/zmq4</td></tr>
-<tr><td>Examples</td><td>https://github.com/pebbe/zmq4/tree/master/examples</td></tr>
-</table>
+| Github   | https://github.com/pebbe/zmq4              |
+|----------|--------------------------------------------|
+| Docs     | https://godoc.org/github.com/pebbe/zmq4    |
+| Examples | https://github.com/pebbe/zmq4/tree/master/examples |
 
 ### Installation
 
