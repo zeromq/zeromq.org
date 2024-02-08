@@ -6,16 +6,14 @@ weight: 4
 | Github   | https://github.com/erickt/rust-zmq                      |
 |----------|---------------------------------------------------------|
 | Crate    | https://docs.rs/crate/zmq                               |
-| Examples | https://github.com/erickt/rust-zmq/tree/master/examples |
+| Examples | [https://github.com/erickt/rust-zmq/tree/master/examples](https://github.com/zeromq/zmq.rs/tree/master/examples) |
 
 ## Installation
-
-[Install libzmq]({{< relref "/docs/download" >}}).
 
 Add the following Cargo.toml file:
 
 ```toml
 [dependencies]
-zmq = "0.9"
+zeromq = { version = "0.3.5", features = ["tcp-transport"] }
 ```
 
