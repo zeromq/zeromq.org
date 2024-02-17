@@ -219,3 +219,12 @@ zmqLibraries:
           gitUrl: https://github.com/erickt/rust-zmq
           type: binding
           engine: libzmq
+
+    - name: Zig
+      libraries:
+        - name: zzmq
+          description: Zig binding for CZMQ
+          language: Zig
+          gitUrl: https://github.com/nine-lives-later/zzmq
+          type: binding
+          engine: libzmq
