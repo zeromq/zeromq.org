@@ -532,15 +532,14 @@ single publisher to multiple subscribers in a fan out fashion.
 Radio-dish is using groups (vs Pub-sub topics), Dish sockets can join a group
 and each message sent by Radio sockets belong to a group.
 
-Groups are null terminated strings limited to 16 chars length (including null).
-The intention is to increase the length to 40 chars (including null). The
-encoding of groups shall be UTF8.
+Groups are null terminated strings limited to 255 bytes in length (including null).
+Each group character must be one byte with allowed values 1-255.
 
 Groups are matched using exact matching (vs prefix matching of PubSub).
 
 #### RADIO socket
 
-A RADIO socket is used by a publisher to distribute data. Each message belong to
+A RADIO socket is used by a publisher to distribute data. Each message belongs to
 a group. Messages are distributed to all members of a group. The *receive*
 operation is not implemented for this socket type.
 
