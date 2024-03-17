@@ -42,3 +42,4 @@ fetch_example nodejs zeromqjs download https://raw.githubusercontent.com/zeromq/
 fetch_example perl perlzmq download https://raw.githubusercontent.com/zeromq/perlzmq/master/README.md "INSTALL"
 fetch_example python pyzmq download https://raw.githubusercontent.com/zeromq/pyzmq/master/README.md "Downloading;Building and installation"
 fetch_example rust rust-zmq download https://raw.githubusercontent.com/erickt/rust-zmq/master/README.md "Installation"
+fetch_example zig zzmq download https://github.com/nine-lives-later/zzmq/raw/main/README.md "Adding to build process;Installing local dependencies"
