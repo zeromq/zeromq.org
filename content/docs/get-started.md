@@ -34,8 +34,8 @@ Libzmq expose [C-API](https://libzmq.readthedocs.io/) and implemented in C++.
 You will rarely use libzmq directly, however if you want to contribute to the project or learn the internals of zeromq, that is the place to start.
 
 ## Pick your language
-
-{{< languages >}}
+english
+>}}
 
 ## Pick your library
 
