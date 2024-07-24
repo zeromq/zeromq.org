@@ -1,7 +1,7 @@
 ---
 name: hello_world_server
-language: python
-library: pyzmq
+language: haskell
+library: zeromq4-haskell
 ---
 
 ```haskell
