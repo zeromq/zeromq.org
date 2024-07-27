@@ -142,7 +142,7 @@ zmqLibraries:
 
     - name: Haskell
       libraries:
-        - name: zeromq-haskell
+        - name: zeromq4-haskell
           description: Haskell binding for libzmq
           language: Haskell
           gitUrl: https://gitlab.com/twittner/zeromq-haskell
