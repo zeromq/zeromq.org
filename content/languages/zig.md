@@ -54,3 +54,55 @@ defer frame.deinit();
 
 const data = try frame.data();
 ```
+
+## zimq
+
+Github: https://github.com/uyha/zimq
+
+### Install
+
+1. Run the following command to add this project as a dependency
+
+   ```sh
+   zig fetch --save git+https://github.com/uyha/zimq.git
+   ```
+
+1. In your `build.zig`, add the following
+
+   ```zig
+   const zimq = b.dependency("zimq", .{
+       .target = target,
+       .optimize = optimize,
+   });
+   // Replace `exe` with your actual library or executable
+   exe.root_module.addImport("zimq", zimq.module("zimq"));
+   ```
+
+### Example
+
+```zig
+const std = @import("std");
+const zimq = @import("zimq");
+
+pub fn main() !void {
+    const context: *zimq.Context = try .init();
+    defer context.deinit();
+
+    const pull: *zimq.Socket = try .init(context, .pull);
+    defer pull.deinit();
+
+    const push: *zimq.Socket = try .init(context, .push);
+    defer push.deinit();
+
+    try pull.bind("inproc://#1");
+    try push.connect("inproc://#1");
+
+    const message = "hello";
+    try push.sendConst(message, message.len, .{});
+
+    var buffer: zimq.Message = .empty();
+    _ = try pull.recvMsg(&buffer, .{});
+
+    std.debug.print("{s}\n", .{buffer.slice().?});
+}
+```
