@@ -1,7 +1,60 @@
 ---
 title: Python
 weight: 3
+toc: true
 ---
+
+## PyOMQ - drop-in pyzmq replacement, 2-3x faster
+
+Drop-in pyzmq replacement backed by omq.rs (pure Rust ZeroMQ). Same API, sync and asyncio, 2-3x throughput over TCP. No libzmq dependency.
+
+| Github | https://github.com/paddor/omq.rs/tree/main/bindings/pyomq |
+|--------|-----------------------------------------------------------|
+| PyPI   | https://pypi.org/project/pyomq/                           |
+
+### Download
+
+```bash
+pip install pyomq
+```
+
+### Example
+
+```python
+import pyomq
+
+ctx = pyomq.Context()
+
+push = ctx.socket(pyomq.PUSH)
+push.bind("tcp://127.0.0.1:5555")
+
+pull = ctx.socket(pyomq.PULL)
+pull.connect("tcp://127.0.0.1:5555")
+
+push.send(b"Hello World!")
+print(pull.recv())
+```
+
+asyncio:
+
+```python
+import asyncio
+import pyomq.asyncio
+
+async def main():
+    ctx = pyomq.asyncio.Context()
+
+    push = ctx.socket(pyomq.PUSH)
+    push.bind("tcp://127.0.0.1:5555")
+
+    pull = ctx.socket(pyomq.PULL)
+    pull.connect("tcp://127.0.0.1:5555")
+
+    await push.send(b"Hello World!")
+    print(await pull.recv())
+
+asyncio.run(main())
+```
 
 ## Pyzmq
 

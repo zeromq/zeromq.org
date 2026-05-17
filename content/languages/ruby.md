@@ -1,7 +1,39 @@
 ---
 title: Ruby
 weight: 3
+toc: true
 ---
+
+## OMQ - pure Ruby, wire-compatible with libzmq
+
+Pure Ruby ZeroMQ implementation. No C extensions, no libzmq dependency. Faster than any binding in both throughput and latency. All standard and draft socket types, TCP/IPC/inproc transports, CURVE/PLAIN/BLAKE3ZMQ mechanisms, lz4+tcp:// and zstd+tcp:// compression transports.
+
+| Github | https://github.com/zeromq/omq.rb              |
+|--------|----------------------------------------------|
+| gem    | https://rubygems.org/gems/omq                |
+| CLI    | https://rubygems.org/gems/omq-cli            |
+
+### Installation
+
+```bash
+gem install omq
+```
+
+### Example
+
+```ruby
+require "omq"
+
+push = OMQ.push
+push.connect("tcp://127.0.0.1:9000")
+push.send("Hello World!")
+
+pull = OMQ.pull
+pull.bind("tcp://127.0.0.1:9000")
+puts pull.recv
+```
+
+## rbzmq - bindings for the libzmq
 
 | Github | https://github.com/zeromq/rbzmq |
 |--------|---------------------------------|
@@ -9,7 +41,7 @@ weight: 3
 | Docs   | http://zeromq.github.io/rbzmq/  |
 
 
-## Installation
+### Installation
 
 [Install libzmq]({{< relref "/docs/download" >}}).
 
@@ -29,7 +61,7 @@ On Windows add a parameter for the libs. For example:
 gem install zmq -- --with-zmq-dir=c:/src/zeromq-4.3.2 --with-zmq-lib=c:/src/zeromq-4.3.2/src/.libs
 ```
 
-## Example
+### Example
 
 ```ruby
 require "zmq"
