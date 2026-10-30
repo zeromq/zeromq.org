@@ -305,7 +305,7 @@ not able to receive any messages.
 When a `PUB` socket enters the mute state due to having reached the high water
 mark for a subscriber, then any messages that would be sent to the subscriber
 in question shall instead be dropped until the mute state ends. The send
-function does never block for this socket type.
+function never blocks for this socket type.
 
 **Summary of characteristics:**
 
