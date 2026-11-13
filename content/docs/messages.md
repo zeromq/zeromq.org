@@ -17,7 +17,7 @@ buffers, msgpack, JSON, or whatever else your applications need to speak. It's
 wise to choose a data representation that is portable, but you can make your own
 decisions about trade-offs.
 
-The simplest ZeroMQ message consist of one frame (also called message part).
+The simplest ZeroMQ message consists of one frame (also called message part).
 Frames are the basic wire format for ZeroMQ messages. A frame is a
 length-specified block of data. The length can be zero upwards. ZeroMQ
 guarantees to deliver all the parts (one or more) for a message, or none of
